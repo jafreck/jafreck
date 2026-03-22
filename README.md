@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 <a href="https://github.com/jafreck">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=jafreck&show_icons=true&theme=dark&include_all_commits=true" />
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=jafreck&show_icons=true&theme=dark" />
 </a>
 <a href="https://github.com/jafreck">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jafreck&layout=compact&langs_count=8&card_width=320&theme=dark" />
