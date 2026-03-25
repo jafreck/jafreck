@@ -3,7 +3,7 @@
 <table align="center" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td align="center">
-      <a href="https://git.io/streak-stats">
+      <a href="https://github.com/jafreck">
         <picture>
           <source
             media="(prefers-color-scheme: dark)"
