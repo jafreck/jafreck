@@ -19,43 +19,45 @@
   </a>
 </p>
 
-<br/><br/>
+<br /><br />
 
-<p align="center">
-  <a href="https://github.com/jafreck">
-    <picture>
-      <source
-        media="(prefers-color-scheme: dark)"
-        srcset="https://github-readme-stats.vercel.app/api?username=jafreck&show_icons=true&hide_rank=true&line_height=28&theme=github_dark"
-      />
-      <source
-        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        srcset="https://github-readme-stats.vercel.app/api?username=jafreck&show_icons=true&hide_rank=true&line_height=28&theme=default"
-      />
-      <img
-        align="left"
-        height="200"
-        src="https://github-readme-stats.vercel.app/api?username=jafreck&show_icons=true&hide_rank=true&line_height=28&theme=default"
-        alt="GitHub stats"
-      />
-    </picture>
-  </a>
-  <a href="https://github.com/jafreck">
-    <picture>
-      <source
-        media="(prefers-color-scheme: dark)"
-        srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=jafreck&layout=compact&langs_count=10&card_width=320&theme=github_dark"
-      />
-      <source
-        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=jafreck&layout=compact&langs_count=10&card_width=320&theme=default"
-      />
-      <img
-        align="right"
-        height="200"
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=jafreck&layout=compact&langs_count=10&card_width=320&theme=default"
-        alt="Top languages"
-      />
-    </picture>
-  </a>
-</p>
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://github.com/jafreck">
+        <picture>
+          <source
+            media="(prefers-color-scheme: dark)"
+            srcset="https://github-readme-stats.vercel.app/api?username=jafreck&show_icons=true&hide_rank=true&line_height=28&theme=github_dark"
+          />
+          <source
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+            srcset="https://github-readme-stats.vercel.app/api?username=jafreck&show_icons=true&hide_rank=true&line_height=28&theme=default"
+          />
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=jafreck&show_icons=true&hide_rank=true&line_height=28&theme=default"
+            alt="GitHub stats"
+          />
+        </picture>
+      </a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://github.com/jafreck">
+        <picture>
+          <source
+            media="(prefers-color-scheme: dark)"
+            srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=jafreck&layout=compact&langs_count=10&card_width=320&theme=github_dark"
+          />
+          <source
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+            srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=jafreck&layout=compact&langs_count=10&card_width=320&theme=default"
+          />
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=jafreck&layout=compact&langs_count=10&card_width=320&theme=default"
+            alt="Top languages"
+          />
+        </picture>
+      </a>
+    </td>
+  </tr>
+</table>
