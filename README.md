@@ -22,7 +22,7 @@
       <br /><br />
       <table align="center" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td align="center" valign="top">
+          <!-- <td align="center" valign="top">
             <a href="https://github.com/jafreck">
               <picture>
                 <source
@@ -39,7 +39,7 @@
                 />
               </picture>
             </a>
-          </td>
+          </td> -->
           <td align="center" valign="top">
             <a href="https://github.com/jafreck">
               <picture>
