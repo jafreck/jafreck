@@ -274,8 +274,8 @@ def build_svg(streak, langs):
     o.append(CSS)
     for (dur, th), name in anim_map.items():
         o.append(
-            f"@keyframes {name}{{0%{{transform:translateY(-{th}px)}}"
-            f"100%{{transform:translateY({H + 20}px)}}}}"
+            f"@keyframes {name}{{0%{{transform:translate3d(0,-{th}px,0)}}"
+            f"100%{{transform:translate3d(0,{H + 20}px,0)}}}}"
         )
     o.append("</style>")
     o.append(
@@ -292,7 +292,7 @@ def build_svg(streak, langs):
     # Rain
     o.append('<g clip-path="url(#c)">')
     for c in cols:
-        o.append(f'<g style="animation:{c["cls"]} {c["dur"]}s linear {c["delay"]}s infinite;animation-fill-mode:backwards">')
+        o.append(f'<g style="transform:translate3d(0,-{c["total_h"]}px,0);will-change:transform;animation:{c["cls"]} {c["dur"]}s linear {c["delay"]}s infinite">')
         for j, ch in enumerate(c["chars"]):
             y = round(j * CH, 1)
             bc = (
