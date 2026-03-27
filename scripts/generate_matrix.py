@@ -59,25 +59,56 @@ def fetch_streak():
         key=lambda x: x["date"],
     )
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    valid = [d for d in days if d["date"] <= today]
 
+    # If today is in the calendar with 0 contributions, skip it
+    # (the day isn't over — the streak isn't broken yet)
+    if valid and valid[-1]["date"] == today and not valid[-1]["contributionCount"]:
+        valid = valid[:-1]
+
+    # Current streak (walk backwards from most recent day)
     cur = 0
-    for day in reversed(days):
-        if day["date"] > today:
-            continue
+    cur_start = cur_end = None
+    for day in reversed(valid):
         if day["contributionCount"]:
+            if cur == 0:
+                cur_end = day["date"]
+            cur_start = day["date"]
             cur += 1
         else:
             break
 
-    longest = streak = 0
-    for day in days:
+    # Longest streak (walk forwards through all days)
+    longest = run = 0
+    longest_start = longest_end = None
+    run_start = None
+    for day in valid:
         if day["contributionCount"]:
-            streak += 1
-            longest = max(longest, streak)
+            if run == 0:
+                run_start = day["date"]
+            run += 1
+            if run > longest:
+                longest = run
+                longest_start = run_start
+                longest_end = day["date"]
         else:
-            streak = 0
+            run = 0
 
-    return dict(total=cal["totalContributions"], current=cur, longest=longest)
+    # Total contributions date range
+    total_start = valid[0]["date"] if valid else today
+    total_end = valid[-1]["date"] if valid else today
+
+    return dict(
+        total=cal["totalContributions"],
+        total_start=total_start,
+        total_end=total_end,
+        current=cur,
+        current_start=cur_start,
+        current_end=cur_end,
+        longest=longest,
+        longest_start=longest_start,
+        longest_end=longest_end,
+    )
 
 
 def fetch_langs():
@@ -122,6 +153,17 @@ def esc(s):
     )
 
 
+def fmt_range(start, end):
+    """Format a date range like 'Mar 20 - Mar 26'."""
+    if not start or not end:
+        return ""
+    s = datetime.strptime(start, "%Y-%m-%d")
+    e = datetime.strptime(end, "%Y-%m-%d")
+    if s.year == e.year:
+        return f"{s.strftime('%b %d')} - {e.strftime('%b %d')}"
+    return f"{s.strftime('%b %d, %Y')} - {e.strftime('%b %d, %Y')}"
+
+
 CSS = """
     .bg{fill:#0D1117}
     .fs1{stop-color:#0D1117;stop-opacity:0}
@@ -159,7 +201,7 @@ def build_svg(streak, langs):
     # Layout
     greeting_y, greeting_h = 25, 55
     streak_y = greeting_y + greeting_h + 20
-    streak_h = 160
+    streak_h = 175
     lang_cols = 2
     lang_rows = math.ceil(n_langs / lang_cols)
     lang_row_h = 26
@@ -279,11 +321,17 @@ def build_svg(streak, langs):
         f'<text class="ts" x="{center_x}" y="{ring_cy + ring_r + 20}" '
         f'text-anchor="middle" font-size="11">Current Streak</text>'
     )
+    cur_range = fmt_range(streak["current_start"], streak["current_end"])
+    o.append(
+        f'<text class="tp" x="{center_x}" y="{ring_cy + ring_r + 35}" '
+        f'text-anchor="middle">{esc(cur_range)}</text>'
+    )
 
     # Left column — Total Contributions
     side_num_y = ring_cy + 5
     side_label_y = ring_cy + 24
     side_emoji_y = ring_cy - 28
+    side_date_y = ring_cy + 40
     o.append(
         f'<text x="{left_x}" y="{side_emoji_y}" '
         f'text-anchor="middle" font-size="16">⭐</text>'
@@ -295,6 +343,11 @@ def build_svg(streak, langs):
     o.append(
         f'<text class="ts" x="{left_x}" y="{side_label_y}" '
         f'text-anchor="middle" font-size="11">Total Contributions</text>'
+    )
+    total_range = fmt_range(streak["total_start"], streak["total_end"])
+    o.append(
+        f'<text class="tp" x="{left_x}" y="{side_date_y}" '
+        f'text-anchor="middle">{esc(total_range)}</text>'
     )
 
     # Right column — Longest Streak
@@ -309,6 +362,11 @@ def build_svg(streak, langs):
     o.append(
         f'<text class="ts" x="{right_x}" y="{side_label_y}" '
         f'text-anchor="middle" font-size="11">Longest Streak</text>'
+    )
+    longest_range = fmt_range(streak["longest_start"], streak["longest_end"])
+    o.append(
+        f'<text class="tp" x="{right_x}" y="{side_date_y}" '
+        f'text-anchor="middle">{esc(longest_range)}</text>'
     )
 
     # ── Languages ──
