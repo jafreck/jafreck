@@ -49,12 +49,18 @@ def gql(query, **variables):
 
 
 def fetch_streak():
+    # Get contribution years, join date, and current rolling-year calendar
     d = gql(
-        """query($u:String!){user(login:$u){contributionsCollection{
-        contributionCalendar{totalContributions
-        weeks{contributionDays{contributionCount date}}}}}}""",
+        """query($u:String!){user(login:$u){
+        createdAt
+        contributionsCollection{
+          contributionYears
+          contributionCalendar{totalContributions
+          weeks{contributionDays{contributionCount date}}}}}}""",
         u=USERNAME,
     )
+    created_at = d["user"]["createdAt"][:10]
+    years = d["user"]["contributionsCollection"]["contributionYears"]
     cal = d["user"]["contributionsCollection"]["contributionCalendar"]
     days = sorted(
         (day for w in cal["weeks"] for day in w["contributionDays"]),
@@ -63,8 +69,23 @@ def fetch_streak():
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     valid = [d for d in days if d["date"] <= today]
 
+    # Sum all-time contributions across every year
+    if len(years) > 1:
+        aliases = " ".join(
+            f'y{yr}:contributionsCollection(from:"{yr}-01-01T00:00:00Z",'
+            f'to:"{yr}-12-31T23:59:59Z")'
+            f"{{contributionCalendar{{totalContributions}}}}"
+            for yr in years
+        )
+        d2 = gql(f"query($u:String!){{user(login:$u){{{aliases}}}}}", u=USERNAME)
+        all_total = sum(
+            d2["user"][f"y{yr}"]["contributionCalendar"]["totalContributions"]
+            for yr in years
+        )
+    else:
+        all_total = cal["totalContributions"]
+
     # If today is in the calendar with 0 contributions, skip it
-    # (the day isn't over — the streak isn't broken yet)
     if valid and valid[-1]["date"] == today and not valid[-1]["contributionCount"]:
         valid = valid[:-1]
 
@@ -96,12 +117,12 @@ def fetch_streak():
         else:
             run = 0
 
-    # Total contributions date range
-    total_start = valid[0]["date"] if valid else today
-    total_end = valid[-1]["date"] if valid else today
+    # Total contributions: from account creation to today
+    total_start = created_at
+    total_end = today
 
     return dict(
-        total=cal["totalContributions"],
+        total=all_total,
         total_start=total_start,
         total_end=total_end,
         current=cur,
