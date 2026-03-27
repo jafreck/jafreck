@@ -216,7 +216,7 @@ def build_svg(streak, langs):
     # Rain
     o.append('<g clip-path="url(#c)">')
     for c in cols:
-        o.append(f'<g style="animation:{c["cls"]} {c["dur"]}s linear {c["delay"]}s infinite;animation-fill-mode:backwards">')
+        o.append(f'<g style="transform:translateY(-{c["total_h"]}px);animation:{c["cls"]} {c["dur"]}s linear {c["delay"]}s infinite">')
         for j, ch in enumerate(c["chars"]):
             y = round(j * CH, 1)
             bc = (
