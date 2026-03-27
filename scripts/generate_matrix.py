@@ -22,6 +22,8 @@ CHARS = list(
     "ナニヌネノハヒフヘホマミムメモヤユヨ"
     "ラリルレロワヲン0123456789"
 )
+EASTER_EGGS = ["CALLYOURMOTHER"]
+EASTER_EGG_ODDS = 5000
 random.seed(42)
 
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
@@ -233,6 +235,17 @@ def build_svg(streak, langs):
                 cls=anim_map[key],
             )
         )
+
+    # Easter egg pass — seeded with today's date so the result is stable
+    # within a single day but re-rolls on each regeneration cycle
+    egg_rng = random.Random(datetime.now(timezone.utc).strftime("%Y-%m-%d"))
+    for col in cols:
+        if egg_rng.randint(1, EASTER_EGG_ODDS) == 1:
+            msg = egg_rng.choice(EASTER_EGGS)
+            if col["n"] >= len(msg):
+                start = (col["n"] - len(msg)) // 2
+                for j, ch in enumerate(msg):
+                    col["chars"][start + j] = ch
 
     o = []
     o.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="100%">')
