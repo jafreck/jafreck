@@ -26,7 +26,7 @@
     <picture>
       <source
         media="(prefers-color-scheme: dark)"
-        srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=jafreck&layout=compact&langs_count=10&card_width=320&bg_color=0D1117&title_color=00FF41&text_color=AFFFAF&border_color=30363D"
+        srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=jafreck&layout=compact&langs_count=10&card_width=320&theme=github_dark"
       />
       <source
         media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"

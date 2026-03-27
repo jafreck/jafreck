@@ -13,7 +13,6 @@
     .panel-bg { fill: #0D1117; fill-opacity: 0.82; }
     .panel-border { stroke: #30363D; stroke-width: 1; fill: none; }
     .title-text { fill: #C9D1D9; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600; }
-    .sub-text { fill: #8B949E; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; }
 
     /* ---- light theme ---- */
     @media (prefers-color-scheme: light) {
@@ -28,7 +27,6 @@
       .panel-bg { fill: #FFFFFF; fill-opacity: 0.88; }
       .panel-border { stroke: #D0D7DE; }
       .title-text { fill: #1F2328; }
-      .sub-text { fill: #57606A; }
     }
 
     @keyframes r0 {
@@ -1075,8 +1073,7 @@
   </g>
 </g>
 <rect width="850" height="320" fill="url(#fade)" rx="6" />
-<rect class="panel-bg" x="215.0" y="110.0" width="420" height="80" rx="12" />
-<rect class="panel-border" x="215.0" y="110.0" width="420" height="80" rx="12" />
-<text class="title-text" x="425.0" y="145.0" text-anchor="middle">Hi there 👋  I'm Jacob</text>
-<text class="sub-text" x="425.0" y="168.0" text-anchor="middle">Software Engineer · Open Source · Rust &amp; Cloud</text>
+<rect class="panel-bg" x="265.0" y="125.0" width="320" height="55" rx="12" />
+<rect class="panel-border" x="265.0" y="125.0" width="320" height="55" rx="12" />
+<text class="title-text" x="425.0" y="160.0" text-anchor="middle">Hi there 👋</text>
 </svg>
