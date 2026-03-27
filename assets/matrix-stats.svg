@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 517" width="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 464" width="100%">
 <defs><style>
 
     .bg{fill:#0D1117}
@@ -15,7 +15,7 @@
     .tl{fill:#C9D1D9;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
     .tp{fill:#8B949E;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:12px}
     .div{stroke:#30363D;stroke-width:1}
-    .bar-bg{fill:#30363D;opacity:0.3}
+    .ring{fill:none;stroke:#58A6FF;stroke-width:3}
 
     @media(prefers-color-scheme:light){
       .bg{fill:#FFF} .fs1{stop-color:#FFF;stop-opacity:0} .fs2{stop-color:#FFF;stop-opacity:1}
@@ -24,58 +24,58 @@
       .pb{fill:#FFF;fill-opacity:.88} .ps{stroke:#D0D7DE}
       .tt{fill:#1F2328} .ts{fill:#57606A} .tn{fill:#0969DA}
       .tl{fill:#1F2328} .tp{fill:#57606A} .div{stroke:#D0D7DE}
-      .bar-bg{fill:#D0D7DE;opacity:0.4}
+      .ring{stroke:#0969DA}
     }
 
-@keyframes r0{0%{transform:translateY(-320px)}100%{transform:translateY(537px)}}
-@keyframes r1{0%{transform:translateY(-208px)}100%{transform:translateY(537px)}}
-@keyframes r2{0%{transform:translateY(-240px)}100%{transform:translateY(537px)}}
-@keyframes r3{0%{transform:translateY(-176px)}100%{transform:translateY(537px)}}
-@keyframes r4{0%{transform:translateY(-208px)}100%{transform:translateY(537px)}}
-@keyframes r5{0%{transform:translateY(-320px)}100%{transform:translateY(537px)}}
-@keyframes r6{0%{transform:translateY(-160px)}100%{transform:translateY(537px)}}
-@keyframes r7{0%{transform:translateY(-320px)}100%{transform:translateY(537px)}}
-@keyframes r8{0%{transform:translateY(-160px)}100%{transform:translateY(537px)}}
-@keyframes r9{0%{transform:translateY(-272px)}100%{transform:translateY(537px)}}
-@keyframes r10{0%{transform:translateY(-336px)}100%{transform:translateY(537px)}}
-@keyframes r11{0%{transform:translateY(-304px)}100%{transform:translateY(537px)}}
-@keyframes r12{0%{transform:translateY(-320px)}100%{transform:translateY(537px)}}
-@keyframes r13{0%{transform:translateY(-176px)}100%{transform:translateY(537px)}}
-@keyframes r14{0%{transform:translateY(-208px)}100%{transform:translateY(537px)}}
-@keyframes r15{0%{transform:translateY(-304px)}100%{transform:translateY(537px)}}
-@keyframes r16{0%{transform:translateY(-160px)}100%{transform:translateY(537px)}}
-@keyframes r17{0%{transform:translateY(-224px)}100%{transform:translateY(537px)}}
-@keyframes r18{0%{transform:translateY(-352px)}100%{transform:translateY(537px)}}
-@keyframes r19{0%{transform:translateY(-336px)}100%{transform:translateY(537px)}}
-@keyframes r20{0%{transform:translateY(-192px)}100%{transform:translateY(537px)}}
-@keyframes r21{0%{transform:translateY(-320px)}100%{transform:translateY(537px)}}
-@keyframes r22{0%{transform:translateY(-304px)}100%{transform:translateY(537px)}}
-@keyframes r23{0%{transform:translateY(-288px)}100%{transform:translateY(537px)}}
-@keyframes r24{0%{transform:translateY(-320px)}100%{transform:translateY(537px)}}
-@keyframes r25{0%{transform:translateY(-256px)}100%{transform:translateY(537px)}}
-@keyframes r26{0%{transform:translateY(-352px)}100%{transform:translateY(537px)}}
-@keyframes r27{0%{transform:translateY(-336px)}100%{transform:translateY(537px)}}
-@keyframes r28{0%{transform:translateY(-224px)}100%{transform:translateY(537px)}}
-@keyframes r29{0%{transform:translateY(-256px)}100%{transform:translateY(537px)}}
-@keyframes r30{0%{transform:translateY(-288px)}100%{transform:translateY(537px)}}
-@keyframes r31{0%{transform:translateY(-320px)}100%{transform:translateY(537px)}}
-@keyframes r32{0%{transform:translateY(-336px)}100%{transform:translateY(537px)}}
-@keyframes r33{0%{transform:translateY(-352px)}100%{transform:translateY(537px)}}
-@keyframes r34{0%{transform:translateY(-352px)}100%{transform:translateY(537px)}}
-@keyframes r35{0%{transform:translateY(-336px)}100%{transform:translateY(537px)}}
-@keyframes r36{0%{transform:translateY(-288px)}100%{transform:translateY(537px)}}
-@keyframes r37{0%{transform:translateY(-224px)}100%{transform:translateY(537px)}}
-@keyframes r38{0%{transform:translateY(-288px)}100%{transform:translateY(537px)}}
-@keyframes r39{0%{transform:translateY(-256px)}100%{transform:translateY(537px)}}
-@keyframes r40{0%{transform:translateY(-192px)}100%{transform:translateY(537px)}}
-@keyframes r41{0%{transform:translateY(-272px)}100%{transform:translateY(537px)}}
-@keyframes r42{0%{transform:translateY(-288px)}100%{transform:translateY(537px)}}
-@keyframes r43{0%{transform:translateY(-304px)}100%{transform:translateY(537px)}}
+@keyframes r0{0%{transform:translateY(-320px)}100%{transform:translateY(484px)}}
+@keyframes r1{0%{transform:translateY(-208px)}100%{transform:translateY(484px)}}
+@keyframes r2{0%{transform:translateY(-240px)}100%{transform:translateY(484px)}}
+@keyframes r3{0%{transform:translateY(-176px)}100%{transform:translateY(484px)}}
+@keyframes r4{0%{transform:translateY(-208px)}100%{transform:translateY(484px)}}
+@keyframes r5{0%{transform:translateY(-320px)}100%{transform:translateY(484px)}}
+@keyframes r6{0%{transform:translateY(-160px)}100%{transform:translateY(484px)}}
+@keyframes r7{0%{transform:translateY(-320px)}100%{transform:translateY(484px)}}
+@keyframes r8{0%{transform:translateY(-160px)}100%{transform:translateY(484px)}}
+@keyframes r9{0%{transform:translateY(-272px)}100%{transform:translateY(484px)}}
+@keyframes r10{0%{transform:translateY(-336px)}100%{transform:translateY(484px)}}
+@keyframes r11{0%{transform:translateY(-304px)}100%{transform:translateY(484px)}}
+@keyframes r12{0%{transform:translateY(-320px)}100%{transform:translateY(484px)}}
+@keyframes r13{0%{transform:translateY(-176px)}100%{transform:translateY(484px)}}
+@keyframes r14{0%{transform:translateY(-208px)}100%{transform:translateY(484px)}}
+@keyframes r15{0%{transform:translateY(-304px)}100%{transform:translateY(484px)}}
+@keyframes r16{0%{transform:translateY(-160px)}100%{transform:translateY(484px)}}
+@keyframes r17{0%{transform:translateY(-224px)}100%{transform:translateY(484px)}}
+@keyframes r18{0%{transform:translateY(-352px)}100%{transform:translateY(484px)}}
+@keyframes r19{0%{transform:translateY(-336px)}100%{transform:translateY(484px)}}
+@keyframes r20{0%{transform:translateY(-192px)}100%{transform:translateY(484px)}}
+@keyframes r21{0%{transform:translateY(-320px)}100%{transform:translateY(484px)}}
+@keyframes r22{0%{transform:translateY(-304px)}100%{transform:translateY(484px)}}
+@keyframes r23{0%{transform:translateY(-288px)}100%{transform:translateY(484px)}}
+@keyframes r24{0%{transform:translateY(-320px)}100%{transform:translateY(484px)}}
+@keyframes r25{0%{transform:translateY(-256px)}100%{transform:translateY(484px)}}
+@keyframes r26{0%{transform:translateY(-352px)}100%{transform:translateY(484px)}}
+@keyframes r27{0%{transform:translateY(-336px)}100%{transform:translateY(484px)}}
+@keyframes r28{0%{transform:translateY(-224px)}100%{transform:translateY(484px)}}
+@keyframes r29{0%{transform:translateY(-256px)}100%{transform:translateY(484px)}}
+@keyframes r30{0%{transform:translateY(-288px)}100%{transform:translateY(484px)}}
+@keyframes r31{0%{transform:translateY(-320px)}100%{transform:translateY(484px)}}
+@keyframes r32{0%{transform:translateY(-336px)}100%{transform:translateY(484px)}}
+@keyframes r33{0%{transform:translateY(-352px)}100%{transform:translateY(484px)}}
+@keyframes r34{0%{transform:translateY(-352px)}100%{transform:translateY(484px)}}
+@keyframes r35{0%{transform:translateY(-336px)}100%{transform:translateY(484px)}}
+@keyframes r36{0%{transform:translateY(-288px)}100%{transform:translateY(484px)}}
+@keyframes r37{0%{transform:translateY(-224px)}100%{transform:translateY(484px)}}
+@keyframes r38{0%{transform:translateY(-288px)}100%{transform:translateY(484px)}}
+@keyframes r39{0%{transform:translateY(-256px)}100%{transform:translateY(484px)}}
+@keyframes r40{0%{transform:translateY(-192px)}100%{transform:translateY(484px)}}
+@keyframes r41{0%{transform:translateY(-272px)}100%{transform:translateY(484px)}}
+@keyframes r42{0%{transform:translateY(-288px)}100%{transform:translateY(484px)}}
+@keyframes r43{0%{transform:translateY(-304px)}100%{transform:translateY(484px)}}
 </style>
 <linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" class="fs1"/><stop offset="75%" class="fs1"/><stop offset="100%" class="fs2"/></linearGradient>
-<clipPath id="c"><rect width="850" height="517" rx="6"/></clipPath>
+<clipPath id="c"><rect width="850" height="464" rx="6"/></clipPath>
 </defs>
-<rect class="bg" width="850" height="517" rx="6"/>
+<rect class="bg" width="850" height="464" rx="6"/>
 <g clip-path="url(#c)">
 <g style="animation:r0 7.0s linear 0.2s infinite">
 <text class="ch cd" x="9.4" y="0">ク</text>
@@ -934,56 +934,49 @@
 <text class="ch cl" x="840.6" y="288">8</text>
 </g>
 </g>
-<rect width="850" height="517" fill="url(#f)" rx="6"/>
+<rect width="850" height="464" fill="url(#f)" rx="6"/>
 <rect class="pb" x="115.0" y="25" width="620" height="55" rx="12"/>
 <rect class="ps" x="115.0" y="25" width="620" height="55" rx="12"/>
 <text class="tt" x="425.0" y="60" text-anchor="middle" font-size="20">Hi there 👋</text>
-<rect class="pb" x="115.0" y="100" width="620" height="120" rx="12"/>
-<rect class="ps" x="115.0" y="100" width="620" height="120" rx="12"/>
-<line class="div" x1="321.66666666666663" y1="115" x2="321.66666666666663" y2="205"/>
-<line class="div" x1="528.3333333333333" y1="115" x2="528.3333333333333" y2="205"/>
-<text class="tn" x="218.33333333333331" y="150" text-anchor="middle" font-size="28">8</text>
-<text class="ts" x="218.33333333333331" y="172" text-anchor="middle" font-size="12">Current Streak</text>
-<text x="218.33333333333331" y="195" text-anchor="middle" font-size="16">🔥</text>
-<text class="tn" x="424.99999999999994" y="150" text-anchor="middle" font-size="28">2004</text>
-<text class="ts" x="424.99999999999994" y="172" text-anchor="middle" font-size="12">Total Contributions</text>
-<text x="424.99999999999994" y="195" text-anchor="middle" font-size="16">⭐</text>
-<text class="tn" x="631.6666666666666" y="150" text-anchor="middle" font-size="28">23</text>
-<text class="ts" x="631.6666666666666" y="172" text-anchor="middle" font-size="12">Longest Streak</text>
-<text x="631.6666666666666" y="195" text-anchor="middle" font-size="16">🏆</text>
-<rect class="pb" x="115.0" y="240" width="620" height="252" rx="12"/>
-<rect class="ps" x="115.0" y="240" width="620" height="252" rx="12"/>
-<text class="tt" x="135.0" y="265" font-size="14">Most Used Languages</text>
-<text class="tl" x="135.0" y="299" font-size="12">TypeScript</text>
-<rect class="bar-bg" x="235.0" y="288" width="430" height="12" rx="3"/>
-<rect x="235.0" y="288" width="219.7" height="12" rx="3" fill="#3178c6"/>
-<text class="tp" x="673.0" y="299">51.1%</text>
-<text class="tl" x="135.0" y="323" font-size="12">Rust</text>
-<rect class="bar-bg" x="235.0" y="312" width="430" height="12" rx="3"/>
-<rect x="235.0" y="312" width="196.1" height="12" rx="3" fill="#dea584"/>
-<text class="tp" x="673.0" y="323">45.6%</text>
-<text class="tl" x="135.0" y="347" font-size="12">Ada</text>
-<rect class="bar-bg" x="235.0" y="336" width="430" height="12" rx="3"/>
-<rect x="235.0" y="336" width="8.2" height="12" rx="3" fill="#02f88c"/>
-<text class="tp" x="673.0" y="347">1.9%</text>
-<text class="tl" x="135.0" y="371" font-size="12">Python</text>
-<rect class="bar-bg" x="235.0" y="360" width="430" height="12" rx="3"/>
-<rect x="235.0" y="360" width="2.6" height="12" rx="3" fill="#3572A5"/>
-<text class="tp" x="673.0" y="371">0.6%</text>
-<text class="tl" x="135.0" y="395" font-size="12">Shell</text>
-<rect class="bar-bg" x="235.0" y="384" width="430" height="12" rx="3"/>
-<rect x="235.0" y="384" width="1.7" height="12" rx="3" fill="#89e051"/>
-<text class="tp" x="673.0" y="395">0.4%</text>
-<text class="tl" x="135.0" y="419" font-size="12">JavaScript</text>
-<rect class="bar-bg" x="235.0" y="408" width="430" height="12" rx="3"/>
-<rect x="235.0" y="408" width="1.3" height="12" rx="3" fill="#f1e05a"/>
-<text class="tp" x="673.0" y="419">0.3%</text>
-<text class="tl" x="135.0" y="443" font-size="12">Dockerfile</text>
-<rect class="bar-bg" x="235.0" y="432" width="430" height="12" rx="3"/>
-<rect x="235.0" y="432" width="0.9" height="12" rx="3" fill="#384d54"/>
-<text class="tp" x="673.0" y="443">0.2%</text>
-<text class="tl" x="135.0" y="467" font-size="12">PowerShell</text>
-<rect class="bar-bg" x="235.0" y="456" width="430" height="12" rx="3"/>
-<rect x="235.0" y="456" width="0.4" height="12" rx="3" fill="#012456"/>
-<text class="tp" x="673.0" y="467">0.1%</text>
+<rect class="pb" x="115.0" y="100" width="620" height="160" rx="12"/>
+<rect class="ps" x="115.0" y="100" width="620" height="160" rx="12"/>
+<line class="div" x1="321.66666666666663" y1="115" x2="321.66666666666663" y2="245"/>
+<line class="div" x1="528.3333333333333" y1="115" x2="528.3333333333333" y2="245"/>
+<circle class="ring" cx="424.99999999999994" cy="178" r="42"/>
+<text x="424.99999999999994" y="138" text-anchor="middle" font-size="18">🔥</text>
+<text class="tn" x="424.99999999999994" y="188" text-anchor="middle" font-size="28">8</text>
+<text class="ts" x="424.99999999999994" y="240" text-anchor="middle" font-size="11">Current Streak</text>
+<text x="218.33333333333331" y="150" text-anchor="middle" font-size="16">⭐</text>
+<text class="tn" x="218.33333333333331" y="183" text-anchor="middle" font-size="26">2004</text>
+<text class="ts" x="218.33333333333331" y="202" text-anchor="middle" font-size="11">Total Contributions</text>
+<text x="631.6666666666666" y="150" text-anchor="middle" font-size="16">🏆</text>
+<text class="tn" x="631.6666666666666" y="183" text-anchor="middle" font-size="26">23</text>
+<text class="ts" x="631.6666666666666" y="202" text-anchor="middle" font-size="11">Longest Streak</text>
+<rect class="pb" x="115.0" y="280" width="620" height="159" rx="12"/>
+<rect class="ps" x="115.0" y="280" width="620" height="159" rx="12"/>
+<text class="tt" x="135.0" y="305" font-size="14">Most Used Languages</text>
+<circle cx="140.0" cy="335" r="5" fill="#3178c6"/>
+<text class="tl" x="151.0" y="339" font-size="12">TypeScript</text>
+<text class="tp" x="415.0" y="339" text-anchor="end">51.1%</text>
+<circle cx="430.0" cy="335" r="5" fill="#dea584"/>
+<text class="tl" x="441.0" y="339" font-size="12">Rust</text>
+<text class="tp" x="705.0" y="339" text-anchor="end">45.6%</text>
+<circle cx="140.0" cy="361" r="5" fill="#02f88c"/>
+<text class="tl" x="151.0" y="365" font-size="12">Ada</text>
+<text class="tp" x="415.0" y="365" text-anchor="end">1.9%</text>
+<circle cx="430.0" cy="361" r="5" fill="#3572A5"/>
+<text class="tl" x="441.0" y="365" font-size="12">Python</text>
+<text class="tp" x="705.0" y="365" text-anchor="end">0.6%</text>
+<circle cx="140.0" cy="387" r="5" fill="#89e051"/>
+<text class="tl" x="151.0" y="391" font-size="12">Shell</text>
+<text class="tp" x="415.0" y="391" text-anchor="end">0.4%</text>
+<circle cx="430.0" cy="387" r="5" fill="#f1e05a"/>
+<text class="tl" x="441.0" y="391" font-size="12">JavaScript</text>
+<text class="tp" x="705.0" y="391" text-anchor="end">0.3%</text>
+<circle cx="140.0" cy="413" r="5" fill="#384d54"/>
+<text class="tl" x="151.0" y="417" font-size="12">Dockerfile</text>
+<text class="tp" x="415.0" y="417" text-anchor="end">0.2%</text>
+<circle cx="430.0" cy="413" r="5" fill="#012456"/>
+<text class="tl" x="441.0" y="417" font-size="12">PowerShell</text>
+<text class="tp" x="705.0" y="417" text-anchor="end">0.1%</text>
 </svg>

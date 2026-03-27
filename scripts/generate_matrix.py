@@ -137,7 +137,7 @@ CSS = """
     .tl{fill:#C9D1D9;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
     .tp{fill:#8B949E;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:12px}
     .div{stroke:#30363D;stroke-width:1}
-    .bar-bg{fill:#30363D;opacity:0.3}
+    .ring{fill:none;stroke:#58A6FF;stroke-width:3}
 
     @media(prefers-color-scheme:light){
       .bg{fill:#FFF} .fs1{stop-color:#FFF;stop-opacity:0} .fs2{stop-color:#FFF;stop-opacity:1}
@@ -146,7 +146,7 @@ CSS = """
       .pb{fill:#FFF;fill-opacity:.88} .ps{stroke:#D0D7DE}
       .tt{fill:#1F2328} .ts{fill:#57606A} .tn{fill:#0969DA}
       .tl{fill:#1F2328} .tp{fill:#57606A} .div{stroke:#D0D7DE}
-      .bar-bg{fill:#D0D7DE;opacity:0.4}
+      .ring{stroke:#0969DA}
     }
 """
 
@@ -154,12 +154,16 @@ CSS = """
 def build_svg(streak, langs):
     n_langs = len(langs)
 
+    import math
+
     # Layout
     greeting_y, greeting_h = 25, 55
     streak_y = greeting_y + greeting_h + 20
-    streak_h = 120
-    lang_row_h = 24
-    lang_h = 30 + n_langs * lang_row_h + 30
+    streak_h = 160
+    lang_cols = 2
+    lang_rows = math.ceil(n_langs / lang_cols)
+    lang_row_h = 26
+    lang_h = 35 + lang_rows * lang_row_h + 20
     lang_y = streak_y + streak_h + 20
     H = lang_y + lang_h + 25
 
@@ -243,7 +247,11 @@ def build_svg(streak, langs):
     # ── Streak ──
     _panel(o, streak_y, streak_h)
     col_w = PANEL_W / 3
-    centers = [PX + col_w * i + col_w / 2 for i in range(3)]
+    left_x = PX + col_w / 2
+    center_x = PX + col_w + col_w / 2
+    right_x = PX + col_w * 2 + col_w / 2
+
+    # Dividers
     o.append(
         f'<line class="div" x1="{PX + col_w}" y1="{streak_y + 15}" '
         f'x2="{PX + col_w}" y2="{streak_y + streak_h - 15}"/>'
@@ -252,26 +260,56 @@ def build_svg(streak, langs):
         f'<line class="div" x1="{PX + col_w * 2}" y1="{streak_y + 15}" '
         f'x2="{PX + col_w * 2}" y2="{streak_y + streak_h - 15}"/>'
     )
-    for i, (val, label, emoji) in enumerate(
-        [
-            (streak["current"], "Current Streak", "🔥"),
-            (streak["total"], "Total Contributions", "⭐"),
-            (streak["longest"], "Longest Streak", "🏆"),
-        ]
-    ):
-        x = centers[i]
-        o.append(
-            f'<text class="tn" x="{x}" y="{streak_y + 50}" '
-            f'text-anchor="middle" font-size="28">{val}</text>'
-        )
-        o.append(
-            f'<text class="ts" x="{x}" y="{streak_y + 72}" '
-            f'text-anchor="middle" font-size="12">{label}</text>'
-        )
-        o.append(
-            f'<text x="{x}" y="{streak_y + 95}" '
-            f'text-anchor="middle" font-size="16">{emoji}</text>'
-        )
+
+    # Center column — ring with fire emoji at top
+    ring_r = 42
+    ring_cy = streak_y + 78
+    o.append(
+        f'<circle class="ring" cx="{center_x}" cy="{ring_cy}" r="{ring_r}"/>'
+    )
+    o.append(
+        f'<text x="{center_x}" y="{ring_cy - ring_r + 2}" '
+        f'text-anchor="middle" font-size="18">🔥</text>'
+    )
+    o.append(
+        f'<text class="tn" x="{center_x}" y="{ring_cy + 10}" '
+        f'text-anchor="middle" font-size="28">{streak["current"]}</text>'
+    )
+    o.append(
+        f'<text class="ts" x="{center_x}" y="{ring_cy + ring_r + 20}" '
+        f'text-anchor="middle" font-size="11">Current Streak</text>'
+    )
+
+    # Left column — Total Contributions
+    side_num_y = ring_cy + 5
+    side_label_y = ring_cy + 24
+    side_emoji_y = ring_cy - 28
+    o.append(
+        f'<text x="{left_x}" y="{side_emoji_y}" '
+        f'text-anchor="middle" font-size="16">⭐</text>'
+    )
+    o.append(
+        f'<text class="tn" x="{left_x}" y="{side_num_y}" '
+        f'text-anchor="middle" font-size="26">{streak["total"]}</text>'
+    )
+    o.append(
+        f'<text class="ts" x="{left_x}" y="{side_label_y}" '
+        f'text-anchor="middle" font-size="11">Total Contributions</text>'
+    )
+
+    # Right column — Longest Streak
+    o.append(
+        f'<text x="{right_x}" y="{side_emoji_y}" '
+        f'text-anchor="middle" font-size="16">🏆</text>'
+    )
+    o.append(
+        f'<text class="tn" x="{right_x}" y="{side_num_y}" '
+        f'text-anchor="middle" font-size="26">{streak["longest"]}</text>'
+    )
+    o.append(
+        f'<text class="ts" x="{right_x}" y="{side_label_y}" '
+        f'text-anchor="middle" font-size="11">Longest Streak</text>'
+    )
 
     # ── Languages ──
     _panel(o, lang_y, lang_h)
@@ -279,27 +317,25 @@ def build_svg(streak, langs):
         f'<text class="tt" x="{PX + 20}" y="{lang_y + 25}" '
         f'font-size="14">Most Used Languages</text>'
     )
-    name_w, pct_w = 100, 50
-    bar_x = PX + 20 + name_w
-    bar_w = PANEL_W - 40 - name_w - pct_w
+    item_w = (PANEL_W - 40) / lang_cols
     for i, lang in enumerate(langs):
-        ry = lang_y + 45 + i * lang_row_h
+        col_i = i % lang_cols
+        row_i = i // lang_cols
+        ix = PX + 20 + col_i * item_w
+        iy = lang_y + 45 + row_i * lang_row_h
+        # Colored dot
         o.append(
-            f'<text class="tl" x="{PX + 20}" y="{ry + 14}" '
+            f'<circle cx="{ix + 5}" cy="{iy + 10}" r="5" fill="{lang["color"]}"/>'
+        )
+        # Language name
+        o.append(
+            f'<text class="tl" x="{ix + 16}" y="{iy + 14}" '
             f'font-size="12">{esc(lang["name"])}</text>'
         )
+        # Percentage (right-aligned within column)
         o.append(
-            f'<rect class="bar-bg" x="{bar_x}" y="{ry + 3}" '
-            f'width="{bar_w}" height="12" rx="3"/>'
-        )
-        fw = round(bar_w * lang["pct"] / 100, 1)
-        o.append(
-            f'<rect x="{bar_x}" y="{ry + 3}" width="{fw}" '
-            f'height="12" rx="3" fill="{lang["color"]}"/>'
-        )
-        o.append(
-            f'<text class="tp" x="{bar_x + bar_w + 8}" '
-            f'y="{ry + 14}">{lang["pct"]}%</text>'
+            f'<text class="tp" x="{ix + item_w - 10}" y="{iy + 14}" '
+            f'text-anchor="end">{lang["pct"]}%</text>'
         )
 
     o.append("</svg>")
