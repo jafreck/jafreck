@@ -7,7 +7,7 @@ from pathlib import Path
 
 # ── Configuration ───────────────────────────────────────────────────
 USERNAME = "jafreck"
-OUT_PATH = Path(__file__).resolve().parent.parent / "assets" / "matrix-stats.svg"
+ASSETS = Path(__file__).resolve().parent.parent / "assets"
 
 W = 850
 NUM_COLS = 45
@@ -187,7 +187,8 @@ def fmt_range(start, end):
     return f"{s.strftime('%b %d, %Y')} - {e.strftime('%b %d, %Y')}"
 
 
-CSS = """
+THEMES = {
+    "dark": """
     .bg{fill:#0D1117}
     .fs1{stop-color:#0D1117;stop-opacity:0}
     .fs2{stop-color:#0D1117;stop-opacity:1}
@@ -203,20 +204,29 @@ CSS = """
     .tp{fill:#8B949E;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:12px}
     .div{stroke:#30363D;stroke-width:1}
     .ring{fill:none;stroke:#58A6FF;stroke-width:3}
+""",
+    "light": """
+    .bg{fill:#FFF}
+    .fs1{stop-color:#FFF;stop-opacity:0}
+    .fs2{stop-color:#FFF;stop-opacity:1}
+    .ch{fill:#0969DA;font-family:monospace;font-size:14px}
+    .cd{opacity:.15} .cm{opacity:.28} .cb{opacity:.45}
+    .cl{opacity:.7;fill:#0550AE}
+    .pb{fill:#FFF;fill-opacity:.88}
+    .ps{stroke:#D0D7DE;stroke-width:1;fill:none}
+    .tt{fill:#1F2328;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-weight:600}
+    .ts{fill:#57606A;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+    .tn{fill:#0969DA;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-weight:600}
+    .tl{fill:#1F2328;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+    .tp{fill:#57606A;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:12px}
+    .div{stroke:#D0D7DE;stroke-width:1}
+    .ring{fill:none;stroke:#0969DA;stroke-width:3}
+""",
+}
 
-    @media(prefers-color-scheme:light){
-      .bg{fill:#FFF} .fs1{stop-color:#FFF;stop-opacity:0} .fs2{stop-color:#FFF;stop-opacity:1}
-      .ch{fill:#0969DA} .cd{opacity:.15} .cm{opacity:.28} .cb{opacity:.45}
-      .cl{opacity:.7;fill:#0550AE}
-      .pb{fill:#FFF;fill-opacity:.88} .ps{stroke:#D0D7DE}
-      .tt{fill:#1F2328} .ts{fill:#57606A} .tn{fill:#0969DA}
-      .tl{fill:#1F2328} .tp{fill:#57606A} .div{stroke:#D0D7DE}
-      .ring{stroke:#0969DA}
-    }
-"""
 
-
-def build_svg(streak, langs):
+def build_svg(streak, langs, theme="dark"):
+    css = THEMES[theme]
     n_langs = len(langs)
 
     import math
@@ -271,7 +281,7 @@ def build_svg(streak, langs):
     o = []
     o.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="100%">')
     o.append("<defs><style>")
-    o.append(CSS)
+    o.append(css)
     for (dur, th), name in anim_map.items():
         o.append(
             f"@keyframes {name}{{0%{{transform:translate3d(0,-{th}px,0)}}"
@@ -455,10 +465,14 @@ def main():
         print(f"⚠ Failed to fetch languages: {e}", file=sys.stderr)
         langs = [dict(name="N/A", pct=100, color="#858585")]
 
-    svg = build_svg(streak, langs)
-    OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUT_PATH.write_text(svg)
-    print(f"✓ Wrote {OUT_PATH} ({len(svg)} bytes)")
+    ASSETS.mkdir(parents=True, exist_ok=True)
+    for theme in ("dark", "light"):
+        # Reset the RNG so both themes get identical rain layouts
+        random.seed(42)
+        svg = build_svg(streak, langs, theme=theme)
+        out = ASSETS / f"matrix-stats-{theme}.svg"
+        out.write_text(svg)
+        print(f"✓ Wrote {out} ({len(svg)} bytes)")
 
 
 if __name__ == "__main__":
