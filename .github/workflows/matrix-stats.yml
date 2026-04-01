@@ -27,7 +27,7 @@ jobs:
 
       - name: Commit & push
         run: |
-          git config user.name  'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git config user.name  'Jacob Freck'
+          git config user.email 'jafreck@outlook.com'
           git add assets/matrix-stats-dark.svg assets/matrix-stats-light.svg
           git diff --cached --quiet || (git commit -m 'chore: update matrix stats' && git push)
