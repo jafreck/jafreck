@@ -25,15 +25,15 @@ jobs:
         run: |
           python scripts/generate_matrix.py
           python scripts/generate_mdr.py
+          python -c "
+          import random, shutil
+          style = random.choice(['matrix', 'mdr'])
+          print(f'Selected style: {style}')
+          shutil.copy(f'assets/{style}-stats-dark.svg', 'assets/stats-dark.svg')
+          shutil.copy(f'assets/{style}-stats-light.svg', 'assets/stats-light.svg')
+          "
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT || github.token }}
-
-      - name: Pick random style (matrix or mdr)
-        run: |
-          STYLE=$(python -c "import random; print(random.choice(['matrix', 'mdr']))")
-          echo "Chose style: $STYLE"
-          cp "assets/${STYLE}-stats-dark.svg" assets/stats-dark.svg
-          cp "assets/${STYLE}-stats-light.svg" assets/stats-light.svg
 
       - name: Commit & push
         run: |
