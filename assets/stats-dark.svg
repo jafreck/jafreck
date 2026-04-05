@@ -1,0 +1,701 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 385" width="100%">
+<defs>
+<clipPath id="gc"><rect width="850" height="385" rx="12"/></clipPath>
+<clipPath id="nc"><rect width="850" height="303" rx="12"/></clipPath>
+<radialGradient id="cg"><stop offset="0%" stop-color="#E0F0FF" stop-opacity="0.18"/><stop offset="100%" stop-color="#E0F0FF" stop-opacity="0"/></radialGradient>
+<pattern id="sl" width="2" height="3" patternUnits="userSpaceOnUse"><rect width="2" height="1" fill="black" opacity="0.10"/></pattern>
+<radialGradient id="vig" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="black" stop-opacity="0"/><stop offset="70%" stop-color="black" stop-opacity="0"/><stop offset="90%" stop-color="black" stop-opacity="0.08"/><stop offset="100%" stop-color="black" stop-opacity="0.35"/></radialGradient>
+<style>
+
+        .bg{fill:#060A10}
+        .n{font-family:'Input Sans','SF Mono','Consolas','DejaVu Sans Mono',monospace;font-size:10px;
+            font-weight:400;text-anchor:middle;
+            transform-box:fill-box;transform-origin:center}
+        .d0{fill:#2A4460;opacity:.6}
+        .d1{fill:#3A6080;opacity:.72}
+        .d2{fill:#5A90B0;opacity:.84}
+        .d3{fill:#8ABCD8;opacity:.95}
+        @keyframes sb{0%,6%,100%{transform:scale(1)}
+            3%{transform:scale(2.4)}}
+        @keyframes ss{0%,6%,100%{transform:scale(1)}
+            3%{transform:scale(1.5)}}
+        .sb{animation-name:sb;animation-duration:25s;
+            animation-timing-function:linear;animation-iteration-count:infinite}
+        .ss{animation-name:ss;animation-duration:25s;
+            animation-timing-function:linear;animation-iteration-count:infinite}
+        .t0_0{animation-delay:-0.0s}
+        .t0_5{animation-delay:-0.5s}
+        .t1_0{animation-delay:-1.0s}
+        .t1_5{animation-delay:-1.5s}
+        .t2_0{animation-delay:-2.0s}
+        .t2_5{animation-delay:-2.5s}
+        .t3_0{animation-delay:-3.0s}
+        .t3_5{animation-delay:-3.5s}
+        .t4_0{animation-delay:-4.0s}
+        .t4_5{animation-delay:-4.5s}
+        .t5_0{animation-delay:-5.0s}
+        .t5_5{animation-delay:-5.5s}
+        .t6_0{animation-delay:-6.0s}
+        .t6_5{animation-delay:-6.5s}
+        .t7_0{animation-delay:-7.0s}
+        .t7_5{animation-delay:-7.5s}
+        .t8_0{animation-delay:-8.0s}
+        .t8_5{animation-delay:-8.5s}
+        .t9_0{animation-delay:-9.0s}
+        .t9_5{animation-delay:-9.5s}
+        .t10_0{animation-delay:-10.0s}
+        .t10_5{animation-delay:-10.5s}
+        .t11_0{animation-delay:-11.0s}
+        .t11_5{animation-delay:-11.5s}
+        .t12_0{animation-delay:-12.0s}
+        .t12_5{animation-delay:-12.5s}
+        .t13_0{animation-delay:-13.0s}
+        .t13_5{animation-delay:-13.5s}
+        .t14_0{animation-delay:-14.0s}
+        .t14_5{animation-delay:-14.5s}
+        .t15_0{animation-delay:-15.0s}
+        .t15_5{animation-delay:-15.5s}
+        .t16_0{animation-delay:-16.0s}
+        .t16_5{animation-delay:-16.5s}
+        .t17_0{animation-delay:-17.0s}
+        .t17_5{animation-delay:-17.5s}
+        .t18_0{animation-delay:-18.0s}
+        .t18_5{animation-delay:-18.5s}
+        .t19_0{animation-delay:-19.0s}
+        .t19_5{animation-delay:-19.5s}
+        .t20_0{animation-delay:-20.0s}
+        .t20_5{animation-delay:-20.5s}
+        .t21_0{animation-delay:-21.0s}
+        .t21_5{animation-delay:-21.5s}
+        .t22_0{animation-delay:-22.0s}
+        .t22_5{animation-delay:-22.5s}
+        .t23_0{animation-delay:-23.0s}
+        .t23_5{animation-delay:-23.5s}
+        .t24_0{animation-delay:-24.0s}
+        .t24_5{animation-delay:-24.5s}
+        .t25_0{animation-delay:-25.0s}
+        @keyframes bounce{
+            0%,100%{transform:translateY(0)}
+            50%{transform:translateY(-2px)}
+        }
+        @keyframes wiggle{
+            0%,100%{transform:translateX(0)}
+            25%{transform:translateX(-1.5px)}
+            75%{transform:translateX(1.5px)}
+        }
+        @keyframes jitter{
+            0%,100%{transform:translate(0,0)}
+            25%{transform:translate(1px,-1px)}
+            50%{transform:translate(-1px,0.5px)}
+            75%{transform:translate(0.5px,1px)}
+        }
+        .b1{animation:bounce 3s ease-in-out infinite}
+        .b2{animation:bounce 4.2s ease-in-out .8s infinite}
+        .b3{animation:bounce 5.5s ease-in-out 1.6s infinite}
+        .w1{animation:wiggle 2.8s ease-in-out infinite}
+        .w2{animation:wiggle 4s ease-in-out 1s infinite}
+        .w3{animation:wiggle 5s ease-in-out 2s infinite}
+        .j1{animation:jitter 3.5s ease-in-out infinite}
+        .j2{animation:jitter 4.8s ease-in-out 1.4s infinite}
+        @keyframes cur{0%{transform:translate(100px,55px)} 11.7%{transform:translate(380px,35px)} 26.0%{transform:translate(720px,90px)} 31.5%{transform:translate(750px,220px)} 37.8%{transform:translate(600px,200px)} 50.3%{transform:translate(300px,180px)} 60.2%{transform:translate(60px,160px)} 66.6%{transform:translate(200px,100px)} 81.1%{transform:translate(550px,120px)} 100.0%{transform:translate(100px,55px)}}
+        .cur{animation:cur 25s linear infinite}
+        .pb{fill:#060A10;fill-opacity:0.92}
+        .ps{stroke:#2A5070;stroke-width:2;fill:none}
+        .tt{fill:#8AB4D0;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:600;
+            letter-spacing:6px;text-transform:uppercase}
+        .sn{fill:#D0E4F4;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:600}
+        .sl{fill:#5A8AAA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;
+            font-size:10px;letter-spacing:2px;text-transform:uppercase}
+        .sr{fill:#4A7A94;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:400;
+            font-size:9px;letter-spacing:1px}
+        .div{stroke:#2A5070;stroke-width:2}
+        @keyframes flicker{
+            0%,100%{opacity:1}
+            92%{opacity:1}
+            93%{opacity:.97}
+            94%{opacity:1}
+            97%{opacity:.98}
+            98%{opacity:1}
+        }
+        .crt{animation:flicker 4s linear infinite}
+    
+</style></defs>
+<rect class="bg" width="850" height="385" rx="12"/>
+<g class="crt">
+<g clip-path="url(#nc)">
+<text class="n d0 w1" x="12.0" y="26">1</text>
+<text class="n d2" x="36.0" y="26">2</text>
+<text class="n d0 ss t1_0" x="60.0" y="26">8</text>
+<text class="n d0 ss t1_0" x="84.0" y="26">6</text>
+<text class="n d0 ss t0_5" x="108.0" y="26">1</text>
+<text class="n d1 ss t0_5" x="132.0" y="26">8</text>
+<text class="n d0 ss t0_0" x="156.0" y="26">8</text>
+<text class="n d1 ss t25_0" x="180.0" y="26">8</text>
+<text class="n d1 ss t24_5" x="204.0" y="26">7</text>
+<text class="n d2 sb t24_5" x="228.0" y="26">0</text>
+<text class="n d1 sb t24_0" x="252.0" y="26">2</text>
+<text class="n d0 sb t24_0" x="276.0" y="26">5</text>
+<text class="n d3 sb t23_5" x="300.0" y="26">3</text>
+<text class="n d0 sb t23_5" x="324.0" y="26">5</text>
+<text class="n d0 sb t23_0" x="348.0" y="26">6</text>
+<text class="n d1 sb t23_0" x="372.0" y="26">5</text>
+<text class="n d2 sb t22_5" x="396.0" y="26">0</text>
+<text class="n d0 sb t22_5" x="420.0" y="26">8</text>
+<text class="n d0 sb t22_0" x="444.0" y="26">6</text>
+<text class="n d2 ss t22_0" x="468.0" y="26">4</text>
+<text class="n d2 ss t21_5" x="492.0" y="26">9</text>
+<text class="n d1 ss t21_5" x="516.0" y="26">5</text>
+<text class="n d0 ss t21_0" x="540.0" y="26">1</text>
+<text class="n d2 ss t21_0" x="564.0" y="26">3</text>
+<text class="n d2 ss t21_0" x="588.0" y="26">1</text>
+<text class="n d0 ss t20_5" x="612.0" y="26">1</text>
+<text class="n d1 j2" x="636.0" y="26">7</text>
+<text class="n d0 w3" x="660.0" y="26">5</text>
+<text class="n d1 w3" x="684.0" y="26">1</text>
+<text class="n d0 j1" x="708.0" y="26">3</text>
+<text class="n d2" x="732.0" y="26">5</text>
+<text class="n d2" x="756.0" y="26">3</text>
+<text class="n d0 w3" x="780.0" y="26">6</text>
+<text class="n d0" x="804.0" y="26">5</text>
+<text class="n d0 b3" x="828.0" y="26">7</text>
+<text class="n d1" x="12.0" y="52">8</text>
+<text class="n d2" x="36.0" y="52">6</text>
+<text class="n d3 ss t1_0" x="60.0" y="52">3</text>
+<text class="n d1 sb t1_0" x="84.0" y="52">2</text>
+<text class="n d2 sb t1_0" x="108.0" y="52">1</text>
+<text class="n d0 sb t0_5" x="132.0" y="52">1</text>
+<text class="n d2 sb t0_0" x="156.0" y="52">2</text>
+<text class="n d1 sb t25_0" x="180.0" y="52">6</text>
+<text class="n d0 sb t24_5" x="204.0" y="52">6</text>
+<text class="n d1 sb t24_5" x="228.0" y="52">7</text>
+<text class="n d2 sb t24_0" x="252.0" y="52">8</text>
+<text class="n d1 sb t24_0" x="276.0" y="52">0</text>
+<text class="n d1 sb t23_5" x="300.0" y="52">1</text>
+<text class="n d2 sb t23_5" x="324.0" y="52">8</text>
+<text class="n d0 sb t23_0" x="348.0" y="52">5</text>
+<text class="n d0 sb t23_0" x="372.0" y="52">6</text>
+<text class="n d3 sb t22_5" x="396.0" y="52">0</text>
+<text class="n d3 sb t22_5" x="420.0" y="52">4</text>
+<text class="n d1 sb t22_0" x="444.0" y="52">2</text>
+<text class="n d2 sb t22_0" x="468.0" y="52">1</text>
+<text class="n d2 sb t21_5" x="492.0" y="52">4</text>
+<text class="n d2 sb t21_5" x="516.0" y="52">8</text>
+<text class="n d1 sb t21_0" x="540.0" y="52">2</text>
+<text class="n d1 sb t21_0" x="564.0" y="52">2</text>
+<text class="n d3 sb t20_5" x="588.0" y="52">8</text>
+<text class="n d1 sb t20_5" x="612.0" y="52">9</text>
+<text class="n d0 ss t20_0" x="636.0" y="52">0</text>
+<text class="n d3 ss t20_0" x="660.0" y="52">5</text>
+<text class="n d0 ss t20_0" x="684.0" y="52">4</text>
+<text class="n d2 ss t19_5" x="708.0" y="52">3</text>
+<text class="n d0 ss t19_5" x="732.0" y="52">1</text>
+<text class="n d2" x="756.0" y="52">7</text>
+<text class="n d2 b2" x="780.0" y="52">8</text>
+<text class="n d0" x="804.0" y="52">8</text>
+<text class="n d1 w3" x="828.0" y="52">9</text>
+<text class="n d2" x="12.0" y="78">3</text>
+<text class="n d1" x="36.0" y="78">5</text>
+<text class="n d0 ss t1_0" x="60.0" y="78">1</text>
+<text class="n d0 ss t1_0" x="84.0" y="78">1</text>
+<text class="n d1 ss t1_0" x="108.0" y="78">9</text>
+<text class="n d0 sb t1_0" x="132.0" y="78">9</text>
+<text class="n d2 sb t1_5" x="156.0" y="78">1</text>
+<text class="n d0 sb t1_5" x="180.0" y="78">0</text>
+<text class="n d3 sb t2_0" x="204.0" y="78">0</text>
+<text class="n d1 sb t2_0" x="228.0" y="78">1</text>
+<text class="n d1 sb t2_5" x="252.0" y="78">4</text>
+<text class="n d1 sb t2_5" x="276.0" y="78">3</text>
+<text class="n d1 sb t3_0" x="300.0" y="78">9</text>
+<text class="n d2 sb t3_0" x="324.0" y="78">3</text>
+<text class="n d0 sb t3_5" x="348.0" y="78">6</text>
+<text class="n d1 sb t3_5" x="372.0" y="78">1</text>
+<text class="n d1 sb t4_0" x="396.0" y="78">5</text>
+<text class="n d2 ss t4_0" x="420.0" y="78">7</text>
+<text class="n d1 ss t4_5" x="444.0" y="78">0</text>
+<text class="n d0 ss t22_0" x="468.0" y="78">1</text>
+<text class="n d2 ss t21_5" x="492.0" y="78">5</text>
+<text class="n d0 sb t21_5" x="516.0" y="78">1</text>
+<text class="n d2 sb t21_0" x="540.0" y="78">3</text>
+<text class="n d2 sb t21_0" x="564.0" y="78">2</text>
+<text class="n d2 sb t20_5" x="588.0" y="78">4</text>
+<text class="n d1 sb t20_5" x="612.0" y="78">1</text>
+<text class="n d0 sb t20_0" x="636.0" y="78">8</text>
+<text class="n d3 sb t20_0" x="660.0" y="78">8</text>
+<text class="n d3 sb t19_5" x="684.0" y="78">1</text>
+<text class="n d0 sb t19_5" x="708.0" y="78">3</text>
+<text class="n d1 sb t19_5" x="732.0" y="78">7</text>
+<text class="n d3 ss t19_5" x="756.0" y="78">6</text>
+<text class="n d0" x="780.0" y="78">2</text>
+<text class="n d3" x="804.0" y="78">4</text>
+<text class="n d1" x="828.0" y="78">4</text>
+<text class="n d1" x="12.0" y="104">8</text>
+<text class="n d0" x="36.0" y="104">3</text>
+<text class="n d2 b2" x="60.0" y="104">9</text>
+<text class="n d0 ss t10_0" x="84.0" y="104">0</text>
+<text class="n d1 ss t10_0" x="108.0" y="104">7</text>
+<text class="n d0 ss t10_0" x="132.0" y="104">8</text>
+<text class="n d0 sb t9_5" x="156.0" y="104">8</text>
+<text class="n d0 sb t9_5" x="180.0" y="104">2</text>
+<text class="n d1 sb t9_0" x="204.0" y="104">1</text>
+<text class="n d1 sb t9_0" x="228.0" y="104">3</text>
+<text class="n d0 sb t8_5" x="252.0" y="104">9</text>
+<text class="n d0 sb t8_5" x="276.0" y="104">9</text>
+<text class="n d1 sb t8_0" x="300.0" y="104">1</text>
+<text class="n d2 sb t8_0" x="324.0" y="104">9</text>
+<text class="n d3 sb t7_5" x="348.0" y="104">5</text>
+<text class="n d1 sb t7_5" x="372.0" y="104">3</text>
+<text class="n d0 sb t7_0" x="396.0" y="104">5</text>
+<text class="n d0 sb t4_0" x="420.0" y="104">6</text>
+<text class="n d1 sb t4_5" x="444.0" y="104">4</text>
+<text class="n d0 sb t4_5" x="468.0" y="104">1</text>
+<text class="n d3 sb t5_0" x="492.0" y="104">9</text>
+<text class="n d0 sb t5_0" x="516.0" y="104">1</text>
+<text class="n d2 sb t5_5" x="540.0" y="104">3</text>
+<text class="n d3 sb t5_5" x="564.0" y="104">2</text>
+<text class="n d3 ss t20_5" x="588.0" y="104">1</text>
+<text class="n d0 ss t20_5" x="612.0" y="104">5</text>
+<text class="n d2 ss t20_0" x="636.0" y="104">7</text>
+<text class="n d2 ss t20_0" x="660.0" y="104">4</text>
+<text class="n d0 sb t19_5" x="684.0" y="104">8</text>
+<text class="n d0 sb t19_0" x="708.0" y="104">8</text>
+<text class="n d3 sb t19_0" x="732.0" y="104">1</text>
+<text class="n d0 ss t19_0" x="756.0" y="104">2</text>
+<text class="n d2 w2" x="780.0" y="104">1</text>
+<text class="n d0 j2" x="804.0" y="104">9</text>
+<text class="n d1" x="828.0" y="104">8</text>
+<text class="n d0" x="12.0" y="130">0</text>
+<text class="n d0 ss t10_5" x="36.0" y="130">4</text>
+<text class="n d2 ss t10_5" x="60.0" y="130">5</text>
+<text class="n d0 sb t10_5" x="84.0" y="130">4</text>
+<text class="n d1 sb t10_0" x="108.0" y="130">7</text>
+<text class="n d1 sb t10_0" x="132.0" y="130">6</text>
+<text class="n d0 sb t9_5" x="156.0" y="130">1</text>
+<text class="n d1 sb t9_5" x="180.0" y="130">2</text>
+<text class="n d1 ss t9_0" x="204.0" y="130">5</text>
+<text class="n d1 ss t9_0" x="228.0" y="130">2</text>
+<text class="n d1 ss t8_5" x="252.0" y="130">0</text>
+<text class="n d3 ss t8_5" x="276.0" y="130">0</text>
+<text class="n d2 ss t8_0" x="300.0" y="130">3</text>
+<text class="n d1 ss t8_0" x="324.0" y="130">1</text>
+<text class="n d2 ss t7_5" x="348.0" y="130">8</text>
+<text class="n d3 sb t7_5" x="372.0" y="130">6</text>
+<text class="n d3 sb t7_0" x="396.0" y="130">2</text>
+<text class="n d2 sb t7_0" x="420.0" y="130">3</text>
+<text class="n d2 sb t6_5" x="444.0" y="130">2</text>
+<text class="n d0 sb t6_5" x="468.0" y="130">0</text>
+<text class="n d2 sb t6_0" x="492.0" y="130">5</text>
+<text class="n d2 sb t6_0" x="516.0" y="130">6</text>
+<text class="n d1 sb t5_5" x="540.0" y="130">3</text>
+<text class="n d2 sb t5_5" x="564.0" y="130">1</text>
+<text class="n d3 ss t5_5" x="588.0" y="130">0</text>
+<text class="n d0" x="612.0" y="130">3</text>
+<text class="n d0" x="636.0" y="130">5</text>
+<text class="n d0 ss t20_0" x="660.0" y="130">3</text>
+<text class="n d1 ss t19_0" x="684.0" y="130">3</text>
+<text class="n d2 sb t19_0" x="708.0" y="130">4</text>
+<text class="n d0 sb t19_0" x="732.0" y="130">4</text>
+<text class="n d0 ss t18_5" x="756.0" y="130">8</text>
+<text class="n d0 ss t18_5" x="780.0" y="130">8</text>
+<text class="n d0" x="804.0" y="130">0</text>
+<text class="n d1" x="828.0" y="130">2</text>
+<text class="n d0 ss t10_5" x="12.0" y="156">0</text>
+<text class="n d0 ss t10_5" x="36.0" y="156">6</text>
+<text class="n d1 sb t10_5" x="60.0" y="156">5</text>
+<text class="n d0 sb t10_5" x="84.0" y="156">8</text>
+<text class="n d0 sb t11_0" x="108.0" y="156">9</text>
+<text class="n d2 sb t11_5" x="132.0" y="156">0</text>
+<text class="n d1 sb t11_5" x="156.0" y="156">0</text>
+<text class="n d1 sb t12_0" x="180.0" y="156">8</text>
+<text class="n d0 sb t12_0" x="204.0" y="156">3</text>
+<text class="n d3 sb t12_5" x="228.0" y="156">1</text>
+<text class="n d2 sb t12_5" x="252.0" y="156">5</text>
+<text class="n d3 ss t13_0" x="276.0" y="156">1</text>
+<text class="n d2 ss t13_0" x="300.0" y="156">4</text>
+<text class="n d1 ss t13_5" x="324.0" y="156">6</text>
+<text class="n d1 ss t13_5" x="348.0" y="156">4</text>
+<text class="n d1 ss t14_0" x="372.0" y="156">3</text>
+<text class="n d1 ss t14_0" x="396.0" y="156">6</text>
+<text class="n d1 ss t14_5" x="420.0" y="156">2</text>
+<text class="n d1 ss t14_5" x="444.0" y="156">4</text>
+<text class="n d0 ss t15_0" x="468.0" y="156">0</text>
+<text class="n d1 ss t15_0" x="492.0" y="156">3</text>
+<text class="n d2 ss t6_0" x="516.0" y="156">9</text>
+<text class="n d1 ss t5_5" x="540.0" y="156">5</text>
+<text class="n d2 ss t5_5" x="564.0" y="156">7</text>
+<text class="n d1 ss t16_0" x="588.0" y="156">8</text>
+<text class="n d2 ss t16_5" x="612.0" y="156">2</text>
+<text class="n d1 ss t16_5" x="636.0" y="156">4</text>
+<text class="n d1" x="660.0" y="156">9</text>
+<text class="n d2 w1" x="684.0" y="156">3</text>
+<text class="n d0 ss t18_5" x="708.0" y="156">2</text>
+<text class="n d3 sb t18_5" x="732.0" y="156">3</text>
+<text class="n d2 sb t18_5" x="756.0" y="156">9</text>
+<text class="n d1 ss t18_5" x="780.0" y="156">1</text>
+<text class="n d0" x="804.0" y="156">9</text>
+<text class="n d0 b3" x="828.0" y="156">7</text>
+<text class="n d2" x="12.0" y="182">0</text>
+<text class="n d2 ss t10_5" x="36.0" y="182">1</text>
+<text class="n d0 ss t10_5" x="60.0" y="182">3</text>
+<text class="n d1 sb t11_0" x="84.0" y="182">8</text>
+<text class="n d0 sb t11_0" x="108.0" y="182">8</text>
+<text class="n d1 sb t11_5" x="132.0" y="182">1</text>
+<text class="n d1 sb t11_5" x="156.0" y="182">7</text>
+<text class="n d1 sb t12_0" x="180.0" y="182">8</text>
+<text class="n d1 sb t12_0" x="204.0" y="182">7</text>
+<text class="n d1 sb t12_5" x="228.0" y="182">8</text>
+<text class="n d2 sb t12_5" x="252.0" y="182">8</text>
+<text class="n d3 sb t13_0" x="276.0" y="182">2</text>
+<text class="n d2 sb t13_0" x="300.0" y="182">7</text>
+<text class="n d3 sb t13_5" x="324.0" y="182">3</text>
+<text class="n d2 sb t13_5" x="348.0" y="182">4</text>
+<text class="n d1 sb t14_0" x="372.0" y="182">8</text>
+<text class="n d0 sb t14_0" x="396.0" y="182">3</text>
+<text class="n d2 sb t14_5" x="420.0" y="182">1</text>
+<text class="n d0 sb t14_5" x="444.0" y="182">3</text>
+<text class="n d2 sb t15_0" x="468.0" y="182">5</text>
+<text class="n d0 sb t15_0" x="492.0" y="182">1</text>
+<text class="n d0 sb t15_5" x="516.0" y="182">3</text>
+<text class="n d2 sb t15_5" x="540.0" y="182">2</text>
+<text class="n d1 sb t16_0" x="564.0" y="182">1</text>
+<text class="n d1 sb t16_0" x="588.0" y="182">5</text>
+<text class="n d0 sb t16_5" x="612.0" y="182">6</text>
+<text class="n d0 ss t16_5" x="636.0" y="182">6</text>
+<text class="n d3 ss t17_0" x="660.0" y="182">9</text>
+<text class="n d2 ss t17_0" x="684.0" y="182">0</text>
+<text class="n d0 ss t17_5" x="708.0" y="182">9</text>
+<text class="n d3 sb t18_0" x="732.0" y="182">0</text>
+<text class="n d2 sb t18_0" x="756.0" y="182">4</text>
+<text class="n d1 ss t18_0" x="780.0" y="182">6</text>
+<text class="n d2" x="804.0" y="182">8</text>
+<text class="n d0" x="828.0" y="182">7</text>
+<text class="n d0" x="12.0" y="208">0</text>
+<text class="n d2" x="36.0" y="208">6</text>
+<text class="n d3 ss t10_5" x="60.0" y="208">2</text>
+<text class="n d0 ss t11_0" x="84.0" y="208">8</text>
+<text class="n d1 ss t11_0" x="108.0" y="208">6</text>
+<text class="n d0 ss t11_5" x="132.0" y="208">0</text>
+<text class="n d0 ss t11_5" x="156.0" y="208">6</text>
+<text class="n d0 ss t12_0" x="180.0" y="208">7</text>
+<text class="n d0 ss t12_0" x="204.0" y="208">4</text>
+<text class="n d1 ss t12_5" x="228.0" y="208">3</text>
+<text class="n d2 ss t12_5" x="252.0" y="208">5</text>
+<text class="n d0 ss t13_0" x="276.0" y="208">6</text>
+<text class="n d0 ss t13_0" x="300.0" y="208">6</text>
+<text class="n d1 ss t13_5" x="324.0" y="208">1</text>
+<text class="n d0 ss t13_5" x="348.0" y="208">8</text>
+<text class="n d0 ss t14_0" x="372.0" y="208">5</text>
+<text class="n d2 sb t14_0" x="396.0" y="208">1</text>
+<text class="n d2 sb t14_5" x="420.0" y="208">0</text>
+<text class="n d0 sb t14_5" x="444.0" y="208">3</text>
+<text class="n d1 sb t15_0" x="468.0" y="208">0</text>
+<text class="n d0 sb t15_0" x="492.0" y="208">3</text>
+<text class="n d1 sb t15_5" x="516.0" y="208">1</text>
+<text class="n d1 sb t15_5" x="540.0" y="208">3</text>
+<text class="n d2 sb t16_0" x="564.0" y="208">4</text>
+<text class="n d1 sb t16_0" x="588.0" y="208">2</text>
+<text class="n d2 sb t16_5" x="612.0" y="208">1</text>
+<text class="n d3 sb t16_5" x="636.0" y="208">2</text>
+<text class="n d1 sb t17_0" x="660.0" y="208">1</text>
+<text class="n d1 sb t17_0" x="684.0" y="208">4</text>
+<text class="n d0 sb t17_5" x="708.0" y="208">6</text>
+<text class="n d0 sb t17_5" x="732.0" y="208">3</text>
+<text class="n d0 sb t18_0" x="756.0" y="208">3</text>
+<text class="n d2 ss t18_0" x="780.0" y="208">4</text>
+<text class="n d2" x="804.0" y="208">9</text>
+<text class="n d2 j2" x="828.0" y="208">9</text>
+<text class="n d0" x="12.0" y="234">5</text>
+<text class="n d2" x="36.0" y="234">0</text>
+<text class="n d1 j2" x="60.0" y="234">1</text>
+<text class="n d1" x="84.0" y="234">2</text>
+<text class="n d1" x="108.0" y="234">4</text>
+<text class="n d1" x="132.0" y="234">7</text>
+<text class="n d0" x="156.0" y="234">9</text>
+<text class="n d0" x="180.0" y="234">1</text>
+<text class="n d1" x="204.0" y="234">7</text>
+<text class="n d0" x="228.0" y="234">5</text>
+<text class="n d1 j2" x="252.0" y="234">2</text>
+<text class="n d0" x="276.0" y="234">5</text>
+<text class="n d1" x="300.0" y="234">4</text>
+<text class="n d0" x="324.0" y="234">3</text>
+<text class="n d1 w2" x="348.0" y="234">7</text>
+<text class="n d1 ss t14_0" x="372.0" y="234">7</text>
+<text class="n d0 ss t14_0" x="396.0" y="234">0</text>
+<text class="n d1 ss t14_5" x="420.0" y="234">3</text>
+<text class="n d0 ss t14_5" x="444.0" y="234">3</text>
+<text class="n d0 ss t15_0" x="468.0" y="234">9</text>
+<text class="n d1 ss t15_0" x="492.0" y="234">8</text>
+<text class="n d3 ss t15_5" x="516.0" y="234">6</text>
+<text class="n d0 ss t15_5" x="540.0" y="234">8</text>
+<text class="n d0 ss t16_0" x="564.0" y="234">7</text>
+<text class="n d0 ss t16_0" x="588.0" y="234">4</text>
+<text class="n d0 ss t16_5" x="612.0" y="234">3</text>
+<text class="n d3 ss t16_5" x="636.0" y="234">8</text>
+<text class="n d0 ss t17_0" x="660.0" y="234">2</text>
+<text class="n d0 ss t17_0" x="684.0" y="234">7</text>
+<text class="n d3 sb t17_5" x="708.0" y="234">9</text>
+<text class="n d1 sb t17_5" x="732.0" y="234">8</text>
+<text class="n d2 sb t18_0" x="756.0" y="234">1</text>
+<text class="n d0 ss t18_0" x="780.0" y="234">4</text>
+<text class="n d0" x="804.0" y="234">2</text>
+<text class="n d0" x="828.0" y="234">2</text>
+<text class="n d0" x="12.0" y="260">8</text>
+<text class="n d0 b2" x="36.0" y="260">7</text>
+<text class="n d1 j1" x="60.0" y="260">7</text>
+<text class="n d3" x="84.0" y="260">4</text>
+<text class="n d1 b3" x="108.0" y="260">1</text>
+<text class="n d0" x="132.0" y="260">0</text>
+<text class="n d0 w3" x="156.0" y="260">4</text>
+<text class="n d1" x="180.0" y="260">6</text>
+<text class="n d2" x="204.0" y="260">3</text>
+<text class="n d0" x="228.0" y="260">7</text>
+<text class="n d0" x="252.0" y="260">6</text>
+<text class="n d3 b1" x="276.0" y="260">9</text>
+<text class="n d0 b1" x="300.0" y="260">3</text>
+<text class="n d1 w2" x="324.0" y="260">2</text>
+<text class="n d1" x="348.0" y="260">7</text>
+<text class="n d0" x="372.0" y="260">0</text>
+<text class="n d0 w2" x="396.0" y="260">7</text>
+<text class="n d1" x="420.0" y="260">9</text>
+<text class="n d0 w1" x="444.0" y="260">6</text>
+<text class="n d2 b1" x="468.0" y="260">4</text>
+<text class="n d1" x="492.0" y="260">4</text>
+<text class="n d1" x="516.0" y="260">4</text>
+<text class="n d1" x="540.0" y="260">4</text>
+<text class="n d1" x="564.0" y="260">8</text>
+<text class="n d0" x="588.0" y="260">9</text>
+<text class="n d1 b1" x="612.0" y="260">5</text>
+<text class="n d1 b3" x="636.0" y="260">9</text>
+<text class="n d1" x="660.0" y="260">4</text>
+<text class="n d1 ss t17_0" x="684.0" y="260">2</text>
+<text class="n d3 ss t17_5" x="708.0" y="260">7</text>
+<text class="n d3 ss t17_5" x="732.0" y="260">2</text>
+<text class="n d1 ss t18_0" x="756.0" y="260">6</text>
+<text class="n d3" x="780.0" y="260">7</text>
+<text class="n d0" x="804.0" y="260">6</text>
+<text class="n d0" x="828.0" y="260">2</text>
+<text class="n d1" x="12.0" y="286">4</text>
+<text class="n d0 b2" x="36.0" y="286">8</text>
+<text class="n d0" x="60.0" y="286">5</text>
+<text class="n d2 b3" x="84.0" y="286">8</text>
+<text class="n d1 w2" x="108.0" y="286">7</text>
+<text class="n d2" x="132.0" y="286">9</text>
+<text class="n d0" x="156.0" y="286">0</text>
+<text class="n d1" x="180.0" y="286">4</text>
+<text class="n d0" x="204.0" y="286">1</text>
+<text class="n d2 j1" x="228.0" y="286">3</text>
+<text class="n d1 w1" x="252.0" y="286">8</text>
+<text class="n d3" x="276.0" y="286">7</text>
+<text class="n d1" x="300.0" y="286">2</text>
+<text class="n d2" x="324.0" y="286">8</text>
+<text class="n d3 w3" x="348.0" y="286">7</text>
+<text class="n d0" x="372.0" y="286">2</text>
+<text class="n d2 b1" x="396.0" y="286">8</text>
+<text class="n d2" x="420.0" y="286">4</text>
+<text class="n d3" x="444.0" y="286">5</text>
+<text class="n d0 w3" x="468.0" y="286">0</text>
+<text class="n d3" x="492.0" y="286">9</text>
+<text class="n d1" x="516.0" y="286">2</text>
+<text class="n d1" x="540.0" y="286">5</text>
+<text class="n d3" x="564.0" y="286">7</text>
+<text class="n d1 w2" x="588.0" y="286">3</text>
+<text class="n d0" x="612.0" y="286">0</text>
+<text class="n d0" x="636.0" y="286">6</text>
+<text class="n d1 b3" x="660.0" y="286">2</text>
+<text class="n d0 b2" x="684.0" y="286">9</text>
+<text class="n d1" x="708.0" y="286">1</text>
+<text class="n d1" x="732.0" y="286">2</text>
+<text class="n d0" x="756.0" y="286">2</text>
+<text class="n d0" x="780.0" y="286">4</text>
+<text class="n d2" x="804.0" y="286">1</text>
+<text class="n d0 j2" x="828.0" y="286">8</text>
+<text class="n d0 b3" x="12.0" y="312">8</text>
+<text class="n d3" x="36.0" y="312">4</text>
+<text class="n d3" x="60.0" y="312">6</text>
+<text class="n d1" x="84.0" y="312">1</text>
+<text class="n d0" x="108.0" y="312">0</text>
+<text class="n d1" x="132.0" y="312">4</text>
+<text class="n d1" x="156.0" y="312">3</text>
+<text class="n d0 b2" x="180.0" y="312">2</text>
+<text class="n d1" x="204.0" y="312">9</text>
+<text class="n d0" x="228.0" y="312">9</text>
+<text class="n d1" x="252.0" y="312">4</text>
+<text class="n d3" x="276.0" y="312">7</text>
+<text class="n d0" x="300.0" y="312">2</text>
+<text class="n d0" x="324.0" y="312">9</text>
+<text class="n d1 j2" x="348.0" y="312">4</text>
+<text class="n d0" x="372.0" y="312">7</text>
+<text class="n d1" x="396.0" y="312">5</text>
+<text class="n d0" x="420.0" y="312">4</text>
+<text class="n d0" x="444.0" y="312">6</text>
+<text class="n d3" x="468.0" y="312">0</text>
+<text class="n d2 w2" x="492.0" y="312">4</text>
+<text class="n d1" x="516.0" y="312">3</text>
+<text class="n d2" x="540.0" y="312">2</text>
+<text class="n d0" x="564.0" y="312">0</text>
+<text class="n d1 b2" x="588.0" y="312">9</text>
+<text class="n d2 w1" x="612.0" y="312">5</text>
+<text class="n d3 j2" x="636.0" y="312">8</text>
+<text class="n d0" x="660.0" y="312">2</text>
+<text class="n d3 w2" x="684.0" y="312">7</text>
+<text class="n d1 b1" x="708.0" y="312">1</text>
+<text class="n d3" x="732.0" y="312">6</text>
+<text class="n d0" x="756.0" y="312">5</text>
+<text class="n d1" x="780.0" y="312">4</text>
+<text class="n d1" x="804.0" y="312">4</text>
+<text class="n d0 w1" x="828.0" y="312">5</text>
+<text class="n d2" x="12.0" y="338">9</text>
+<text class="n d0 b2" x="36.0" y="338">9</text>
+<text class="n d2 b1" x="60.0" y="338">4</text>
+<text class="n d1" x="84.0" y="338">0</text>
+<text class="n d0" x="108.0" y="338">1</text>
+<text class="n d1" x="132.0" y="338">6</text>
+<text class="n d1" x="156.0" y="338">8</text>
+<text class="n d2" x="180.0" y="338">2</text>
+<text class="n d1" x="204.0" y="338">7</text>
+<text class="n d0 j2" x="228.0" y="338">4</text>
+<text class="n d3" x="252.0" y="338">7</text>
+<text class="n d3 j2" x="276.0" y="338">1</text>
+<text class="n d0 w1" x="300.0" y="338">0</text>
+<text class="n d0 w3" x="324.0" y="338">7</text>
+<text class="n d3 b2" x="348.0" y="338">9</text>
+<text class="n d3" x="372.0" y="338">3</text>
+<text class="n d0" x="396.0" y="338">3</text>
+<text class="n d1" x="420.0" y="338">3</text>
+<text class="n d0 b3" x="444.0" y="338">3</text>
+<text class="n d0" x="468.0" y="338">0</text>
+<text class="n d1" x="492.0" y="338">2</text>
+<text class="n d1 b1" x="516.0" y="338">1</text>
+<text class="n d2 w2" x="540.0" y="338">5</text>
+<text class="n d0 b3" x="564.0" y="338">0</text>
+<text class="n d2" x="588.0" y="338">6</text>
+<text class="n d2 j1" x="612.0" y="338">7</text>
+<text class="n d1" x="636.0" y="338">7</text>
+<text class="n d2" x="660.0" y="338">0</text>
+<text class="n d0" x="684.0" y="338">8</text>
+<text class="n d0" x="708.0" y="338">0</text>
+<text class="n d1 b3" x="732.0" y="338">6</text>
+<text class="n d0 b3" x="756.0" y="338">7</text>
+<text class="n d0 w3" x="780.0" y="338">2</text>
+<text class="n d1 j2" x="804.0" y="338">9</text>
+<text class="n d1" x="828.0" y="338">7</text>
+<text class="n d2" x="12.0" y="364">1</text>
+<text class="n d2 w2" x="36.0" y="364">8</text>
+<text class="n d2" x="60.0" y="364">3</text>
+<text class="n d2 b2" x="84.0" y="364">6</text>
+<text class="n d2 j1" x="108.0" y="364">5</text>
+<text class="n d0" x="132.0" y="364">7</text>
+<text class="n d1" x="156.0" y="364">1</text>
+<text class="n d2" x="180.0" y="364">5</text>
+<text class="n d3" x="204.0" y="364">9</text>
+<text class="n d1" x="228.0" y="364">1</text>
+<text class="n d2" x="252.0" y="364">6</text>
+<text class="n d1 j1" x="276.0" y="364">4</text>
+<text class="n d1 w1" x="300.0" y="364">2</text>
+<text class="n d2 j2" x="324.0" y="364">5</text>
+<text class="n d0" x="348.0" y="364">9</text>
+<text class="n d3" x="372.0" y="364">8</text>
+<text class="n d1" x="396.0" y="364">9</text>
+<text class="n d3" x="420.0" y="364">9</text>
+<text class="n d0 w2" x="444.0" y="364">4</text>
+<text class="n d0 w1" x="468.0" y="364">5</text>
+<text class="n d1 b3" x="492.0" y="364">9</text>
+<text class="n d0" x="516.0" y="364">0</text>
+<text class="n d1 j2" x="540.0" y="364">6</text>
+<text class="n d2" x="564.0" y="364">4</text>
+<text class="n d2" x="588.0" y="364">9</text>
+<text class="n d0" x="612.0" y="364">2</text>
+<text class="n d0" x="636.0" y="364">1</text>
+<text class="n d1" x="660.0" y="364">7</text>
+<text class="n d2 b2" x="684.0" y="364">3</text>
+<text class="n d0" x="708.0" y="364">1</text>
+<text class="n d1 j1" x="732.0" y="364">7</text>
+<text class="n d3 b1" x="756.0" y="364">6</text>
+<text class="n d3" x="780.0" y="364">4</text>
+<text class="n d0 b2" x="804.0" y="364">4</text>
+<text class="n d0" x="828.0" y="364">6</text>
+<text class="n d1" x="12.0" y="390">3</text>
+<text class="n d0" x="36.0" y="390">5</text>
+<text class="n d2" x="60.0" y="390">0</text>
+<text class="n d3" x="84.0" y="390">1</text>
+<text class="n d2" x="108.0" y="390">9</text>
+<text class="n d0 b2" x="132.0" y="390">4</text>
+<text class="n d2" x="156.0" y="390">2</text>
+<text class="n d0" x="180.0" y="390">5</text>
+<text class="n d1" x="204.0" y="390">3</text>
+<text class="n d0 j2" x="228.0" y="390">1</text>
+<text class="n d0 w3" x="252.0" y="390">3</text>
+<text class="n d1 w2" x="276.0" y="390">1</text>
+<text class="n d2" x="300.0" y="390">5</text>
+<text class="n d0 b1" x="324.0" y="390">2</text>
+<text class="n d1" x="348.0" y="390">2</text>
+<text class="n d0" x="372.0" y="390">1</text>
+<text class="n d1" x="396.0" y="390">7</text>
+<text class="n d1" x="420.0" y="390">9</text>
+<text class="n d1" x="444.0" y="390">9</text>
+<text class="n d2" x="468.0" y="390">5</text>
+<text class="n d1" x="492.0" y="390">2</text>
+<text class="n d2" x="516.0" y="390">4</text>
+<text class="n d1 j2" x="540.0" y="390">5</text>
+<text class="n d0" x="564.0" y="390">0</text>
+<text class="n d2" x="588.0" y="390">1</text>
+<text class="n d2" x="612.0" y="390">1</text>
+<text class="n d2" x="636.0" y="390">7</text>
+<text class="n d1" x="660.0" y="390">0</text>
+<text class="n d0" x="684.0" y="390">3</text>
+<text class="n d3" x="708.0" y="390">2</text>
+<text class="n d3 b3" x="732.0" y="390">5</text>
+<text class="n d0" x="756.0" y="390">2</text>
+<text class="n d1" x="780.0" y="390">7</text>
+<text class="n d0 w2" x="804.0" y="390">5</text>
+<text class="n d1 b3" x="828.0" y="390">5</text>
+</g>
+<rect x="0" y="303" width="850" height="82" fill="#060A10"/>
+<line x1="0" y1="303" x2="850" y2="303" stroke="#2A5070" stroke-width="3"/>
+<g clip-path="url(#nc)"><g class="cur"><polygon points="0,0 0,18 6,13 12,13" fill="#060A10" stroke="white" stroke-width="1.5" stroke-linejoin="round"/></g></g>
+<rect class="pb" x="115.0" y="22" width="620" height="42" rx="1"/>
+<rect class="ps" x="115.0" y="22" width="620" height="42" rx="1"/>
+<text class="tt" x="425.0" y="50" text-anchor="middle" font-size="18">Hi there 👋</text>
+<rect class="pb" x="115.0" y="78" width="620" height="155" rx="1"/>
+<rect class="ps" x="115.0" y="78" width="620" height="155" rx="1"/>
+<line class="div" x1="321.66666666666663" y1="90" x2="321.66666666666663" y2="221"/>
+<line class="div" x1="528.3333333333333" y1="90" x2="528.3333333333333" y2="221"/>
+<circle cx="424.99999999999994" cy="148" r="38" stroke="#5A90B0" stroke-width="2.5" fill="none" stroke-dasharray="6,4" opacity="0.7"/>
+<text class="sn" x="424.99999999999994" y="157" text-anchor="middle" font-size="28">15</text>
+<text class="sl" x="424.99999999999994" y="204" text-anchor="middle">Current Streak</text>
+<text class="sr" x="424.99999999999994" y="218" text-anchor="middle">Mar 22 - Apr 05</text>
+<text class="sn" x="218.33333333333331" y="152" text-anchor="middle" font-size="26">2456</text>
+<text class="sl" x="218.33333333333331" y="170" text-anchor="middle">Total Contributions</text>
+<text class="sr" x="218.33333333333331" y="184" text-anchor="middle">Jun 15, 2019 - Apr 05, 2026</text>
+<text class="sn" x="631.6666666666666" y="152" text-anchor="middle" font-size="26">42</text>
+<text class="sl" x="631.6666666666666" y="170" text-anchor="middle">Longest Streak</text>
+<text class="sr" x="631.6666666666666" y="184" text-anchor="middle">Nov 01 - Dec 12</text>
+<rect x="131.0" y="317" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
+<text style="fill:#5A8AAA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="185.8" y="331.0" text-anchor="middle">Python</text>
+<rect x="131.0" y="339" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
+<rect x="131.0" y="339" width="38.6" height="22" rx="1" fill="#1A4A6A"/>
+<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="185.8" y="354.0" text-anchor="middle">35.2%</text>
+<rect x="250.6" y="317" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
+<text style="fill:#5A8AAA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="305.4" y="331.0" text-anchor="middle">TypeScript</text>
+<rect x="250.6" y="339" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
+<rect x="250.6" y="339" width="24.2" height="22" rx="1" fill="#1A4A6A"/>
+<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="305.4" y="354.0" text-anchor="middle">22.1%</text>
+<rect x="370.2" y="317" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
+<text style="fill:#5A8AAA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="425.0" y="331.0" text-anchor="middle">Go</text>
+<rect x="370.2" y="339" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
+<rect x="370.2" y="339" width="20.2" height="22" rx="1" fill="#1A4A6A"/>
+<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="425.0" y="354.0" text-anchor="middle">18.4%</text>
+<rect x="489.79999999999995" y="317" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
+<text style="fill:#5A8AAA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="544.5999999999999" y="331.0" text-anchor="middle">Rust</text>
+<rect x="489.79999999999995" y="339" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
+<rect x="489.79999999999995" y="339" width="14.0" height="22" rx="1" fill="#1A4A6A"/>
+<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="544.5999999999999" y="354.0" text-anchor="middle">12.8%</text>
+<rect x="609.4" y="317" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
+<text style="fill:#5A8AAA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="664.1999999999999" y="331.0" text-anchor="middle">Shell</text>
+<rect x="609.4" y="339" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
+<rect x="609.4" y="339" width="12.6" height="22" rx="1" fill="#1A4A6A"/>
+<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="664.1999999999999" y="354.0" text-anchor="middle">11.5%</text>
+</g>
+<rect width="850" height="385" fill="url(#sl)" rx="12"/>
+<rect width="850" height="385" fill="url(#vig)" rx="12"/>
+<rect width="850" height="385" rx="12" fill="none" stroke="#111" stroke-width="4"/>
+</svg>
