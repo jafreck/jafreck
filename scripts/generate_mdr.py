@@ -418,9 +418,9 @@ def build_svg(streak, langs, theme="dark"):
         .d2{{fill:{t['num_colors'][2]};opacity:.84}}
         .d3{{fill:{t['num_colors'][3]};opacity:.95}}
         @keyframes sb{{0%,{SWELL_WINDOW_PCT}%,100%{{transform:scale(1)}}
-            {SWELL_PEAK_PCT}%{{transform:scale(2.4)}}}}
+            {SWELL_PEAK_PCT}%{{transform:scale(3.2)}}}}
         @keyframes ss{{0%,{SWELL_WINDOW_PCT}%,100%{{transform:scale(1)}}
-            {SWELL_PEAK_PCT}%{{transform:scale(1.5)}}}}
+            {SWELL_PEAK_PCT}%{{transform:scale(2.0)}}}}
         .sb{{animation-name:sb;animation-duration:{CURSOR_DUR}s;
             animation-timing-function:linear;animation-iteration-count:infinite}}
         .ss{{animation-name:ss;animation-duration:{CURSOR_DUR}s;
