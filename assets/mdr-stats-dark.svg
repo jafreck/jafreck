@@ -16,9 +16,9 @@
         .d2{fill:#5A90B0;opacity:.84}
         .d3{fill:#8ABCD8;opacity:.95}
         @keyframes sb{0%,6%,100%{transform:scale(1)}
-            3%{transform:scale(3.2)}}
+            3%{transform:scale(3.2);fill:#E0F0FF}}
         @keyframes ss{0%,6%,100%{transform:scale(1)}
-            3%{transform:scale(2.0)}}
+            3%{transform:scale(2.0);fill:#E0F0FF;opacity:1}}
         .sb{animation-name:sb;animation-duration:25s;
             animation-timing-function:linear;animation-iteration-count:infinite}
         .ss{animation-name:ss;animation-duration:25s;
@@ -668,37 +668,37 @@
 <text class="sn" x="424.99999999999994" y="157" text-anchor="middle" font-size="28">18</text>
 <text class="sl" x="424.99999999999994" y="204" text-anchor="middle">Current Streak</text>
 <text class="sr" x="424.99999999999994" y="218" text-anchor="middle">Mar 19 - Apr 05</text>
-<text class="sn" x="218.33333333333331" y="152" text-anchor="middle" font-size="26">4438</text>
+<text class="sn" x="218.33333333333331" y="152" text-anchor="middle" font-size="26">4440</text>
 <text class="sl" x="218.33333333333331" y="170" text-anchor="middle">Total Contributions</text>
 <text class="sr" x="218.33333333333331" y="184" text-anchor="middle">Sep 08, 2017 - Apr 05, 2026</text>
-<text class="sn" x="631.6666666666666" y="152" text-anchor="middle" font-size="26">23</text>
+<text class="sn" x="631.6666666666666" y="152" text-anchor="middle" font-size="26">22</text>
 <text class="sl" x="631.6666666666666" y="170" text-anchor="middle">Longest Streak</text>
-<text class="sr" x="631.6666666666666" y="184" text-anchor="middle">Feb 21 - Mar 15</text>
+<text class="sr" x="631.6666666666666" y="184" text-anchor="middle">Feb 22 - Mar 15</text>
 <rect x="131.0" y="317" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
 <text style="fill:#5A8AAA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="185.8" y="331.0" text-anchor="middle">Rust</text>
 <rect x="131.0" y="339" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
-<rect x="131.0" y="339" width="65.0" height="22" rx="1" fill="#1A4A6A"/>
-<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="185.8" y="354.0" text-anchor="middle">59.3%</text>
+<rect x="131.0" y="339" width="55.8" height="22" rx="1" fill="#1A4A6A"/>
+<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="185.8" y="354.0" text-anchor="middle">50.9%</text>
 <rect x="250.6" y="317" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
 <text style="fill:#5A8AAA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="305.4" y="331.0" text-anchor="middle">TypeScript</text>
 <rect x="250.6" y="339" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
-<rect x="250.6" y="339" width="39.3" height="22" rx="1" fill="#1A4A6A"/>
-<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="305.4" y="354.0" text-anchor="middle">35.9%</text>
+<rect x="250.6" y="339" width="49.3" height="22" rx="1" fill="#1A4A6A"/>
+<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="305.4" y="354.0" text-anchor="middle">45.0%</text>
 <rect x="370.2" y="317" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
 <text style="fill:#5A8AAA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="425.0" y="331.0" text-anchor="middle">Ada</text>
 <rect x="370.2" y="339" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
-<rect x="370.2" y="339" width="1.5" height="22" rx="1" fill="#1A4A6A"/>
-<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="425.0" y="354.0" text-anchor="middle">1.4%</text>
+<rect x="370.2" y="339" width="1.9" height="22" rx="1" fill="#1A4A6A"/>
+<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="425.0" y="354.0" text-anchor="middle">1.7%</text>
 <rect x="489.79999999999995" y="317" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
 <text style="fill:#5A8AAA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="544.5999999999999" y="331.0" text-anchor="middle">Metal</text>
 <rect x="489.79999999999995" y="339" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
-<rect x="489.79999999999995" y="339" width="1.0" height="22" rx="1" fill="#1A4A6A"/>
-<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="544.5999999999999" y="354.0" text-anchor="middle">0.9%</text>
+<rect x="489.79999999999995" y="339" width="1.3" height="22" rx="1" fill="#1A4A6A"/>
+<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="544.5999999999999" y="354.0" text-anchor="middle">1.2%</text>
 <rect x="609.4" y="317" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
-<text style="fill:#5A8AAA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="664.1999999999999" y="331.0" text-anchor="middle">Go</text>
+<text style="fill:#5A8AAA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="664.1999999999999" y="331.0" text-anchor="middle">Python</text>
 <rect x="609.4" y="339" width="109.6" height="22" rx="1" fill="#040810" stroke="#2A5070" stroke-width="1.5"/>
-<rect x="609.4" y="339" width="1.0" height="22" rx="1" fill="#1A4A6A"/>
-<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="664.1999999999999" y="354.0" text-anchor="middle">0.9%</text>
+<rect x="609.4" y="339" width="0.5" height="22" rx="1" fill="#1A4A6A"/>
+<text style="fill:#9AC0DA;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="664.1999999999999" y="354.0" text-anchor="middle">0.5%</text>
 </g>
 <rect width="850" height="385" fill="url(#sl)" rx="12"/>
 <rect width="850" height="385" fill="url(#vig)" rx="12"/>
