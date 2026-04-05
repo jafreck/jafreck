@@ -418,9 +418,9 @@ def build_svg(streak, langs, theme="dark"):
         .d2{{fill:{t['num_colors'][2]};opacity:.84}}
         .d3{{fill:{t['num_colors'][3]};opacity:.95}}
         @keyframes sb{{0%,{SWELL_WINDOW_PCT}%,100%{{transform:scale(1)}}
-            {SWELL_PEAK_PCT}%{{transform:scale(3.2)}}}}
+            {SWELL_PEAK_PCT}%{{transform:scale(3.2);fill:{t['swell_bright']}}}}}
         @keyframes ss{{0%,{SWELL_WINDOW_PCT}%,100%{{transform:scale(1)}}
-            {SWELL_PEAK_PCT}%{{transform:scale(2.0)}}}}
+            {SWELL_PEAK_PCT}%{{transform:scale(2.0);fill:{t['swell_bright']};opacity:1}}}}
         .sb{{animation-name:sb;animation-duration:{CURSOR_DUR}s;
             animation-timing-function:linear;animation-iteration-count:infinite}}
         .ss{{animation-name:ss;animation-duration:{CURSOR_DUR}s;
@@ -441,14 +441,19 @@ def build_svg(streak, langs, theme="dark"):
             50%{{transform:translate(-1px,0.5px)}}
             75%{{transform:translate(0.5px,1px)}}
         }}
-        .b1{{animation:bounce 3s ease-in-out infinite}}
-        .b2{{animation:bounce 4.2s ease-in-out .8s infinite}}
-        .b3{{animation:bounce 5.5s ease-in-out 1.6s infinite}}
-        .w1{{animation:wiggle 2.8s ease-in-out infinite}}
-        .w2{{animation:wiggle 4s ease-in-out 1s infinite}}
-        .w3{{animation:wiggle 5s ease-in-out 2s infinite}}
-        .j1{{animation:jitter 3.5s ease-in-out infinite}}
-        .j2{{animation:jitter 4.8s ease-in-out 1.4s infinite}}
+        @keyframes breathe{{
+            0%,100%{{opacity:.55}}
+            50%{{opacity:.78}}
+        }}
+        .b1{{animation:bounce 3s ease-in-out infinite,breathe 4s ease-in-out infinite}}
+        .b2{{animation:bounce 4.2s ease-in-out .8s infinite,breathe 5.5s ease-in-out .4s infinite}}
+        .b3{{animation:bounce 5.5s ease-in-out 1.6s infinite,breathe 6s ease-in-out 1s infinite}}
+        .w1{{animation:wiggle 2.8s ease-in-out infinite,breathe 3.8s ease-in-out .6s infinite}}
+        .w2{{animation:wiggle 4s ease-in-out 1s infinite,breathe 5s ease-in-out 1.2s infinite}}
+        .w3{{animation:wiggle 5s ease-in-out 2s infinite,breathe 6.5s ease-in-out 2s infinite}}
+        .j1{{animation:jitter 3.5s ease-in-out infinite,breathe 4.5s ease-in-out .3s infinite}}
+        .j2{{animation:jitter 4.8s ease-in-out 1.4s infinite,breathe 5.8s ease-in-out 1s infinite}}
+        .br{{animation:breathe 4s ease-in-out infinite}}
         @keyframes cur{{{" ".join(cursor_kf)}}}
         .cur{{animation:cur {CURSOR_DUR}s linear infinite}}
         .pb{{fill:{t['panel_bg']};fill-opacity:{t['panel_opacity']}}}
@@ -514,6 +519,8 @@ def build_svg(streak, langs, theme="dark"):
                     mot = f" w{random.randint(1, 3)}"
                 elif r < 0.38:
                     mot = f" j{random.randint(1, 2)}"
+                elif r < 0.55:
+                    mot = " br"
                 o.append(
                     f'<text class="n {dim}{mot}" x="{x}" y="{y}">{digit}</text>'
                 )

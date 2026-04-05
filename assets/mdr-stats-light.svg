@@ -89,14 +89,19 @@
             50%{transform:translate(-1px,0.5px)}
             75%{transform:translate(0.5px,1px)}
         }
-        .b1{animation:bounce 3s ease-in-out infinite}
-        .b2{animation:bounce 4.2s ease-in-out .8s infinite}
-        .b3{animation:bounce 5.5s ease-in-out 1.6s infinite}
-        .w1{animation:wiggle 2.8s ease-in-out infinite}
-        .w2{animation:wiggle 4s ease-in-out 1s infinite}
-        .w3{animation:wiggle 5s ease-in-out 2s infinite}
-        .j1{animation:jitter 3.5s ease-in-out infinite}
-        .j2{animation:jitter 4.8s ease-in-out 1.4s infinite}
+        @keyframes breathe{
+            0%,100%{opacity:.55}
+            50%{opacity:.78}
+        }
+        .b1{animation:bounce 3s ease-in-out infinite,breathe 4s ease-in-out infinite}
+        .b2{animation:bounce 4.2s ease-in-out .8s infinite,breathe 5.5s ease-in-out .4s infinite}
+        .b3{animation:bounce 5.5s ease-in-out 1.6s infinite,breathe 6s ease-in-out 1s infinite}
+        .w1{animation:wiggle 2.8s ease-in-out infinite,breathe 3.8s ease-in-out .6s infinite}
+        .w2{animation:wiggle 4s ease-in-out 1s infinite,breathe 5s ease-in-out 1.2s infinite}
+        .w3{animation:wiggle 5s ease-in-out 2s infinite,breathe 6.5s ease-in-out 2s infinite}
+        .j1{animation:jitter 3.5s ease-in-out infinite,breathe 4.5s ease-in-out .3s infinite}
+        .j2{animation:jitter 4.8s ease-in-out 1.4s infinite,breathe 5.8s ease-in-out 1s infinite}
+        .br{animation:breathe 4s ease-in-out infinite}
         @keyframes cur{0%{transform:translate(100px,55px)} 11.7%{transform:translate(380px,35px)} 26.0%{transform:translate(720px,90px)} 31.5%{transform:translate(750px,220px)} 37.8%{transform:translate(600px,200px)} 50.3%{transform:translate(300px,180px)} 60.2%{transform:translate(60px,160px)} 66.6%{transform:translate(200px,100px)} 81.1%{transform:translate(550px,120px)} 100.0%{transform:translate(100px,55px)}}
         .cur{animation:cur 25s linear infinite}
         .pb{fill:#F4F6F8;fill-opacity:0.94}
@@ -156,10 +161,10 @@
 <text class="n d2" x="732.0" y="26">5</text>
 <text class="n d2" x="756.0" y="26">3</text>
 <text class="n d0 w3" x="780.0" y="26">6</text>
-<text class="n d0" x="804.0" y="26">5</text>
+<text class="n d0 br" x="804.0" y="26">5</text>
 <text class="n d0 b3" x="828.0" y="26">7</text>
 <text class="n d1" x="12.0" y="52">8</text>
-<text class="n d2" x="36.0" y="52">6</text>
+<text class="n d2 br" x="36.0" y="52">6</text>
 <text class="n d3 ss t1_0" x="60.0" y="52">3</text>
 <text class="n d1 sb t1_0" x="84.0" y="52">2</text>
 <text class="n d2 sb t1_0" x="108.0" y="52">1</text>
@@ -191,10 +196,10 @@
 <text class="n d0 ss t19_5" x="732.0" y="52">1</text>
 <text class="n d2" x="756.0" y="52">7</text>
 <text class="n d2 b2" x="780.0" y="52">8</text>
-<text class="n d0" x="804.0" y="52">8</text>
+<text class="n d0 br" x="804.0" y="52">8</text>
 <text class="n d1 w3" x="828.0" y="52">9</text>
-<text class="n d2" x="12.0" y="78">3</text>
-<text class="n d1" x="36.0" y="78">5</text>
+<text class="n d2 br" x="12.0" y="78">3</text>
+<text class="n d1 br" x="36.0" y="78">5</text>
 <text class="n d0 ss t1_0" x="60.0" y="78">1</text>
 <text class="n d0 ss t1_0" x="84.0" y="78">1</text>
 <text class="n d1 ss t1_0" x="108.0" y="78">9</text>
@@ -228,7 +233,7 @@
 <text class="n d0" x="780.0" y="78">2</text>
 <text class="n d3" x="804.0" y="78">4</text>
 <text class="n d1" x="828.0" y="78">4</text>
-<text class="n d1" x="12.0" y="104">8</text>
+<text class="n d1 br" x="12.0" y="104">8</text>
 <text class="n d0" x="36.0" y="104">3</text>
 <text class="n d2 b2" x="60.0" y="104">9</text>
 <text class="n d0 ss t10_0" x="84.0" y="104">0</text>
@@ -263,7 +268,7 @@
 <text class="n d2 w2" x="780.0" y="104">1</text>
 <text class="n d0 j2" x="804.0" y="104">9</text>
 <text class="n d1" x="828.0" y="104">8</text>
-<text class="n d0" x="12.0" y="130">0</text>
+<text class="n d0 br" x="12.0" y="130">0</text>
 <text class="n d0 ss t10_5" x="36.0" y="130">4</text>
 <text class="n d2 ss t10_5" x="60.0" y="130">5</text>
 <text class="n d0 sb t10_5" x="84.0" y="130">4</text>
@@ -367,7 +372,7 @@
 <text class="n d2 sb t18_0" x="756.0" y="182">4</text>
 <text class="n d1 ss t18_0" x="780.0" y="182">6</text>
 <text class="n d2" x="804.0" y="182">8</text>
-<text class="n d0" x="828.0" y="182">7</text>
+<text class="n d0 br" x="828.0" y="182">7</text>
 <text class="n d0" x="12.0" y="208">0</text>
 <text class="n d2" x="36.0" y="208">6</text>
 <text class="n d3 ss t10_5" x="60.0" y="208">2</text>
@@ -410,12 +415,12 @@
 <text class="n d1" x="108.0" y="234">4</text>
 <text class="n d1" x="132.0" y="234">7</text>
 <text class="n d0" x="156.0" y="234">9</text>
-<text class="n d0" x="180.0" y="234">1</text>
+<text class="n d0 br" x="180.0" y="234">1</text>
 <text class="n d1" x="204.0" y="234">7</text>
 <text class="n d0" x="228.0" y="234">5</text>
 <text class="n d1 j2" x="252.0" y="234">2</text>
 <text class="n d0" x="276.0" y="234">5</text>
-<text class="n d1" x="300.0" y="234">4</text>
+<text class="n d1 br" x="300.0" y="234">4</text>
 <text class="n d0" x="324.0" y="234">3</text>
 <text class="n d1 w2" x="348.0" y="234">7</text>
 <text class="n d1 ss t14_0" x="372.0" y="234">7</text>
@@ -441,28 +446,28 @@
 <text class="n d0" x="12.0" y="260">8</text>
 <text class="n d0 b2" x="36.0" y="260">7</text>
 <text class="n d1 j1" x="60.0" y="260">7</text>
-<text class="n d3" x="84.0" y="260">4</text>
+<text class="n d3 br" x="84.0" y="260">4</text>
 <text class="n d1 b3" x="108.0" y="260">1</text>
 <text class="n d0" x="132.0" y="260">0</text>
 <text class="n d0 w3" x="156.0" y="260">4</text>
 <text class="n d1" x="180.0" y="260">6</text>
-<text class="n d2" x="204.0" y="260">3</text>
+<text class="n d2 br" x="204.0" y="260">3</text>
 <text class="n d0" x="228.0" y="260">7</text>
 <text class="n d0" x="252.0" y="260">6</text>
 <text class="n d3 b1" x="276.0" y="260">9</text>
 <text class="n d0 b1" x="300.0" y="260">3</text>
 <text class="n d1 w2" x="324.0" y="260">2</text>
-<text class="n d1" x="348.0" y="260">7</text>
+<text class="n d1 br" x="348.0" y="260">7</text>
 <text class="n d0" x="372.0" y="260">0</text>
 <text class="n d0 w2" x="396.0" y="260">7</text>
 <text class="n d1" x="420.0" y="260">9</text>
 <text class="n d0 w1" x="444.0" y="260">6</text>
 <text class="n d2 b1" x="468.0" y="260">4</text>
 <text class="n d1" x="492.0" y="260">4</text>
-<text class="n d1" x="516.0" y="260">4</text>
+<text class="n d1 br" x="516.0" y="260">4</text>
 <text class="n d1" x="540.0" y="260">4</text>
-<text class="n d1" x="564.0" y="260">8</text>
-<text class="n d0" x="588.0" y="260">9</text>
+<text class="n d1 br" x="564.0" y="260">8</text>
+<text class="n d0 br" x="588.0" y="260">9</text>
 <text class="n d1 b1" x="612.0" y="260">5</text>
 <text class="n d1 b3" x="636.0" y="260">9</text>
 <text class="n d1" x="660.0" y="260">4</text>
@@ -470,39 +475,39 @@
 <text class="n d3 ss t17_5" x="708.0" y="260">7</text>
 <text class="n d3 ss t17_5" x="732.0" y="260">2</text>
 <text class="n d1 ss t18_0" x="756.0" y="260">6</text>
-<text class="n d3" x="780.0" y="260">7</text>
+<text class="n d3 br" x="780.0" y="260">7</text>
 <text class="n d0" x="804.0" y="260">6</text>
 <text class="n d0" x="828.0" y="260">2</text>
-<text class="n d1" x="12.0" y="286">4</text>
+<text class="n d1 br" x="12.0" y="286">4</text>
 <text class="n d0 b2" x="36.0" y="286">8</text>
 <text class="n d0" x="60.0" y="286">5</text>
 <text class="n d2 b3" x="84.0" y="286">8</text>
 <text class="n d1 w2" x="108.0" y="286">7</text>
 <text class="n d2" x="132.0" y="286">9</text>
-<text class="n d0" x="156.0" y="286">0</text>
+<text class="n d0 br" x="156.0" y="286">0</text>
 <text class="n d1" x="180.0" y="286">4</text>
 <text class="n d0" x="204.0" y="286">1</text>
 <text class="n d2 j1" x="228.0" y="286">3</text>
 <text class="n d1 w1" x="252.0" y="286">8</text>
 <text class="n d3" x="276.0" y="286">7</text>
 <text class="n d1" x="300.0" y="286">2</text>
-<text class="n d2" x="324.0" y="286">8</text>
+<text class="n d2 br" x="324.0" y="286">8</text>
 <text class="n d3 w3" x="348.0" y="286">7</text>
 <text class="n d0" x="372.0" y="286">2</text>
 <text class="n d2 b1" x="396.0" y="286">8</text>
 <text class="n d2" x="420.0" y="286">4</text>
-<text class="n d3" x="444.0" y="286">5</text>
+<text class="n d3 br" x="444.0" y="286">5</text>
 <text class="n d0 w3" x="468.0" y="286">0</text>
-<text class="n d3" x="492.0" y="286">9</text>
-<text class="n d1" x="516.0" y="286">2</text>
-<text class="n d1" x="540.0" y="286">5</text>
+<text class="n d3 br" x="492.0" y="286">9</text>
+<text class="n d1 br" x="516.0" y="286">2</text>
+<text class="n d1 br" x="540.0" y="286">5</text>
 <text class="n d3" x="564.0" y="286">7</text>
 <text class="n d1 w2" x="588.0" y="286">3</text>
-<text class="n d0" x="612.0" y="286">0</text>
+<text class="n d0 br" x="612.0" y="286">0</text>
 <text class="n d0" x="636.0" y="286">6</text>
 <text class="n d1 b3" x="660.0" y="286">2</text>
 <text class="n d0 b2" x="684.0" y="286">9</text>
-<text class="n d1" x="708.0" y="286">1</text>
+<text class="n d1 br" x="708.0" y="286">1</text>
 <text class="n d1" x="732.0" y="286">2</text>
 <text class="n d0" x="756.0" y="286">2</text>
 <text class="n d0" x="780.0" y="286">4</text>
@@ -513,17 +518,17 @@
 <text class="n d3" x="60.0" y="312">6</text>
 <text class="n d1" x="84.0" y="312">1</text>
 <text class="n d0" x="108.0" y="312">0</text>
-<text class="n d1" x="132.0" y="312">4</text>
+<text class="n d1 br" x="132.0" y="312">4</text>
 <text class="n d1" x="156.0" y="312">3</text>
 <text class="n d0 b2" x="180.0" y="312">2</text>
-<text class="n d1" x="204.0" y="312">9</text>
-<text class="n d0" x="228.0" y="312">9</text>
+<text class="n d1 br" x="204.0" y="312">9</text>
+<text class="n d0 br" x="228.0" y="312">9</text>
 <text class="n d1" x="252.0" y="312">4</text>
 <text class="n d3" x="276.0" y="312">7</text>
 <text class="n d0" x="300.0" y="312">2</text>
 <text class="n d0" x="324.0" y="312">9</text>
 <text class="n d1 j2" x="348.0" y="312">4</text>
-<text class="n d0" x="372.0" y="312">7</text>
+<text class="n d0 br" x="372.0" y="312">7</text>
 <text class="n d1" x="396.0" y="312">5</text>
 <text class="n d0" x="420.0" y="312">4</text>
 <text class="n d0" x="444.0" y="312">6</text>
@@ -531,7 +536,7 @@
 <text class="n d2 w2" x="492.0" y="312">4</text>
 <text class="n d1" x="516.0" y="312">3</text>
 <text class="n d2" x="540.0" y="312">2</text>
-<text class="n d0" x="564.0" y="312">0</text>
+<text class="n d0 br" x="564.0" y="312">0</text>
 <text class="n d1 b2" x="588.0" y="312">9</text>
 <text class="n d2 w1" x="612.0" y="312">5</text>
 <text class="n d3 j2" x="636.0" y="312">8</text>
@@ -539,15 +544,15 @@
 <text class="n d3 w2" x="684.0" y="312">7</text>
 <text class="n d1 b1" x="708.0" y="312">1</text>
 <text class="n d3" x="732.0" y="312">6</text>
-<text class="n d0" x="756.0" y="312">5</text>
-<text class="n d1" x="780.0" y="312">4</text>
+<text class="n d0 br" x="756.0" y="312">5</text>
+<text class="n d1 br" x="780.0" y="312">4</text>
 <text class="n d1" x="804.0" y="312">4</text>
 <text class="n d0 w1" x="828.0" y="312">5</text>
 <text class="n d2" x="12.0" y="338">9</text>
 <text class="n d0 b2" x="36.0" y="338">9</text>
 <text class="n d2 b1" x="60.0" y="338">4</text>
-<text class="n d1" x="84.0" y="338">0</text>
-<text class="n d0" x="108.0" y="338">1</text>
+<text class="n d1 br" x="84.0" y="338">0</text>
+<text class="n d0 br" x="108.0" y="338">1</text>
 <text class="n d1" x="132.0" y="338">6</text>
 <text class="n d1" x="156.0" y="338">8</text>
 <text class="n d2" x="180.0" y="338">2</text>
@@ -572,12 +577,12 @@
 <text class="n d1" x="636.0" y="338">7</text>
 <text class="n d2" x="660.0" y="338">0</text>
 <text class="n d0" x="684.0" y="338">8</text>
-<text class="n d0" x="708.0" y="338">0</text>
+<text class="n d0 br" x="708.0" y="338">0</text>
 <text class="n d1 b3" x="732.0" y="338">6</text>
 <text class="n d0 b3" x="756.0" y="338">7</text>
 <text class="n d0 w3" x="780.0" y="338">2</text>
 <text class="n d1 j2" x="804.0" y="338">9</text>
-<text class="n d1" x="828.0" y="338">7</text>
+<text class="n d1 br" x="828.0" y="338">7</text>
 <text class="n d2" x="12.0" y="364">1</text>
 <text class="n d2 w2" x="36.0" y="364">8</text>
 <text class="n d2" x="60.0" y="364">3</text>
@@ -592,36 +597,36 @@
 <text class="n d1 j1" x="276.0" y="364">4</text>
 <text class="n d1 w1" x="300.0" y="364">2</text>
 <text class="n d2 j2" x="324.0" y="364">5</text>
-<text class="n d0" x="348.0" y="364">9</text>
+<text class="n d0 br" x="348.0" y="364">9</text>
 <text class="n d3" x="372.0" y="364">8</text>
 <text class="n d1" x="396.0" y="364">9</text>
 <text class="n d3" x="420.0" y="364">9</text>
 <text class="n d0 w2" x="444.0" y="364">4</text>
 <text class="n d0 w1" x="468.0" y="364">5</text>
 <text class="n d1 b3" x="492.0" y="364">9</text>
-<text class="n d0" x="516.0" y="364">0</text>
+<text class="n d0 br" x="516.0" y="364">0</text>
 <text class="n d1 j2" x="540.0" y="364">6</text>
 <text class="n d2" x="564.0" y="364">4</text>
 <text class="n d2" x="588.0" y="364">9</text>
 <text class="n d0" x="612.0" y="364">2</text>
 <text class="n d0" x="636.0" y="364">1</text>
-<text class="n d1" x="660.0" y="364">7</text>
+<text class="n d1 br" x="660.0" y="364">7</text>
 <text class="n d2 b2" x="684.0" y="364">3</text>
 <text class="n d0" x="708.0" y="364">1</text>
 <text class="n d1 j1" x="732.0" y="364">7</text>
 <text class="n d3 b1" x="756.0" y="364">6</text>
 <text class="n d3" x="780.0" y="364">4</text>
 <text class="n d0 b2" x="804.0" y="364">4</text>
-<text class="n d0" x="828.0" y="364">6</text>
+<text class="n d0 br" x="828.0" y="364">6</text>
 <text class="n d1" x="12.0" y="390">3</text>
 <text class="n d0" x="36.0" y="390">5</text>
-<text class="n d2" x="60.0" y="390">0</text>
+<text class="n d2 br" x="60.0" y="390">0</text>
 <text class="n d3" x="84.0" y="390">1</text>
 <text class="n d2" x="108.0" y="390">9</text>
 <text class="n d0 b2" x="132.0" y="390">4</text>
 <text class="n d2" x="156.0" y="390">2</text>
 <text class="n d0" x="180.0" y="390">5</text>
-<text class="n d1" x="204.0" y="390">3</text>
+<text class="n d1 br" x="204.0" y="390">3</text>
 <text class="n d0 j2" x="228.0" y="390">1</text>
 <text class="n d0 w3" x="252.0" y="390">3</text>
 <text class="n d1 w2" x="276.0" y="390">1</text>
@@ -633,16 +638,16 @@
 <text class="n d1" x="420.0" y="390">9</text>
 <text class="n d1" x="444.0" y="390">9</text>
 <text class="n d2" x="468.0" y="390">5</text>
-<text class="n d1" x="492.0" y="390">2</text>
+<text class="n d1 br" x="492.0" y="390">2</text>
 <text class="n d2" x="516.0" y="390">4</text>
 <text class="n d1 j2" x="540.0" y="390">5</text>
 <text class="n d0" x="564.0" y="390">0</text>
 <text class="n d2" x="588.0" y="390">1</text>
-<text class="n d2" x="612.0" y="390">1</text>
+<text class="n d2 br" x="612.0" y="390">1</text>
 <text class="n d2" x="636.0" y="390">7</text>
 <text class="n d1" x="660.0" y="390">0</text>
-<text class="n d0" x="684.0" y="390">3</text>
-<text class="n d3" x="708.0" y="390">2</text>
+<text class="n d0 br" x="684.0" y="390">3</text>
+<text class="n d3 br" x="708.0" y="390">2</text>
 <text class="n d3 b3" x="732.0" y="390">5</text>
 <text class="n d0" x="756.0" y="390">2</text>
 <text class="n d1" x="780.0" y="390">7</text>
@@ -666,34 +671,34 @@
 <text class="sn" x="218.33333333333331" y="152" text-anchor="middle" font-size="26">4438</text>
 <text class="sl" x="218.33333333333331" y="170" text-anchor="middle">Total Contributions</text>
 <text class="sr" x="218.33333333333331" y="184" text-anchor="middle">Sep 08, 2017 - Apr 05, 2026</text>
-<text class="sn" x="631.6666666666666" y="152" text-anchor="middle" font-size="26">22</text>
+<text class="sn" x="631.6666666666666" y="152" text-anchor="middle" font-size="26">23</text>
 <text class="sl" x="631.6666666666666" y="170" text-anchor="middle">Longest Streak</text>
-<text class="sr" x="631.6666666666666" y="184" text-anchor="middle">Feb 22 - Mar 15</text>
+<text class="sr" x="631.6666666666666" y="184" text-anchor="middle">Feb 21 - Mar 15</text>
 <rect x="131.0" y="317" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
 <text style="fill:#5A6A7A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="185.8" y="331.0" text-anchor="middle">Rust</text>
 <rect x="131.0" y="339" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
-<rect x="131.0" y="339" width="55.8" height="22" rx="1" fill="#5A8AAA"/>
-<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="185.8" y="354.0" text-anchor="middle">50.9%</text>
+<rect x="131.0" y="339" width="65.0" height="22" rx="1" fill="#5A8AAA"/>
+<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="185.8" y="354.0" text-anchor="middle">59.3%</text>
 <rect x="250.6" y="317" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
 <text style="fill:#5A6A7A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="305.4" y="331.0" text-anchor="middle">TypeScript</text>
 <rect x="250.6" y="339" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
-<rect x="250.6" y="339" width="49.3" height="22" rx="1" fill="#5A8AAA"/>
-<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="305.4" y="354.0" text-anchor="middle">45.0%</text>
+<rect x="250.6" y="339" width="39.3" height="22" rx="1" fill="#5A8AAA"/>
+<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="305.4" y="354.0" text-anchor="middle">35.9%</text>
 <rect x="370.2" y="317" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
 <text style="fill:#5A6A7A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="425.0" y="331.0" text-anchor="middle">Ada</text>
 <rect x="370.2" y="339" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
-<rect x="370.2" y="339" width="2.0" height="22" rx="1" fill="#5A8AAA"/>
-<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="425.0" y="354.0" text-anchor="middle">1.8%</text>
+<rect x="370.2" y="339" width="1.5" height="22" rx="1" fill="#5A8AAA"/>
+<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="425.0" y="354.0" text-anchor="middle">1.4%</text>
 <rect x="489.79999999999995" y="317" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
 <text style="fill:#5A6A7A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="544.5999999999999" y="331.0" text-anchor="middle">Metal</text>
 <rect x="489.79999999999995" y="339" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
-<rect x="489.79999999999995" y="339" width="1.3" height="22" rx="1" fill="#5A8AAA"/>
-<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="544.5999999999999" y="354.0" text-anchor="middle">1.2%</text>
+<rect x="489.79999999999995" y="339" width="1.0" height="22" rx="1" fill="#5A8AAA"/>
+<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="544.5999999999999" y="354.0" text-anchor="middle">0.9%</text>
 <rect x="609.4" y="317" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
-<text style="fill:#5A6A7A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="664.1999999999999" y="331.0" text-anchor="middle">Python</text>
+<text style="fill:#5A6A7A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="664.1999999999999" y="331.0" text-anchor="middle">Go</text>
 <rect x="609.4" y="339" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
-<rect x="609.4" y="339" width="0.5" height="22" rx="1" fill="#5A8AAA"/>
-<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="664.1999999999999" y="354.0" text-anchor="middle">0.5%</text>
+<rect x="609.4" y="339" width="1.0" height="22" rx="1" fill="#5A8AAA"/>
+<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="664.1999999999999" y="354.0" text-anchor="middle">0.9%</text>
 </g>
 <rect width="850" height="385" fill="url(#sl)" rx="12"/>
 <rect width="850" height="385" fill="url(#vig)" rx="12"/>
