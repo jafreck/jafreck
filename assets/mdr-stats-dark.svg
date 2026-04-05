@@ -16,9 +16,9 @@
         .d2{fill:#5A90B0;opacity:.84}
         .d3{fill:#8ABCD8;opacity:.95}
         @keyframes sb{0%,6%,100%{transform:scale(1)}
-            3%{transform:scale(2.4)}}
+            3%{transform:scale(3.2)}}
         @keyframes ss{0%,6%,100%{transform:scale(1)}
-            3%{transform:scale(1.5)}}
+            3%{transform:scale(2.0)}}
         .sb{animation-name:sb;animation-duration:25s;
             animation-timing-function:linear;animation-iteration-count:infinite}
         .ss{animation-name:ss;animation-duration:25s;
@@ -663,7 +663,7 @@
 <text class="sn" x="424.99999999999994" y="157" text-anchor="middle" font-size="28">18</text>
 <text class="sl" x="424.99999999999994" y="204" text-anchor="middle">Current Streak</text>
 <text class="sr" x="424.99999999999994" y="218" text-anchor="middle">Mar 19 - Apr 05</text>
-<text class="sn" x="218.33333333333331" y="152" text-anchor="middle" font-size="26">4436</text>
+<text class="sn" x="218.33333333333331" y="152" text-anchor="middle" font-size="26">4438</text>
 <text class="sl" x="218.33333333333331" y="170" text-anchor="middle">Total Contributions</text>
 <text class="sr" x="218.33333333333331" y="184" text-anchor="middle">Sep 08, 2017 - Apr 05, 2026</text>
 <text class="sn" x="631.6666666666666" y="152" text-anchor="middle" font-size="26">22</text>
