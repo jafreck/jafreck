@@ -1,20 +1,23 @@
 const REPO_RAW = "https://raw.githubusercontent.com/jafreck/jafreck/main/assets";
 
-const STYLES = [
-  "matrix",
-  "mdr",
-  "terminal-v1",
-  "terminal-v2",
-  "terminal-v3",
-  "invaders-v2",
-];
+const STYLES = {
+  "matrix": "matrix-stats",
+  "mdr": "mdr-stats",
+  "terminal-v1": "terminal-v1",
+  "terminal-v2": "terminal-v2",
+  "terminal-v3": "terminal-v3",
+  "invaders": "invaders-v2",
+};
+
+const STYLE_KEYS = Object.keys(STYLES);
 
 export default {
   async fetch(request) {
     const url = new URL(request.url);
     const theme = url.searchParams.get("theme") === "light" ? "light" : "dark";
-    const style = STYLES[Math.floor(Math.random() * STYLES.length)];
-    const svgUrl = `${REPO_RAW}/${style}-stats-${theme}.svg`;
+    const key = STYLE_KEYS[Math.floor(Math.random() * STYLE_KEYS.length)];
+    const prefix = STYLES[key];
+    const svgUrl = `${REPO_RAW}/${prefix}-${theme}.svg`;
 
     const resp = await fetch(svgUrl);
     if (!resp.ok) {
