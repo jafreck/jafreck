@@ -1,0 +1,287 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 850 542" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace">
+<defs>
+<filter id="soften" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="0.3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<style>
+
+      /* Base text */
+      .t { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 14px; fill: #383a42; }
+      .t-dim { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 14px; fill: #a0a1a7; }
+      .t-bright { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 14px; fill: #232428; font-weight: 600; }
+      .t-banner { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 14px; fill: #a626a4; }
+      .t-dir { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 14px; fill: #4078f2; font-weight: 600; }
+      .t-arrow { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 14px; fill: #0184bc; font-weight: 700; }
+      .t-cmd { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 14px; fill: #232428; }
+      .t-stat { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 14px; fill: #383a42; }
+      .t-val { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 14px; fill: #c18401; font-weight: 600; }
+      .t-range { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 14px; fill: #a0a1a7; }
+      .t-header { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 13px; fill: #4078f2; font-weight: 600; letter-spacing: 0.5px; }
+      .t-sep { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 14px; fill: #d3d3d8; }
+      .t-title { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 13px; fill: #6a6a6a; }
+
+      /* Cursor blink — thin line */
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .cursor {
+        fill: #526fff;
+        animation: blink 1.2s step-end infinite;
+      }
+
+      /* Smooth character reveal */
+      @keyframes reveal {
+        from { clip-path: inset(0 100% 0 0); }
+        to { clip-path: inset(0 0% 0 0); }
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      /* Cursor-wrap fade in */
+      .cursor-wrap {
+        opacity: 0;
+        animation: fadeIn 0.1s ease 5.30s forwards;
+      }
+    
+
+      .line-0 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 0.00s forwards;
+      }
+      .line-0 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.46s steps(31) 0.00s forwards;
+      }
+    
+
+      .line-2 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 0.50s forwards;
+      }
+      .line-2 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.16s steps(11) 0.50s forwards;
+      }
+    
+
+      .line-4 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 1.00s forwards;
+      }
+      .line-4 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.96s steps(64) 1.00s forwards;
+      }
+    
+
+      .line-6 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 1.50s forwards;
+      }
+      .line-6 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.73s steps(49) 1.50s forwards;
+      }
+    
+
+      .line-7 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 1.75s forwards;
+      }
+      .line-7 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.73s steps(49) 1.75s forwards;
+      }
+    
+
+      .line-8 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 2.00s forwards;
+      }
+      .line-8 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.93s steps(62) 2.00s forwards;
+      }
+    
+
+      .line-10 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 2.50s forwards;
+      }
+      .line-10 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.96s steps(64) 2.50s forwards;
+      }
+    
+
+      .line-12 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 3.00s forwards;
+      }
+      .line-12 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.38s steps(25) 3.00s forwards;
+      }
+    
+
+      .line-14 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 3.50s forwards;
+      }
+      .line-14 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.66s steps(44) 3.50s forwards;
+      }
+    
+
+      .line-15 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 3.75s forwards;
+      }
+      .line-15 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.66s steps(44) 3.75s forwards;
+      }
+    
+
+      .line-16 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 4.00s forwards;
+      }
+      .line-16 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.66s steps(44) 4.00s forwards;
+      }
+    
+
+      .line-17 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 4.25s forwards;
+      }
+      .line-17 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.66s steps(44) 4.25s forwards;
+      }
+    
+
+      .line-18 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 4.50s forwards;
+      }
+      .line-18 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.66s steps(44) 4.50s forwards;
+      }
+    
+
+      .line-20 {
+        opacity: 0;
+        animation: fadeIn 0.08s ease 5.00s forwards;
+      }
+      .line-20 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: reveal 0.28s steps(19) 5.00s forwards;
+      }
+    
+</style>
+<rect width="850" height="542" rx="10" fill="#fafafa"/>
+<rect width="850" height="40" rx="10" fill="#e8e8e8"/>
+<rect y="30" width="850" height="10" fill="#e8e8e8"/>
+<circle cx="22" cy="20" r="6.5" fill="#ff5f56" stroke="#e0443e" stroke-width="0.5"/>
+<circle cx="44" cy="20" r="6.5" fill="#ffbd2e" stroke="#dea123" stroke-width="0.5"/>
+<circle cx="66" cy="20" r="6.5" fill="#27c93f" stroke="#1aab29" stroke-width="0.5"/>
+<text class="t-title" x="425" y="24" text-anchor="middle">jafreck — zsh — 80×24</text>
+<line x1="0" y1="40" x2="850" y2="40" stroke="#d0d0d0" stroke-width="1"/>
+<g class="line-0">
+<text class="typed" x="28" y="78">
+<tspan class="t-dir">~/source/jafreck</tspan>
+<tspan class="t-arrow"> ❯ </tspan>
+<tspan class="t-cmd">github-stats</tspan>
+</text>
+</g>
+<g class="line-2">
+<text x="38" y="122" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="26px" fill="#a626a4" font-weight="700"><tspan class="typed">Hi there! 👋</tspan></text>
+</g>
+<g class="line-4">
+<text class="t-sep" x="28" y="166"><tspan class="typed">  ──────────────────────────────────────────────────────────────</tspan></text>
+</g>
+<g class="line-6">
+<text x="44.8" y="210">
+<tspan class="t-stat">🔥  Current Streak      </tspan>
+<tspan class="t-val">15</tspan>
+<tspan class="t-stat"> days   </tspan>
+<tspan class="t-range">Mar 22 – Apr 05</tspan>
+</text>
+</g>
+<g class="line-7">
+<text x="44.8" y="232">
+<tspan class="t-stat">🏆  Longest Streak      </tspan>
+<tspan class="t-val">42</tspan>
+<tspan class="t-stat"> days   </tspan>
+<tspan class="t-range">Nov 01 – Dec 12</tspan>
+</text>
+</g>
+<g class="line-8">
+<text x="44.8" y="254">
+<tspan class="t-stat">⭐  Total Commits     </tspan>
+<tspan class="t-val">2456</tspan>
+<tspan class="t-stat">         </tspan>
+<tspan class="t-range">Jun 15, 2019 – Apr 05, 2026</tspan>
+</text>
+</g>
+<g class="line-10">
+<text class="t-sep" x="28" y="298"><tspan class="typed">  ──────────────────────────────────────────────────────────────</tspan></text>
+</g>
+<g class="line-12">
+<text class="t-header" x="28" y="342"><tspan class="typed">  LANGUAGE          USAGE</tspan></text>
+</g>
+<g class="line-14">
+<text x="44.8" y="386" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#3572A5" opacity="1.0"><tspan class="typed">●</tspan></text>
+<text class="t" x="61.599999999999994" y="386"><tspan class="typed">Python    </tspan></text>
+<text x="162.4" y="386" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#3572A5" opacity="1.0"><tspan class="typed">███████</tspan></text>
+<text class="t-dim" x="221.20000000000002" y="386"><tspan class="typed">░░░░░░░░░░░░░</tspan></text>
+<text class="t-bright" x="338.79999999999995" y="386"><tspan class="typed"> 35.2%</tspan></text>
+</g>
+<g class="line-15">
+<text x="44.8" y="408" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#3178c6" opacity="1.0"><tspan class="typed">●</tspan></text>
+<text class="t" x="61.599999999999994" y="408"><tspan class="typed">TypeScript</tspan></text>
+<text x="162.4" y="408" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#3178c6" opacity="1.0"><tspan class="typed">████</tspan></text>
+<text class="t-dim" x="196.0" y="408"><tspan class="typed">░░░░░░░░░░░░░░░░</tspan></text>
+<text class="t-bright" x="338.79999999999995" y="408"><tspan class="typed"> 22.1%</tspan></text>
+</g>
+<g class="line-16">
+<text x="44.8" y="430" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#00ADD8" opacity="1.0"><tspan class="typed">●</tspan></text>
+<text class="t" x="61.599999999999994" y="430"><tspan class="typed">Go        </tspan></text>
+<text x="162.4" y="430" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#00ADD8" opacity="1.0"><tspan class="typed">████</tspan></text>
+<text class="t-dim" x="196.0" y="430"><tspan class="typed">░░░░░░░░░░░░░░░░</tspan></text>
+<text class="t-bright" x="338.79999999999995" y="430"><tspan class="typed"> 18.4%</tspan></text>
+</g>
+<g class="line-17">
+<text x="44.8" y="452" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#dea584" opacity="1.0"><tspan class="typed">●</tspan></text>
+<text class="t" x="61.599999999999994" y="452"><tspan class="typed">Rust      </tspan></text>
+<text x="162.4" y="452" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#dea584" opacity="1.0"><tspan class="typed">███</tspan></text>
+<text class="t-dim" x="187.60000000000002" y="452"><tspan class="typed">░░░░░░░░░░░░░░░░░</tspan></text>
+<text class="t-bright" x="338.79999999999995" y="452"><tspan class="typed"> 12.8%</tspan></text>
+</g>
+<g class="line-18">
+<text x="44.8" y="474" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#89e051" opacity="1.0"><tspan class="typed">●</tspan></text>
+<text class="t" x="61.599999999999994" y="474"><tspan class="typed">Shell     </tspan></text>
+<text x="162.4" y="474" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#89e051" opacity="1.0"><tspan class="typed">██</tspan></text>
+<text class="t-dim" x="179.20000000000002" y="474"><tspan class="typed">░░░░░░░░░░░░░░░░░░</tspan></text>
+<text class="t-bright" x="338.79999999999995" y="474"><tspan class="typed"> 11.5%</tspan></text>
+</g>
+<g class="line-20">
+<text class="typed" x="28" y="518">
+<tspan class="t-dir">~/source/jafreck</tspan>
+<tspan class="t-arrow"> ❯ </tspan>
+</text>
+</g>
+<g class="cursor-wrap">
+<rect class="cursor" x="187.6" y="504" width="2" height="17" rx="1"/>
+</g>
+<radialGradient id="vig" cx="50%" cy="50%" r="70%"><stop offset="70%" stop-color="transparent"/><stop offset="100%" stop-color="black" stop-opacity="0.08"/></radialGradient>
+<rect width="850" height="542" fill="url(#vig)" rx="10" pointer-events="none"/>
+<rect width="850" height="542" rx="10" fill="none" stroke="#d0d0d0" stroke-width="1"/>
+</svg>

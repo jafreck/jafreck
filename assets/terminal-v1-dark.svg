@@ -1,0 +1,423 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 850 736" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace">
+<defs>
+<pattern id="scanlines" patternUnits="userSpaceOnUse" width="100%" height="4">
+<rect width="100%" height="2" fill="black" opacity="0.10"/>
+</pattern>
+<filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.0" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="textglow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="1.0" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="innershadow" x="-5%" y="-5%" width="110%" height="110%"><feComponentTransfer in="SourceAlpha"><feFuncA type="table" tableValues="1 0"/></feComponentTransfer><feGaussianBlur stdDeviation="6"/><feOffset dx="0" dy="2" result="offsetblur"/><feFlood flood-color="#000000" flood-opacity="0.5" result="color"/><feComposite in2="offsetblur" operator="in"/><feComposite in2="SourceAlpha" operator="in"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode/></feMerge></filter>
+</defs>
+<style>
+
+      .bg { fill: #0a0800; }
+      .term-text {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #FFB000;
+        filter: url(#textglow);
+      }
+      .term-prompt {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #FFB000;
+        font-weight: bold;
+        filter: url(#textglow);
+      }
+      .term-header {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #FFB000;
+        font-weight: bold;
+        filter: url(#textglow);
+      }
+      .term-stat {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #FFB000;
+        filter: url(#textglow);
+      }
+      .term-dim {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #805800;
+        filter: url(#textglow);
+      }
+      .term-boot {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #CC8C00;
+        filter: url(#textglow);
+      }
+      .term-boot-ok {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #FFB000;
+        font-weight: bold;
+        filter: url(#textglow);
+      }
+      .term-ascii {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #FFD060;
+        filter: url(#textglow);
+      }
+      .term-greeting {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 26px;
+        fill: #FFD060;
+        font-weight: bold;
+        filter: url(#textglow);
+      }
+
+      /* Cursor blink */
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .cursor {
+        fill: #FFB000;
+        animation: blink 1s step-end infinite;
+      }
+      /* Line reveal */
+      @keyframes lineReveal {
+        0% { opacity: 0; transform: translateX(-4px); }
+        100% { opacity: 1; transform: translateX(0); }
+      }
+
+      /* Character typing via clip-path */
+      @keyframes typeClip {
+        0% { clip-path: inset(0 100% 0 0); }
+        100% { clip-path: inset(0 0% 0 0); }
+      }
+
+      /* More pronounced CRT flicker with occasional brightness dip */
+      @keyframes crtFlicker {
+        0%   { opacity: 1; }
+        15%  { opacity: 1; }
+        16%  { opacity: 0.82; }
+        17%  { opacity: 1; }
+        42%  { opacity: 1; }
+        43%  { opacity: 0.88; }
+        44%  { opacity: 0.78; }
+        45%  { opacity: 1; }
+        70%  { opacity: 1; }
+        71%  { opacity: 0.90; }
+        72%  { opacity: 1; }
+        90%  { opacity: 1; }
+        91%  { opacity: 0.85; }
+        92%  { opacity: 0.92; }
+        93%  { opacity: 1; }
+        100% { opacity: 1; }
+      }
+      .crt-wrap {
+        animation: crtFlicker 3s infinite;
+      }
+
+      /* Scanline pattern scroll */
+      @keyframes scanScroll {
+        0%   { transform: translateY(0); }
+        100% { transform: translateY(4px); }
+      }
+      .scanline-layer {
+        animation: scanScroll 0.15s linear infinite;
+      }
+
+      /* Scrolling bright scanline bar */
+      @keyframes scanBar {
+        0%   { transform: translateY(-4px); }
+        100% { transform: translateY(740px); }
+      }
+      .scan-bar {
+        animation: scanBar 6s linear infinite;
+      }
+    
+
+      .line-0 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 0.00s forwards;
+      }
+      .line-0 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.30s steps(30) 0.00s forwards;
+      }
+    
+
+      .line-1 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 0.12s forwards;
+      }
+      .line-1 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.30s steps(30) 0.12s forwards;
+      }
+    
+
+      .line-2 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 0.24s forwards;
+      }
+      .line-2 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.30s steps(30) 0.24s forwards;
+      }
+    
+
+      .line-4 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 0.48s forwards;
+      }
+      .line-4 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.30s steps(10) 0.48s forwards;
+      }
+    
+
+      .line-7 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 0.84s forwards;
+      }
+      .line-7 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.36s steps(45) 0.84s forwards;
+      }
+    
+
+      .line-9 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 1.08s forwards;
+      }
+      .line-9 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.40s steps(50) 1.08s forwards;
+      }
+    
+
+      .line-10 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 1.20s forwards;
+      }
+      .line-10 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.40s steps(50) 1.20s forwards;
+      }
+    
+
+      .line-11 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 1.32s forwards;
+      }
+      .line-11 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.40s steps(50) 1.32s forwards;
+      }
+    
+
+      .line-13 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 1.56s forwards;
+      }
+      .line-13 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.41s steps(51) 1.56s forwards;
+      }
+    
+
+      .line-14 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 1.68s forwards;
+      }
+      .line-14 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.41s steps(51) 1.68s forwards;
+      }
+    
+
+      .line-15 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 1.80s forwards;
+      }
+      .line-15 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.51s steps(64) 1.80s forwards;
+      }
+    
+
+      .line-17 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 2.04s forwards;
+      }
+      .line-17 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.50s steps(62) 2.04s forwards;
+      }
+    
+
+      .line-19 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 2.28s forwards;
+      }
+      .line-19 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.30s steps(37) 2.28s forwards;
+      }
+    
+
+      .line-21 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 2.52s forwards;
+      }
+      .line-21 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.34s steps(42) 2.52s forwards;
+      }
+    
+
+      .line-22 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 2.64s forwards;
+      }
+      .line-22 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.34s steps(42) 2.64s forwards;
+      }
+    
+
+      .line-23 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 2.76s forwards;
+      }
+      .line-23 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.34s steps(42) 2.76s forwards;
+      }
+    
+
+      .line-24 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 2.88s forwards;
+      }
+      .line-24 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.34s steps(42) 2.88s forwards;
+      }
+    
+
+      .line-25 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 3.00s forwards;
+      }
+      .line-25 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.34s steps(42) 3.00s forwards;
+      }
+    
+
+      .line-27 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 3.24s forwards;
+      }
+      .line-27 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.50s steps(62) 3.24s forwards;
+      }
+    
+
+      .line-29 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 3.48s forwards;
+      }
+      .line-29 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.30s steps(19) 3.48s forwards;
+      }
+    
+</style>
+<rect class="bg" width="850" height="736" rx="16"/>
+<rect x="16" y="10" width="818" height="716" rx="12" fill="rgba(255,176,0,0.12)" filter="url(#glow)"/>
+<rect x="4" y="4" width="842" height="728" rx="14" fill="none" stroke="#332600" stroke-width="1" opacity="0.3"/>
+<g class="crt-wrap">
+<g class="line-0">
+<text class="term-boot" x="30" y="50"><tspan class="typed">BIOS v2.4.1 ............... </tspan></text>
+<text class="term-boot-ok" x="265.20000000000005" y="50"><tspan class="typed">OK</tspan></text>
+</g>
+<g class="line-1">
+<text class="term-boot" x="30" y="72"><tspan class="typed">Memory test: 640K ......... </tspan></text>
+<text class="term-boot-ok" x="265.20000000000005" y="72"><tspan class="typed">OK</tspan></text>
+</g>
+<g class="line-2">
+<text class="term-boot" x="30" y="94"><tspan class="typed">Loading GitHub API ........ </tspan></text>
+<text class="term-boot-ok" x="265.20000000000005" y="94"><tspan class="typed">OK</tspan></text>
+</g>
+<g class="line-4">
+<text class="term-greeting" x="30" y="138"><tspan class="typed">Hi there 👋</tspan></text>
+</g>
+<g class="line-7">
+<text class="term-prompt" x="30" y="204"><tspan class="typed">~/github/jafreck $ system_info --user jafreck</tspan></text>
+</g>
+<g class="line-9">
+<text class="term-header" x="30" y="248" textLength="420.0" lengthAdjust="spacing"><tspan class="typed">+------------------------------------------------+</tspan></text>
+</g>
+<g class="line-10">
+<text class="term-header" x="30" y="270" textLength="420.0" lengthAdjust="spacing"><tspan class="typed">|      G I T H U B   S Y S T E M   I N F O       |</tspan></text>
+</g>
+<g class="line-11">
+<text class="term-header" x="30" y="292" textLength="420.0" lengthAdjust="spacing"><tspan class="typed">+------------------------------------------------+</tspan></text>
+</g>
+<g class="line-13">
+<text class="term-stat" x="30" y="336"><tspan class="typed">  CURRENT STREAK ...    15 days   (Mar 22 - Apr 05)</tspan></text>
+</g>
+<g class="line-14">
+<text class="term-stat" x="30" y="358"><tspan class="typed">  LONGEST STREAK ...    42 days   (Nov 01 - Dec 12)</tspan></text>
+</g>
+<g class="line-15">
+<text class="term-stat" x="30" y="380"><tspan class="typed">  TOTAL COMMITS ....  2456         (Jun 15, 2019 - Apr 05, 2026)</tspan></text>
+</g>
+<g class="line-17">
+<text class="term-dim" x="30" y="424"><tspan class="typed">  ────────────────────────────────────────────────────────────</tspan></text>
+</g>
+<g class="line-19">
+<text class="term-prompt" x="30" y="468"><tspan class="typed">~/github/jafreck $ lang_stats --top 5</tspan></text>
+</g>
+<g class="line-21">
+<text class="term-text" x="30" y="512"><tspan class="typed">  Python      </tspan></text>
+<text x="147.60000000000002" y="512" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#3572A5" opacity="0.95" filter="url(#textglow)"><tspan class="typed">███████</tspan></text>
+<text x="206.40000000000003" y="512" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#3a2800" filter="url(#textglow)"><tspan class="typed">░░░░░░░░░░░░░</tspan></text>
+<text class="term-text" x="315.6" y="512"><tspan class="typed">   35.2%</tspan></text>
+</g>
+<g class="line-22">
+<text class="term-text" x="30" y="534"><tspan class="typed">  TypeScript  </tspan></text>
+<text x="147.60000000000002" y="534" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#3178c6" opacity="0.95" filter="url(#textglow)"><tspan class="typed">████</tspan></text>
+<text x="181.20000000000002" y="534" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#3a2800" filter="url(#textglow)"><tspan class="typed">░░░░░░░░░░░░░░░░</tspan></text>
+<text class="term-text" x="315.6" y="534"><tspan class="typed">   22.1%</tspan></text>
+</g>
+<g class="line-23">
+<text class="term-text" x="30" y="556"><tspan class="typed">  Go          </tspan></text>
+<text x="147.60000000000002" y="556" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#00ADD8" opacity="0.95" filter="url(#textglow)"><tspan class="typed">████</tspan></text>
+<text x="181.20000000000002" y="556" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#3a2800" filter="url(#textglow)"><tspan class="typed">░░░░░░░░░░░░░░░░</tspan></text>
+<text class="term-text" x="315.6" y="556"><tspan class="typed">   18.4%</tspan></text>
+</g>
+<g class="line-24">
+<text class="term-text" x="30" y="578"><tspan class="typed">  Rust        </tspan></text>
+<text x="147.60000000000002" y="578" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#dea584" opacity="0.95" filter="url(#textglow)"><tspan class="typed">███</tspan></text>
+<text x="172.8" y="578" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#3a2800" filter="url(#textglow)"><tspan class="typed">░░░░░░░░░░░░░░░░░</tspan></text>
+<text class="term-text" x="315.6" y="578"><tspan class="typed">   12.8%</tspan></text>
+</g>
+<g class="line-25">
+<text class="term-text" x="30" y="600"><tspan class="typed">  Shell       </tspan></text>
+<text x="147.60000000000002" y="600" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#89e051" opacity="0.95" filter="url(#textglow)"><tspan class="typed">██</tspan></text>
+<text x="164.40000000000003" y="600" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#3a2800" filter="url(#textglow)"><tspan class="typed">░░░░░░░░░░░░░░░░░░</tspan></text>
+<text class="term-text" x="315.6" y="600"><tspan class="typed">   11.5%</tspan></text>
+</g>
+<g class="line-27">
+<text class="term-dim" x="30" y="644"><tspan class="typed">  ────────────────────────────────────────────────────────────</tspan></text>
+</g>
+<g class="line-29">
+<text class="term-prompt" x="30" y="688"><tspan class="typed">~/github/jafreck $ </tspan><tspan class="cursor">█</tspan></text>
+</g>
+</g>
+<rect class="scanline-layer" width="850" height="744" fill="url(#scanlines)" rx="16" pointer-events="none"/>
+<g class="scan-bar" opacity="0.07"><rect x="0" y="0" width="850" height="3" fill="#FFB000" rx="1"/></g>
+<radialGradient id="vig" cx="50%" cy="50%" r="65%"><stop offset="50%" stop-color="transparent"/><stop offset="100%" stop-color="#0a0500" stop-opacity="0.50"/></radialGradient>
+<rect width="850" height="736" fill="url(#vig)" rx="16" pointer-events="none"/>
+<rect width="850" height="736" rx="16" fill="none" stroke="#1a1200" stroke-width="4" filter="url(#innershadow)"/>
+</svg>

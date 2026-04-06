@@ -1,0 +1,484 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 850 750" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace">
+<defs>
+<pattern id="scanlines" patternUnits="userSpaceOnUse" width="100%" height="4">
+<rect width="100%" height="2" fill="black" opacity="0.04"/>
+</pattern>
+<filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="textglow" x="-15%" y="-15%" width="130%" height="130%"><feGaussianBlur stdDeviation="1.2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="logoglow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.0" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<style>
+
+      .bg { fill: #f0efe8; }
+      .term-text {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #1a4a1a;
+        filter: url(#textglow);
+      }
+      .term-prompt {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #1a5a1a;
+        font-weight: bold;
+        filter: url(#textglow);
+      }
+      .term-header {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #1a4a1a;
+        font-weight: bold;
+        filter: url(#textglow);
+      }
+      .term-stat {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #1a4a1a;
+        filter: url(#textglow);
+      }
+      .term-dim {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #6a8a6a;
+        filter: url(#textglow);
+      }
+      .term-logo {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #0a3a0a;
+        filter: url(#logoglow);
+      }
+      .term-label {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #3a6a3a;
+        font-weight: bold;
+        filter: url(#textglow);
+      }
+      .term-neofetch {
+        font-family: 'Courier New', 'Consolas', 'Liberation Mono', monospace;
+        font-size: 14px;
+        fill: #1a4a1a;
+        filter: url(#textglow);
+      }
+
+      /* Thin underscore cursor blink */
+      @keyframes cursorBlink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .cursor {
+        fill: #1a4a1a;
+        animation: cursorBlink 0.8s step-end infinite;
+      }
+
+      /* Line reveal */
+      @keyframes lineReveal {
+        0% { opacity: 0; transform: translateX(-4px); }
+        100% { opacity: 1; transform: translateX(0); }
+      }
+
+      /* Character typing via clip-path */
+      @keyframes typeClip {
+        0% { clip-path: inset(0 100% 0 0); }
+        100% { clip-path: inset(0 0% 0 0); }
+      }
+
+      /* Hollywood scramble: random chars flash then settle */
+      @keyframes scramble {
+        0% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+      @keyframes unscramble {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+      /* CRT flicker */
+      @keyframes crtFlicker {
+        0% { opacity: 1; }
+        92% { opacity: 1; }
+        93% { opacity: 0.90; }
+        94% { opacity: 1; }
+        96% { opacity: 0.94; }
+        97% { opacity: 1; }
+        100% { opacity: 1; }
+      }
+      .crt-wrap {
+        animation: crtFlicker 3s infinite;
+      }
+
+      /* Scanline scroll */
+      @keyframes scanScroll {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(4px); }
+      }
+      .scanline-layer {
+        animation: scanScroll 0.15s linear infinite;
+      }
+    
+
+      .line-0 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 0.00s forwards;
+      }
+      .line-0 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.61s steps(51) 0.00s forwards;
+      }
+    
+
+      .line-0 .scramble-overlay {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 0.00s forwards,
+                   scramble 0.40s ease-in 0.40s forwards;
+      }
+    
+
+      .line-2 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 0.36s forwards;
+      }
+      .line-2 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.16s steps(13) 0.36s forwards;
+      }
+    
+
+      .line-4 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 0.72s forwards;
+      }
+      .line-4 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.25s steps(21) 0.72s forwards;
+      }
+    
+
+      .line-5 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 0.90s forwards;
+      }
+      .line-5 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.29s steps(24) 0.90s forwards;
+      }
+    
+
+      .line-6 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 1.08s forwards;
+      }
+      .line-6 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.36s steps(30) 1.08s forwards;
+      }
+    
+
+      .line-7 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 1.26s forwards;
+      }
+      .line-7 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.50s steps(42) 1.26s forwards;
+      }
+    
+
+      .line-8 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 1.44s forwards;
+      }
+      .line-8 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.64s steps(53) 1.44s forwards;
+      }
+    
+
+      .line-9 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 1.62s forwards;
+      }
+      .line-9 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.53s steps(44) 1.62s forwards;
+      }
+    
+
+      .line-10 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 1.80s forwards;
+      }
+      .line-10 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.53s steps(44) 1.80s forwards;
+      }
+    
+
+      .line-12 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 2.16s forwards;
+      }
+      .line-12 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.80s steps(67) 2.16s forwards;
+      }
+    
+
+      .line-12 .scramble-overlay {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 2.16s forwards,
+                   scramble 0.40s ease-in 2.56s forwards;
+      }
+    
+
+      .line-14 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 2.52s forwards;
+      }
+      .line-14 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.60s steps(50) 2.52s forwards;
+      }
+    
+
+      .line-15 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 2.70s forwards;
+      }
+      .line-15 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.60s steps(50) 2.70s forwards;
+      }
+    
+
+      .line-16 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 2.88s forwards;
+      }
+      .line-16 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.60s steps(50) 2.88s forwards;
+      }
+    
+
+      .line-18 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 3.24s forwards;
+      }
+      .line-18 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.61s steps(51) 3.24s forwards;
+      }
+    
+
+      .line-19 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 3.42s forwards;
+      }
+      .line-19 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.61s steps(51) 3.42s forwards;
+      }
+    
+
+      .line-20 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 3.60s forwards;
+      }
+      .line-20 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.77s steps(64) 3.60s forwards;
+      }
+    
+
+      .line-22 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 3.96s forwards;
+      }
+      .line-22 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.80s steps(67) 3.96s forwards;
+      }
+    
+
+      .line-22 .scramble-overlay {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 3.96s forwards,
+                   scramble 0.40s ease-in 4.36s forwards;
+      }
+    
+
+      .line-24 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 4.32s forwards;
+      }
+      .line-24 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.62s steps(52) 4.32s forwards;
+      }
+    
+
+      .line-25 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 4.50s forwards;
+      }
+      .line-25 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.62s steps(52) 4.50s forwards;
+      }
+    
+
+      .line-26 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 4.68s forwards;
+      }
+      .line-26 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.62s steps(52) 4.68s forwards;
+      }
+    
+
+      .line-27 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 4.86s forwards;
+      }
+      .line-27 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.62s steps(52) 4.86s forwards;
+      }
+    
+
+      .line-28 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 5.04s forwards;
+      }
+      .line-28 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.62s steps(52) 5.04s forwards;
+      }
+    
+
+      .line-30 {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 5.40s forwards;
+      }
+      .line-30 .typed {
+        clip-path: inset(0 100% 0 0);
+        animation: typeClip 0.54s steps(45) 5.40s forwards;
+      }
+    
+
+      .line-30 .scramble-overlay {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 5.40s forwards,
+                   scramble 0.40s ease-in 5.80s forwards;
+      }
+    
+
+      .cursor-wrap {
+        opacity: 0;
+        animation: lineReveal 0.05s ease-out 5.90s forwards;
+      }
+    
+</style>
+<rect class="bg" width="850" height="750" rx="8"/>
+<rect x="20" y="10" width="810" height="730" rx="6" fill="rgba(26,74,26,0.06)" filter="url(#glow)"/>
+<g class="crt-wrap">
+<g class="line-0">
+<text class="term-prompt" x="30" y="46"><tspan class="typed">[23:15:42] jafreck@github:~/.github/jafreck$ whoami</tspan></text>
+<text class="term-prompt scramble-overlay" x="30" y="46">[l^:dr:os] zxoUb@k@T#qjZ!:~/.WmGHrY/F)jSq&gt;y$ jZB{iU</text>
+</g>
+<g class="line-2">
+<text class="term-stat" x="30" y="90"><tspan class="typed">  Hi there! 👋</tspan></text>
+</g>
+<g class="line-4">
+<text class="term-stat" x="30" y="134"><tspan class="typed">  user:       jafreck</tspan></text>
+</g>
+<g class="line-5">
+<text class="term-stat" x="30" y="156"><tspan class="typed">  host:       github.com</tspan></text>
+</g>
+<g class="line-6">
+<text class="term-stat" x="30" y="178"><tspan class="typed">  uptime:     since 2019-06-15</tspan></text>
+</g>
+<g class="line-7">
+<text class="term-dim" x="30" y="200"><tspan class="typed">  ----------------------------------------</tspan></text>
+</g>
+<g class="line-8">
+<text class="term-stat" x="30" y="222"><tspan class="typed">  commits:        2456  (Jun 15, 2019 - Apr 05, 2026)</tspan></text>
+</g>
+<g class="line-9">
+<text class="term-stat" x="30" y="244"><tspan class="typed">  current streak: 15 days  (Mar 22 - Apr 05)</tspan></text>
+</g>
+<g class="line-10">
+<text class="term-stat" x="30" y="266"><tspan class="typed">  longest streak: 42 days  (Nov 01 - Dec 12)</tspan></text>
+</g>
+<g class="line-12">
+<text class="term-prompt" x="30" y="310"><tspan class="typed">[23:15:47] jafreck@github:~/.github/jafreck$ cat /proc/github/stats</tspan></text>
+<text class="term-prompt scramble-overlay" x="30" y="310">[qm:Rd:75] %w4PF3b@7A:xRU:~/.YZ@l@7/:r&amp;Fx7d$ t&amp;i /NbAQ/ZkZHL&lt;/C|N$@</text>
+</g>
+<g class="line-14">
+<text class="term-header" x="30" y="354" textLength="420.0" lengthAdjust="spacing"><tspan class="typed">╭────────────────────────────────────────────────╮</tspan></text>
+</g>
+<g class="line-15">
+<text class="term-header" x="30" y="376" textLength="420.0" lengthAdjust="spacing"><tspan class="typed">│            CONTRIBUTION STATISTICS             │</tspan></text>
+</g>
+<g class="line-16">
+<text class="term-header" x="30" y="398" textLength="420.0" lengthAdjust="spacing"><tspan class="typed">╰────────────────────────────────────────────────╯</tspan></text>
+</g>
+<g class="line-18">
+<text class="term-stat" x="30" y="442"><tspan class="typed">  🔥 Current Streak ...    15 days   Mar 22 - Apr 05</tspan></text>
+</g>
+<g class="line-19">
+<text class="term-stat" x="30" y="464"><tspan class="typed">  🏆 Longest Streak ...    42 days   Nov 01 - Dec 12</tspan></text>
+</g>
+<g class="line-20">
+<text class="term-stat" x="30" y="486"><tspan class="typed">  📊 Total Commits ....  2456         Jun 15, 2019 - Apr 05, 2026</tspan></text>
+</g>
+<g class="line-22">
+<text class="term-prompt" x="30" y="530"><tspan class="typed">[23:15:51] jafreck@github:~/.github/jafreck$ lang-breakdown --top 5</tspan></text>
+<text class="term-prompt scramble-overlay" x="30" y="530">[go:{x:uk] Sg{$2bT@d{wI6G:~/.{#&amp;Qkp/AZNKBw^$ m6E&lt;GphuLVHTPW ezuq3 C</text>
+</g>
+<g class="line-24">
+<text class="term-text" x="30" y="574"><tspan class="typed">  Python      </tspan></text>
+<text x="147.60000000000002" y="574" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#3572A5" opacity="0.85" filter="url(#textglow)"><tspan class="typed">▰▰▰▰▰▰▰▰▰▰▰</tspan></text>
+<text x="240.00000000000003" y="574" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#d0ddd0" filter="url(#textglow)"><tspan class="typed">▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱</tspan></text>
+<text class="term-text" x="399.6" y="574"><tspan class="typed">   35.2%</tspan></text>
+</g>
+<g class="line-25">
+<text class="term-text" x="30" y="596"><tspan class="typed">  TypeScript  </tspan></text>
+<text x="147.60000000000002" y="596" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#3178c6" opacity="0.85" filter="url(#textglow)"><tspan class="typed">▰▰▰▰▰▰▰</tspan></text>
+<text x="206.40000000000003" y="596" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#d0ddd0" filter="url(#textglow)"><tspan class="typed">▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱</tspan></text>
+<text class="term-text" x="399.6" y="596"><tspan class="typed">   22.1%</tspan></text>
+</g>
+<g class="line-26">
+<text class="term-text" x="30" y="618"><tspan class="typed">  Go          </tspan></text>
+<text x="147.60000000000002" y="618" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#00ADD8" opacity="0.85" filter="url(#textglow)"><tspan class="typed">▰▰▰▰▰▰</tspan></text>
+<text x="198.00000000000003" y="618" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#d0ddd0" filter="url(#textglow)"><tspan class="typed">▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱</tspan></text>
+<text class="term-text" x="399.6" y="618"><tspan class="typed">   18.4%</tspan></text>
+</g>
+<g class="line-27">
+<text class="term-text" x="30" y="640"><tspan class="typed">  Rust        </tspan></text>
+<text x="147.60000000000002" y="640" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#dea584" opacity="0.85" filter="url(#textglow)"><tspan class="typed">▰▰▰▰</tspan></text>
+<text x="181.20000000000002" y="640" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#d0ddd0" filter="url(#textglow)"><tspan class="typed">▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱</tspan></text>
+<text class="term-text" x="399.6" y="640"><tspan class="typed">   12.8%</tspan></text>
+</g>
+<g class="line-28">
+<text class="term-text" x="30" y="662"><tspan class="typed">  Shell       </tspan></text>
+<text x="147.60000000000002" y="662" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#89e051" opacity="0.85" filter="url(#textglow)"><tspan class="typed">▰▰▰</tspan></text>
+<text x="172.8" y="662" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#d0ddd0" filter="url(#textglow)"><tspan class="typed">▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱</tspan></text>
+<text class="term-text" x="399.6" y="662"><tspan class="typed">   11.5%</tspan></text>
+</g>
+<g class="line-30">
+<text class="term-prompt" x="30" y="706"><tspan class="typed">[23:15:54] jafreck@github:~/.github/jafreck$ </tspan></text>
+<text class="term-prompt scramble-overlay" x="30" y="706">[zN:xR:|)] &gt;0yhK9^@N)z#&lt;U:~/.VlY*I4/*&lt;Cw3xZ$ </text>
+</g>
+<g class="cursor-wrap">
+<rect class="cursor" x="408.0" y="707" width="8.4" height="2" rx="0.5"/>
+</g>
+</g>
+<rect class="scanline-layer" width="850" height="758" fill="url(#scanlines)" rx="8" pointer-events="none"/>
+<radialGradient id="vig" cx="50%" cy="50%" r="70%"><stop offset="60%" stop-color="transparent"/><stop offset="100%" stop-color="black" stop-opacity="0.35"/></radialGradient>
+<rect width="850" height="750" fill="url(#vig)" rx="8" pointer-events="none"/>
+<rect width="850" height="750" rx="8" fill="none" stroke="#c0c0b8" stroke-width="3"/>
+</svg>
