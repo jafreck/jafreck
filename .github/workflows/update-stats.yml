@@ -7,8 +7,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'scripts/generate_matrix.py'
-      - 'scripts/generate_mdr.py'
+      - 'scripts/generate_*.py'
 
 jobs:
   update:
@@ -21,17 +20,14 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Generate SVGs
+      - name: Generate all SVGs
         run: |
           python scripts/generate_matrix.py
           python scripts/generate_mdr.py
-          python -c "
-          import random, shutil
-          style = random.choice(['matrix', 'mdr'])
-          print(f'Selected style: {style}')
-          shutil.copy(f'assets/{style}-stats-dark.svg', 'assets/stats-dark.svg')
-          shutil.copy(f'assets/{style}-stats-light.svg', 'assets/stats-light.svg')
-          "
+          python scripts/generate_terminal_v1.py
+          python scripts/generate_terminal_v2.py
+          python scripts/generate_terminal_v3.py
+          python scripts/generate_invaders_v2.py
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT || github.token }}
 

@@ -1,6 +1,13 @@
 const REPO_RAW = "https://raw.githubusercontent.com/jafreck/jafreck/main/assets";
 
-const STYLES = ["matrix", "mdr"];
+const STYLES = [
+  "matrix",
+  "mdr",
+  "terminal-v1",
+  "terminal-v2",
+  "terminal-v3",
+  "invaders-v2",
+];
 
 export default {
   async fetch(request) {

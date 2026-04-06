@@ -4,4 +4,5 @@ compatibility_date = "2024-01-01"
 account_id = "a7ed6b5b0372096df9c0e1c731028070"
 
 [build]
+command = ""
 watch_dir = "."
