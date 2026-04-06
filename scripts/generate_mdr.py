@@ -713,7 +713,7 @@ def main():
     for theme in ("dark", "light"):
         random.seed(42)
         svg = build_svg(streak, langs, theme=theme)
-        out = ASSETS / f"mdr-stats-{theme}.svg"
+        out = ASSETS / f"severance-mdr-{theme}.svg"
         out.write_text(svg)
         print(f"✓ Wrote {out} ({len(svg)} bytes)")
 

@@ -696,7 +696,7 @@ def main():
     ASSETS.mkdir(parents=True, exist_ok=True)
     for theme in ("dark", "light"):
         svg = build_svg(streak, langs, theme=theme)
-        out = ASSETS / f"terminal-v1-{theme}.svg"
+        out = ASSETS / f"terminal-amber-{theme}.svg"
         out.write_text(svg)
         print(f"\u2713 Wrote {out} ({len(svg)} bytes)")
 

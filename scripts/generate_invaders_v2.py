@@ -729,7 +729,7 @@ def main():
     for theme in ("dark", "light"):
         random.seed(42)
         svg = build_svg(streak, langs, theme=theme)
-        out = ASSETS / f"invaders-v2-{theme}.svg"
+        out = ASSETS / f"space-invaders-{theme}.svg"
         out.write_text(svg)
         print(f"✓ Wrote {out} ({len(svg)} bytes)")
 
@@ -753,6 +753,6 @@ if __name__ == "__main__":
     for theme in ("dark", "light"):
         random.seed(42)
         svg = build_svg(streak, langs, theme=theme)
-        out = ASSETS / f"invaders-v2-{theme}.svg"
+        out = ASSETS / f"space-invaders-{theme}.svg"
         out.write_text(svg)
         print(f"✓ Wrote {out} ({len(svg)} bytes)")
