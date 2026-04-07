@@ -735,24 +735,4 @@ def main():
 
 
 if __name__ == "__main__":
-    # Generate test SVGs with mock data
-    streak = dict(
-        total=2456, total_start='2019-06-15', total_end='2026-04-05',
-        current=15, current_start='2026-03-22', current_end='2026-04-05',
-        longest=42, longest_start='2024-11-01', longest_end='2024-12-12',
-    )
-    langs = [
-        dict(name='Python', pct=35.2, color='#3572A5'),
-        dict(name='TypeScript', pct=22.1, color='#3178c6'),
-        dict(name='Go', pct=18.4, color='#00ADD8'),
-        dict(name='Rust', pct=12.8, color='#dea584'),
-        dict(name='Shell', pct=11.5, color='#89e051'),
-    ]
-
-    ASSETS.mkdir(parents=True, exist_ok=True)
-    for theme in ("dark", "light"):
-        random.seed(42)
-        svg = build_svg(streak, langs, theme=theme)
-        out = ASSETS / f"space-invaders-{theme}.svg"
-        out.write_text(svg)
-        print(f"✓ Wrote {out} ({len(svg)} bytes)")
+    main()

@@ -675,9 +675,9 @@ def main():
     except Exception as e:
         print(f"\u26a0 Failed to fetch streak: {e}", file=sys.stderr)
         streak = dict(
-            total=2456, total_start='2019-06-15', total_end='2026-04-05',
-            current=15, current_start='2026-03-22', current_end='2026-04-05',
-            longest=42, longest_start='2024-11-01', longest_end='2024-12-12',
+            total=0, total_start=None, total_end=None,
+            current=0, current_start=None, current_end=None,
+            longest=0, longest_start=None, longest_end=None,
         )
 
     try:
@@ -685,13 +685,7 @@ def main():
         print(f"Languages: {', '.join(l['name'] for l in langs)}")
     except Exception as e:
         print(f"\u26a0 Failed to fetch languages: {e}", file=sys.stderr)
-        langs = [
-            dict(name='Python', pct=35.2, color='#3572A5'),
-            dict(name='TypeScript', pct=22.1, color='#3178c6'),
-            dict(name='Go', pct=18.4, color='#00ADD8'),
-            dict(name='Rust', pct=12.8, color='#dea584'),
-            dict(name='Shell', pct=11.5, color='#89e051'),
-        ]
+        langs = [dict(name="N/A", pct=100, color="#858585")]
 
     ASSETS.mkdir(parents=True, exist_ok=True)
     for theme in ("dark", "light"):
