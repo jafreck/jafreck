@@ -578,47 +578,54 @@ def build_svg(streak, langs, theme="dark"):
                 )
 
         elif line_type == "lang" and lang_color:
-            bar_start_idx = text.index("\u2588")
-            bar_end_idx = text.rindex("\u2591") + 1 if "\u2591" in text else text.rindex("\u2588") + 1
-            before_bar = text[:bar_start_idx]
-            bar_section = text[bar_start_idx:bar_end_idx]
-            after_bar = text[bar_end_idx:]
+            if "\u2588" in text:
+                bar_start_idx = text.index("\u2588")
+                bar_end_idx = text.rindex("\u2591") + 1 if "\u2591" in text else text.rindex("\u2588") + 1
+                before_bar = text[:bar_start_idx]
+                bar_section = text[bar_start_idx:bar_end_idx]
+                after_bar = text[bar_end_idx:]
 
-            filled_chars = bar_section.count("\u2588")
-            empty_chars = bar_section.count("\u2591")
-            filled_text = "\u2588" * filled_chars
-            empty_text = "\u2591" * empty_chars
+                filled_chars = bar_section.count("\u2588")
+                empty_chars = bar_section.count("\u2591")
+                filled_text = "\u2588" * filled_chars
+                empty_text = "\u2591" * empty_chars
 
-            # Language name
-            o.append(
-                f'<text class="{css_class}" x="{x}" y="{y}">'
-                f'<tspan class="typed">{esc(before_bar)}</tspan></text>'
-            )
-            # Filled bar — actual language color from GitHub
-            bar_x = x + len(before_bar) * CHAR_W
-            o.append(
-                f'<text x="{bar_x}" y="{y}" '
-                f'font-family="{FONT}" font-size="14px" '
-                f'fill="{lang_color}" opacity="{t["lang_color_opacity"]}" '
-                f'filter="url(#textglow)">'
-                f'<tspan class="typed">{filled_text}</tspan></text>'
-            )
-            # Empty bar
-            if empty_chars > 0:
-                empty_x = bar_x + filled_chars * CHAR_W
+                # Language name
                 o.append(
-                    f'<text x="{empty_x}" y="{y}" '
-                    f'font-family="{FONT}" font-size="14px" '
-                    f'fill="{t["bar_empty"]}" '
-                    f'filter="url(#textglow)">'
-                    f'<tspan class="typed">{empty_text}</tspan></text>'
+                    f'<text class="{css_class}" x="{x}" y="{y}">'
+                    f'<tspan class="typed">{esc(before_bar)}</tspan></text>'
                 )
-            # Percentage
-            after_x = bar_x + (filled_chars + empty_chars) * CHAR_W
-            o.append(
-                f'<text class="{css_class}" x="{after_x}" y="{y}">'
-                f'<tspan class="typed">{esc(after_bar)}</tspan></text>'
-            )
+                # Filled bar — actual language color from GitHub
+                bar_x = x + len(before_bar) * CHAR_W
+                o.append(
+                    f'<text x="{bar_x}" y="{y}" '
+                    f'font-family="{FONT}" font-size="14px" '
+                    f'fill="{lang_color}" opacity="{t["lang_color_opacity"]}" '
+                    f'filter="url(#textglow)">'
+                    f'<tspan class="typed">{filled_text}</tspan></text>'
+                )
+                # Empty bar
+                if empty_chars > 0:
+                    empty_x = bar_x + filled_chars * CHAR_W
+                    o.append(
+                        f'<text x="{empty_x}" y="{y}" '
+                        f'font-family="{FONT}" font-size="14px" '
+                        f'fill="{t["bar_empty"]}" '
+                        f'filter="url(#textglow)">'
+                        f'<tspan class="typed">{empty_text}</tspan></text>'
+                    )
+                # Percentage
+                after_x = bar_x + (filled_chars + empty_chars) * CHAR_W
+                o.append(
+                    f'<text class="{css_class}" x="{after_x}" y="{y}">'
+                    f'<tspan class="typed">{esc(after_bar)}</tspan></text>'
+                )
+            else:
+                # Language has <1% — bar is all empty, render as plain text
+                o.append(
+                    f'<text class="{css_class}" x="{x}" y="{y}">'
+                    f'<tspan class="typed">{esc(text)}</tspan></text>'
+                )
         else:
             o.append(
                 f'<text class="{css_class}" x="{x}" y="{y}">'
