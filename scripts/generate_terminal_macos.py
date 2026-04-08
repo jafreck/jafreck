@@ -278,7 +278,7 @@ def build_svg(streak, langs, theme="dark"):
     for lang in langs:
         padded = lang["name"].ljust(max_name)
         bar_len = 20
-        filled = round(lang["pct"] / 100 * bar_len)
+        filled = max(1, round(lang["pct"] / 100 * bar_len))
         bar = "█" * filled + "░" * (bar_len - filled)
         lines.append(("lang", f"  ● {padded}  {bar}  {lang['pct']:>5.1f}%", lang))
 
@@ -535,7 +535,7 @@ def build_svg(streak, langs, theme="dark"):
             max_name_len = max((len(l["name"]) for l in langs), default=10)
             bar_x = name_x + (max_name_len + 2) * CHAR_W
             bar_len = 20
-            filled = round(lang["pct"] / 100 * bar_len)
+            filled = max(1, round(lang["pct"] / 100 * bar_len))
             filled_text = "█" * filled
             empty_text = "░" * (bar_len - filled)
 

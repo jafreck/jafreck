@@ -24,9 +24,9 @@ jobs:
         run: |
           python scripts/generate_matrix.py
           python scripts/generate_mdr.py
-          python scripts/generate_terminal_v1.py
-          python scripts/generate_terminal_v2.py
-          python scripts/generate_terminal_v3.py
+          python scripts/generate_terminal_amber.py
+          python scripts/generate_terminal_hacker.py
+          python scripts/generate_terminal_macos.py
           python scripts/generate_invaders_v2.py
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT || github.token }}
