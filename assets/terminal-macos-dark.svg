@@ -256,7 +256,7 @@
 <g class="line-8">
 <text x="44.8" y="254">
 <tspan class="t-stat">⭐  Total Commits     </tspan>
-<tspan class="t-val">4620</tspan>
+<tspan class="t-val">4635</tspan>
 <tspan class="t-stat">         </tspan>
 <tspan class="t-range">Sep 08, 2017 – Apr 08, 2026</tspan>
 </text>
@@ -284,37 +284,43 @@
 <g class="line-16">
 <text x="44.8" y="430" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#8f14e9" opacity="1.0"><tspan class="typed">●</tspan></text>
 <text class="t" x="61.599999999999994" y="430"><tspan class="typed">Metal     </tspan></text>
-<text class="t-dim" x="162.4" y="430"><tspan class="typed">░░░░░░░░░░░░░░░░░░░░</tspan></text>
+<text x="162.4" y="430" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#8f14e9" opacity="1.0"><tspan class="typed">█</tspan></text>
+<text class="t-dim" x="170.8" y="430"><tspan class="typed">░░░░░░░░░░░░░░░░░░░</tspan></text>
 <text class="t-bright" x="338.79999999999995" y="430"><tspan class="typed">  1.9%</tspan></text>
 </g>
 <g class="line-17">
 <text x="44.8" y="452" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#02f88c" opacity="1.0"><tspan class="typed">●</tspan></text>
 <text class="t" x="61.599999999999994" y="452"><tspan class="typed">Ada       </tspan></text>
-<text class="t-dim" x="162.4" y="452"><tspan class="typed">░░░░░░░░░░░░░░░░░░░░</tspan></text>
+<text x="162.4" y="452" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#02f88c" opacity="1.0"><tspan class="typed">█</tspan></text>
+<text class="t-dim" x="170.8" y="452"><tspan class="typed">░░░░░░░░░░░░░░░░░░░</tspan></text>
 <text class="t-bright" x="338.79999999999995" y="452"><tspan class="typed">  1.7%</tspan></text>
 </g>
 <g class="line-18">
 <text x="44.8" y="474" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#3572A5" opacity="1.0"><tspan class="typed">●</tspan></text>
 <text class="t" x="61.599999999999994" y="474"><tspan class="typed">Python    </tspan></text>
-<text class="t-dim" x="162.4" y="474"><tspan class="typed">░░░░░░░░░░░░░░░░░░░░</tspan></text>
+<text x="162.4" y="474" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#3572A5" opacity="1.0"><tspan class="typed">█</tspan></text>
+<text class="t-dim" x="170.8" y="474"><tspan class="typed">░░░░░░░░░░░░░░░░░░░</tspan></text>
 <text class="t-bright" x="338.79999999999995" y="474"><tspan class="typed">  1.2%</tspan></text>
 </g>
 <g class="line-19">
 <text x="44.8" y="496" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#89e051" opacity="1.0"><tspan class="typed">●</tspan></text>
 <text class="t" x="61.599999999999994" y="496"><tspan class="typed">Shell     </tspan></text>
-<text class="t-dim" x="162.4" y="496"><tspan class="typed">░░░░░░░░░░░░░░░░░░░░</tspan></text>
+<text x="162.4" y="496" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#89e051" opacity="1.0"><tspan class="typed">█</tspan></text>
+<text class="t-dim" x="170.8" y="496"><tspan class="typed">░░░░░░░░░░░░░░░░░░░</tspan></text>
 <text class="t-bright" x="338.79999999999995" y="496"><tspan class="typed">  0.4%</tspan></text>
 </g>
 <g class="line-20">
 <text x="44.8" y="518" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#384d54" opacity="1.0"><tspan class="typed">●</tspan></text>
 <text class="t" x="61.599999999999994" y="518"><tspan class="typed">Dockerfile</tspan></text>
-<text class="t-dim" x="162.4" y="518"><tspan class="typed">░░░░░░░░░░░░░░░░░░░░</tspan></text>
+<text x="162.4" y="518" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#384d54" opacity="1.0"><tspan class="typed">█</tspan></text>
+<text class="t-dim" x="170.8" y="518"><tspan class="typed">░░░░░░░░░░░░░░░░░░░</tspan></text>
 <text class="t-bright" x="338.79999999999995" y="518"><tspan class="typed">  0.1%</tspan></text>
 </g>
 <g class="line-21">
 <text x="44.8" y="540" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#012456" opacity="1.0"><tspan class="typed">●</tspan></text>
 <text class="t" x="61.599999999999994" y="540"><tspan class="typed">PowerShell</tspan></text>
-<text class="t-dim" x="162.4" y="540"><tspan class="typed">░░░░░░░░░░░░░░░░░░░░</tspan></text>
+<text x="162.4" y="540" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace" font-size="14px" fill="#012456" opacity="1.0"><tspan class="typed">█</tspan></text>
+<text class="t-dim" x="170.8" y="540"><tspan class="typed">░░░░░░░░░░░░░░░░░░░</tspan></text>
 <text class="t-bright" x="338.79999999999995" y="540"><tspan class="typed">  0.1%</tspan></text>
 </g>
 <g class="line-23">
