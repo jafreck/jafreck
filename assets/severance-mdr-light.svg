@@ -668,7 +668,7 @@
 <text class="sn" x="424.99999999999994" y="157" text-anchor="middle" font-size="28">23</text>
 <text class="sl" x="424.99999999999994" y="204" text-anchor="middle">Current Streak</text>
 <text class="sr" x="424.99999999999994" y="218" text-anchor="middle">Mar 19 - Apr 10</text>
-<text class="sn" x="218.33333333333331" y="152" text-anchor="middle" font-size="26">4733</text>
+<text class="sn" x="218.33333333333331" y="152" text-anchor="middle" font-size="26">4745</text>
 <text class="sl" x="218.33333333333331" y="170" text-anchor="middle">Total Contributions</text>
 <text class="sr" x="218.33333333333331" y="184" text-anchor="middle">Sep 08, 2017 - Apr 10, 2026</text>
 <text class="sn" x="631.6666666666666" y="152" text-anchor="middle" font-size="26">23</text>
@@ -677,18 +677,18 @@
 <rect x="131.0" y="317" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
 <text style="fill:#5A6A7A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="185.8" y="331.0" text-anchor="middle">Rust</text>
 <rect x="131.0" y="339" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
-<rect x="131.0" y="339" width="56.3" height="22" rx="1" fill="#5A8AAA"/>
-<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="185.8" y="354.0" text-anchor="middle">51.4%</text>
+<rect x="131.0" y="339" width="56.6" height="22" rx="1" fill="#5A8AAA"/>
+<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="185.8" y="354.0" text-anchor="middle">51.6%</text>
 <rect x="250.6" y="317" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
 <text style="fill:#5A6A7A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="305.4" y="331.0" text-anchor="middle">TypeScript</text>
 <rect x="250.6" y="339" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
-<rect x="250.6" y="339" width="47.3" height="22" rx="1" fill="#5A8AAA"/>
-<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="305.4" y="354.0" text-anchor="middle">43.2%</text>
+<rect x="250.6" y="339" width="47.1" height="22" rx="1" fill="#5A8AAA"/>
+<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="305.4" y="354.0" text-anchor="middle">43.0%</text>
 <rect x="370.2" y="317" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
 <text style="fill:#5A6A7A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="425.0" y="331.0" text-anchor="middle">Metal</text>
 <rect x="370.2" y="339" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
-<rect x="370.2" y="339" width="2.1" height="22" rx="1" fill="#5A8AAA"/>
-<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="425.0" y="354.0" text-anchor="middle">1.9%</text>
+<rect x="370.2" y="339" width="2.0" height="22" rx="1" fill="#5A8AAA"/>
+<text style="fill:#2A4A5A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:10px;letter-spacing:1px" x="425.0" y="354.0" text-anchor="middle">1.8%</text>
 <rect x="489.79999999999995" y="317" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
 <text style="fill:#5A6A7A;font-family:'Forma DJR','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:500;font-size:9px;letter-spacing:1px;text-transform:uppercase" x="544.5999999999999" y="331.0" text-anchor="middle">Ada</text>
 <rect x="489.79999999999995" y="339" width="109.6" height="22" rx="1" fill="#DEE2E8" stroke="#8A9AAA" stroke-width="1.5"/>
