@@ -240,23 +240,23 @@
 <g class="line-6">
 <text x="44.8" y="210">
 <tspan class="t-stat">🔥  Current Streak      </tspan>
-<tspan class="t-val">29</tspan>
+<tspan class="t-val">30</tspan>
 <tspan class="t-stat"> days   </tspan>
-<tspan class="t-range">Mar 19 – Apr 16</tspan>
+<tspan class="t-range">Mar 19 – Apr 17</tspan>
 </text>
 </g>
 <g class="line-7">
 <text x="44.8" y="232">
 <tspan class="t-stat">🏆  Longest Streak      </tspan>
-<tspan class="t-val">29</tspan>
+<tspan class="t-val">30</tspan>
 <tspan class="t-stat"> days   </tspan>
-<tspan class="t-range">Mar 19 – Apr 16</tspan>
+<tspan class="t-range">Mar 19 – Apr 17</tspan>
 </text>
 </g>
 <g class="line-8">
 <text x="44.8" y="254">
 <tspan class="t-stat">⭐  Total Commits     </tspan>
-<tspan class="t-val">4771</tspan>
+<tspan class="t-val">4772</tspan>
 <tspan class="t-stat">         </tspan>
 <tspan class="t-range">Sep 08, 2017 – Apr 17, 2026</tspan>
 </text>
