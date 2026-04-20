@@ -799,20 +799,20 @@
 <g style="transform:translateY(-288px);animation:r38 5.8s linear 3.1s infinite">
 <text class="ch cd" x="727.2" y="0">ホ</text>
 <text class="ch cd" x="727.2" y="16">ヒ</text>
-<text class="ch cd" x="727.2" y="32">エ</text>
-<text class="ch cd" x="727.2" y="48">セ</text>
-<text class="ch cd" x="727.2" y="64">7</text>
-<text class="ch cd" x="727.2" y="80">ヒ</text>
-<text class="ch cd" x="727.2" y="96">ノ</text>
-<text class="ch cd" x="727.2" y="112">3</text>
-<text class="ch cd" x="727.2" y="128">ヨ</text>
-<text class="ch cd" x="727.2" y="144">ヲ</text>
-<text class="ch cd" x="727.2" y="160">イ</text>
-<text class="ch cd" x="727.2" y="176">8</text>
-<text class="ch cm" x="727.2" y="192">2</text>
-<text class="ch cm" x="727.2" y="208">ユ</text>
-<text class="ch cm" x="727.2" y="224">ノ</text>
-<text class="ch cb" x="727.2" y="240">マ</text>
+<text class="ch cd" x="727.2" y="32">C</text>
+<text class="ch cd" x="727.2" y="48">A</text>
+<text class="ch cd" x="727.2" y="64">L</text>
+<text class="ch cd" x="727.2" y="80">L</text>
+<text class="ch cd" x="727.2" y="96">Y</text>
+<text class="ch cd" x="727.2" y="112">O</text>
+<text class="ch cd" x="727.2" y="128">U</text>
+<text class="ch cd" x="727.2" y="144">R</text>
+<text class="ch cd" x="727.2" y="160">M</text>
+<text class="ch cd" x="727.2" y="176">O</text>
+<text class="ch cm" x="727.2" y="192">T</text>
+<text class="ch cm" x="727.2" y="208">H</text>
+<text class="ch cm" x="727.2" y="224">E</text>
+<text class="ch cb" x="727.2" y="240">R</text>
 <text class="ch cb" x="727.2" y="256">ア</text>
 <text class="ch cl" x="727.2" y="272">ヌ</text>
 </g>
@@ -938,9 +938,9 @@
 <text class="ts" x="424.99999999999994" y="240" text-anchor="middle" font-size="11">Current Streak</text>
 <text class="tp" x="424.99999999999994" y="255" text-anchor="middle">Mar 19 - Apr 19</text>
 <text x="218.33333333333331" y="150" text-anchor="middle" font-size="16">⭐</text>
-<text class="tn" x="218.33333333333331" y="183" text-anchor="middle" font-size="26">4782</text>
+<text class="tn" x="218.33333333333331" y="183" text-anchor="middle" font-size="26">4783</text>
 <text class="ts" x="218.33333333333331" y="202" text-anchor="middle" font-size="11">Total Contributions</text>
-<text class="tp" x="218.33333333333331" y="218" text-anchor="middle">Sep 08, 2017 - Apr 19, 2026</text>
+<text class="tp" x="218.33333333333331" y="218" text-anchor="middle">Sep 08, 2017 - Apr 20, 2026</text>
 <text x="631.6666666666666" y="150" text-anchor="middle" font-size="16">🏆</text>
 <text class="tn" x="631.6666666666666" y="183" text-anchor="middle" font-size="26">32</text>
 <text class="ts" x="631.6666666666666" y="202" text-anchor="middle" font-size="11">Longest Streak</text>
