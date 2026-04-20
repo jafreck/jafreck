@@ -417,7 +417,7 @@
 <g class="crt-wrap">
 <g class="line-0">
 <text class="term-prompt" x="30" y="46"><tspan class="typed">[23:15:42] jafreck@github:~/.github/jafreck$ whoami</tspan></text>
-<text class="term-prompt scramble-overlay" x="30" y="46">[f|:M::aS] 9s&lt;Q]M@@{D&gt;N&gt;I:~/.;jxIBn/[?NGY&amp;|$ Z(QDLA</text>
+<text class="term-prompt scramble-overlay" x="30" y="46">[z@:s&gt;:qn] PF{nWg;@8i%|@9:~/.IRp9jY/qc950:D$ HH86j0</text>
 </g>
 <g class="line-2">
 <text class="term-stat" x="30" y="90"><tspan class="typed">  Hi there! 👋</tspan></text>
@@ -435,7 +435,7 @@
 <text class="term-dim" x="30" y="200"><tspan class="typed">  ----------------------------------------</tspan></text>
 </g>
 <g class="line-8">
-<text class="term-stat" x="30" y="222"><tspan class="typed">  commits:        4785  (Sep 08, 2017 - Apr 20, 2026)</tspan></text>
+<text class="term-stat" x="30" y="222"><tspan class="typed">  commits:        4786  (Sep 08, 2017 - Apr 20, 2026)</tspan></text>
 </g>
 <g class="line-9">
 <text class="term-stat" x="30" y="244"><tspan class="typed">  current streak: 33 days  (Mar 19 - Apr 20)</tspan></text>
@@ -445,7 +445,7 @@
 </g>
 <g class="line-12">
 <text class="term-prompt" x="30" y="310"><tspan class="typed">[23:15:47] jafreck@github:~/.github/jafreck$ cat /proc/github/stats</tspan></text>
-<text class="term-prompt scramble-overlay" x="30" y="310">[Iw:O!:6m] !%F#[P(@@E4i#7:~/.G(Jx50/g8OLlSq$ s3% /^{Ak/}NftVq/pSJ3Y</text>
+<text class="term-prompt scramble-overlay" x="30" y="310">[@t:)Z:G4] i6ZTvD6@DDoQV#:~/.J*{R8M/UE^qB{)$ *SB /N&amp;?M/2d&lt;UJ4/MR7G0</text>
 </g>
 <g class="line-14">
 <text class="term-header" x="30" y="354" textLength="420.0" lengthAdjust="spacing"><tspan class="typed">╭────────────────────────────────────────────────╮</tspan></text>
@@ -463,11 +463,11 @@
 <text class="term-stat" x="30" y="464"><tspan class="typed">  🏆 Longest Streak ...    33 days   Mar 19 - Apr 20</tspan></text>
 </g>
 <g class="line-20">
-<text class="term-stat" x="30" y="486"><tspan class="typed">  📊 Total Commits ....  4785         Sep 08, 2017 - Apr 20, 2026</tspan></text>
+<text class="term-stat" x="30" y="486"><tspan class="typed">  📊 Total Commits ....  4786         Sep 08, 2017 - Apr 20, 2026</tspan></text>
 </g>
 <g class="line-22">
 <text class="term-prompt" x="30" y="530"><tspan class="typed">[23:15:51] jafreck@github:~/.github/jafreck$ lang-breakdown --top 8</tspan></text>
-<text class="term-prompt scramble-overlay" x="30" y="530">[GH:&amp;C:p@] GU@kI0&amp;@;PFB7h:~/.9Ujnb;/E[xR&gt;w?$ BdjMu}T!1&amp;u|[8 x}9xA (</text>
+<text class="term-prompt scramble-overlay" x="30" y="530">[*k:xj:$k] 4juHyup@1dC;uk:~/.dZTxkF/P#bew6F$ |nw{zvMybhfZ]] Kz}vC !</text>
 </g>
 <g class="line-24">
 <text class="term-text" x="30" y="574"><tspan class="typed">  Rust        </tspan></text>
@@ -519,7 +519,7 @@
 </g>
 <g class="line-33">
 <text class="term-prompt" x="30" y="772"><tspan class="typed">[23:15:54] jafreck@github:~/.github/jafreck$ </tspan></text>
-<text class="term-prompt scramble-overlay" x="30" y="772">[db:@q:hW] |yl{Xw&lt;@g&gt;v^E2:~/.9ZxK9E/Rc{bwW#$ </text>
+<text class="term-prompt scramble-overlay" x="30" y="772">[LV:4s:W$] QgqQVUt@!iglUj:~/.&gt;mRYDi/&amp;IXjRPM$ </text>
 </g>
 <g class="cursor-wrap">
 <rect class="cursor" x="408.0" y="773" width="8.4" height="2" rx="0.5"/>
