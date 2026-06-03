@@ -417,7 +417,7 @@
 <g class="crt-wrap">
 <g class="line-0">
 <text class="term-prompt" x="30" y="46"><tspan class="typed">[23:15:42] jafreck@github:~/.github/jafreck$ whoami</tspan></text>
-<text class="term-prompt scramble-overlay" x="30" y="46">[&gt;x:j(:[v] Z6[$KKM@gV%:0T:~/.b)N#1Y/#cnASYF$ 2?)b67</text>
+<text class="term-prompt scramble-overlay" x="30" y="46">[@j:yZ:(}] j|&lt;2&lt;S8@[AO)x5:~/.H|&amp;Bgd/XAkV&lt;4P$ u?wF?A</text>
 </g>
 <g class="line-2">
 <text class="term-stat" x="30" y="90"><tspan class="typed">  Hi there! 👋</tspan></text>
@@ -435,17 +435,17 @@
 <text class="term-dim" x="30" y="200"><tspan class="typed">  ----------------------------------------</tspan></text>
 </g>
 <g class="line-8">
-<text class="term-stat" x="30" y="222"><tspan class="typed">  commits:        4965  (Sep 08, 2017 - Jun 03, 2026)</tspan></text>
+<text class="term-stat" x="30" y="222"><tspan class="typed">  commits:        4966  (Sep 08, 2017 - Jun 03, 2026)</tspan></text>
 </g>
 <g class="line-9">
-<text class="term-stat" x="30" y="244"><tspan class="typed">  current streak: 76 days  (Mar 19 - Jun 02)</tspan></text>
+<text class="term-stat" x="30" y="244"><tspan class="typed">  current streak: 77 days  (Mar 19 - Jun 03)</tspan></text>
 </g>
 <g class="line-10">
-<text class="term-stat" x="30" y="266"><tspan class="typed">  longest streak: 76 days  (Mar 19 - Jun 02)</tspan></text>
+<text class="term-stat" x="30" y="266"><tspan class="typed">  longest streak: 77 days  (Mar 19 - Jun 03)</tspan></text>
 </g>
 <g class="line-12">
 <text class="term-prompt" x="30" y="310"><tspan class="typed">[23:15:47] jafreck@github:~/.github/jafreck$ cat /proc/github/stats</tspan></text>
-<text class="term-prompt scramble-overlay" x="30" y="310">[r@:f&gt;:GY] &amp;pLyFtC@lrb5gz:~/.2{?kG(/!TEfv;w$ ad* /KDXP/:&amp;DQjC/oMq;G</text>
+<text class="term-prompt scramble-overlay" x="30" y="310">[U&amp;:1(:SW] &lt;4@Ih)^@i7mIJs:~/.L@0[|G/P{T&gt;HO[$ D47 /M9Ix/cOyZH$/}hn^t</text>
 </g>
 <g class="line-14">
 <text class="term-header" x="30" y="354" textLength="420.0" lengthAdjust="spacing"><tspan class="typed">╭────────────────────────────────────────────────╮</tspan></text>
@@ -457,17 +457,17 @@
 <text class="term-header" x="30" y="398" textLength="420.0" lengthAdjust="spacing"><tspan class="typed">╰────────────────────────────────────────────────╯</tspan></text>
 </g>
 <g class="line-18">
-<text class="term-stat" x="30" y="442"><tspan class="typed">  🔥 Current Streak ...    76 days   Mar 19 - Jun 02</tspan></text>
+<text class="term-stat" x="30" y="442"><tspan class="typed">  🔥 Current Streak ...    77 days   Mar 19 - Jun 03</tspan></text>
 </g>
 <g class="line-19">
-<text class="term-stat" x="30" y="464"><tspan class="typed">  🏆 Longest Streak ...    76 days   Mar 19 - Jun 02</tspan></text>
+<text class="term-stat" x="30" y="464"><tspan class="typed">  🏆 Longest Streak ...    77 days   Mar 19 - Jun 03</tspan></text>
 </g>
 <g class="line-20">
-<text class="term-stat" x="30" y="486"><tspan class="typed">  📊 Total Commits ....  4965         Sep 08, 2017 - Jun 03, 2026</tspan></text>
+<text class="term-stat" x="30" y="486"><tspan class="typed">  📊 Total Commits ....  4966         Sep 08, 2017 - Jun 03, 2026</tspan></text>
 </g>
 <g class="line-22">
 <text class="term-prompt" x="30" y="530"><tspan class="typed">[23:15:51] jafreck@github:~/.github/jafreck$ lang-breakdown --top 8</tspan></text>
-<text class="term-prompt scramble-overlay" x="30" y="530">[$M:C0:T|] sdxz2D&amp;@5&lt;m5kD:~/.HFSaWt/YP9&gt;;M]$ v{gh@{8yR@ZQ!P 40N?g 3</text>
+<text class="term-prompt scramble-overlay" x="30" y="530">[XW:m?:Ya] Nkf:]$G@ZBRBZE:~/.8|^dU2/UiMtU@C$ 3nSn&gt;5G&amp;E8%^?z mP6KF W</text>
 </g>
 <g class="line-24">
 <text class="term-text" x="30" y="574"><tspan class="typed">  Rust        </tspan></text>
@@ -519,7 +519,7 @@
 </g>
 <g class="line-33">
 <text class="term-prompt" x="30" y="772"><tspan class="typed">[23:15:54] jafreck@github:~/.github/jafreck$ </tspan></text>
-<text class="term-prompt scramble-overlay" x="30" y="772">[}E:m&lt;:vq] a?BEZqs@PoW&amp;Ut:~/.hH8D0&lt;/*L9DW6{$ </text>
+<text class="term-prompt scramble-overlay" x="30" y="772">[69:o5:V9] PQwvLYq@!iEV{I:~/.jNh;&amp;S/#kahWGr$ </text>
 </g>
 <g class="cursor-wrap">
 <rect class="cursor" x="408.0" y="773" width="8.4" height="2" rx="0.5"/>
