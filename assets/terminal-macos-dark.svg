@@ -82,7 +82,7 @@
       }
       .line-6 .typed {
         clip-path: inset(0 100% 0 0);
-        animation: reveal 0.73s steps(49) 1.50s forwards;
+        animation: reveal 0.51s steps(34) 1.50s forwards;
       }
     
 
@@ -239,10 +239,9 @@
 </g>
 <g class="line-6">
 <text x="44.8" y="210">
-<tspan class="t-stat">🔥  Current Streak     </tspan>
-<tspan class="t-val">120</tspan>
+<tspan class="t-stat">🔥  Current Streak       </tspan>
+<tspan class="t-val">0</tspan>
 <tspan class="t-stat"> days   </tspan>
-<tspan class="t-range">Mar 19 – Jul 16</tspan>
 </text>
 </g>
 <g class="line-7">
@@ -256,9 +255,9 @@
 <g class="line-8">
 <text x="44.8" y="254">
 <tspan class="t-stat">⭐  Total Commits     </tspan>
-<tspan class="t-val">5147</tspan>
+<tspan class="t-val">5148</tspan>
 <tspan class="t-stat">         </tspan>
-<tspan class="t-range">Sep 08, 2017 – Jul 16, 2026</tspan>
+<tspan class="t-range">Sep 08, 2017 – Jul 21, 2026</tspan>
 </text>
 </g>
 <g class="line-10">
