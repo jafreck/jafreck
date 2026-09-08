@@ -400,7 +400,7 @@
 <text class="term-stat" x="30" y="358"><tspan class="typed">  LONGEST STREAK ...   120 days   (Mar 19 - Jul 16)</tspan></text>
 </g>
 <g class="line-15">
-<text class="term-stat" x="30" y="380"><tspan class="typed">  TOTAL COMMITS ....  5369         (Sep 08, 2017 - Sep 08, 2026)</tspan></text>
+<text class="term-stat" x="30" y="380"><tspan class="typed">  TOTAL COMMITS ....  5392         (Sep 08, 2017 - Sep 08, 2026)</tspan></text>
 </g>
 <g class="line-17">
 <text class="term-dim" x="30" y="424"><tspan class="typed">  ────────────────────────────────────────────────────────────</tspan></text>
@@ -412,13 +412,13 @@
 <text class="term-text" x="46.8" y="512"><tspan class="typed">Rust      </tspan></text>
 <text x="147.60000000000002" y="512" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#dea584" opacity="0.95" filter="url(#textglow)"><tspan class="typed">██████████</tspan></text>
 <text x="231.60000000000002" y="512" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#3a2800" filter="url(#textglow)"><tspan class="typed">░░░░░░░░░░</tspan></text>
-<text class="term-text" x="332.40000000000003" y="512"><tspan class="typed"> 49.4%</tspan></text>
+<text class="term-text" x="332.40000000000003" y="512"><tspan class="typed"> 49.0%</tspan></text>
 </g>
 <g class="line-22">
 <text class="term-text" x="46.8" y="534"><tspan class="typed">TypeScript</tspan></text>
 <text x="147.60000000000002" y="534" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#3178c6" opacity="0.95" filter="url(#textglow)"><tspan class="typed">█████████</tspan></text>
 <text x="223.20000000000005" y="534" font-family="'Courier New', 'Consolas', 'Liberation Mono', monospace" font-size="14px" fill="#3a2800" filter="url(#textglow)"><tspan class="typed">░░░░░░░░░░░</tspan></text>
-<text class="term-text" x="332.40000000000003" y="534"><tspan class="typed"> 45.4%</tspan></text>
+<text class="term-text" x="332.40000000000003" y="534"><tspan class="typed"> 45.9%</tspan></text>
 </g>
 <g class="line-23">
 <text class="term-text" x="46.8" y="556"><tspan class="typed">Metal     </tspan></text>
